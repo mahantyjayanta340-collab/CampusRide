@@ -3,80 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#059669">
-  <meta name="description" content="CampusRide — Digitalizing University Transit for ARKA JAIN University. Real-time Bus Finder, Pickup Zone Radar & QR Boarding Pass.">
-  <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkNhbXB1c1JpZGUgXHUyMDE0IERpZ2l0YWxpemluZyBVbml2ZXJzaXR5IFRyYW5zaXQgKEFKVSkiLCAic2hvcnRfbmFtZSI6ICJDYW1wdXNSaWRlIiwgImRlc2NyaXB0aW9uIjogIlJlYWwtVGltZSBVbml2ZXJzaXR5IEJ1cyBSZXNvbHZlciwgQ2FtcHVzIEJheSBSYWRhciAmIFFSIEJvYXJkaW5nIFBhc3MgZm9yIEFSS0EgSkFJTiBVbml2ZXJzaXR5IiwgInN0YXJ0X3VybCI6ICIuL2luZGV4Lmh0bWwiLCAic2NvcGUiOiAiLi8iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiI2Y0ZjdmYiIsICJ0aGVtZV9jb2xvciI6ICIjMDU5NjY5IiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0LXByaW1hcnkiLCAiY2F0ZWdvcmllcyI6IFsidHJhbnNwb3J0YXRpb24iLCAiZWR1Y2F0aW9uIiwgInV0aWxpdGllcyJdLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FZQUFBQlMzR3dIQUFBRzFVbEVRVlI0bk8zZE1XNGNSeENGNFZwQ2lTSUNUaGpvQmdSc2hRSjhFV1c2Z2pNZHdwbXZvRXhIY1NnSHVvRUNKUUlVT1Z3SHhoRGM1Yzd1OUhSVmRWZlYvNFVTdFR2cWZtKzZaM1pJSG1ReTl3K1B4OUhIQURzL3YzODlqRDZHNTRZZURHR0h5TmhTdUw4eG9jYzEzbVZ3ZXpPQ2p4WmVSVEIvRTRLUEh0WkZNSHR4Z2c5TlZrVlFmMUdDRDB2YVJialRmREhDRDJ2YUdWTnBFOEhIQ0JxclFmY0tRUGd4aWtiMnVncEErREZhYndaM0Y0RHdZeFk5V2R4VkFNS1AyZXpOWkhNQkNEOW10U2ViVFFVZy9KaGRhMFkzMzBZYUZmN0RwL2NqM2haS2poOCtEM25mcmJkSU4zMlJaL2dKZkc2ZWhkaFNncHRmNEJWK2dsK0xWeEZ1bFdCb0FRZzlSR3pMMEZXQUdjSS9hZzhKSFRQTTg3VVNyUDZGVmZpM0RBaWh6Mm5rM0srVndMVUExd2FBME5maW5ZV21BbmlHbitEWDVwbUxTeVZRL1g2QU5ZUWZhOVl5NEhXRDVFVWoxTC9oNE1KL2hPRGpFbytzbks4Q3Bpc0E0VWVMUzltd1hnbE9DcUI1OWlmODJNTzZCT2NaTjFrQkNEOTZlSzRFVHdYUU92c1RmbWl3TE1IenJKdmZCU0w4Mk1zak82b0Y0TmtlV05QTzJKMkl6dmFIclE4c1dHMkZsc3liYllFSVA3Ullac25sazJCZ1Zpb0ZPRitTT1B0RDIzbW10SzRGV0FGUTJsM3ZCVEIzZmpCS2IvYnVIeDZQNmlzQTJ4OVlzY2pXSy9WWG5BaXJrNDdNSjdXVUJTRDR1cGJ4ekZpRVE4ODF3R3gzZndpK2o5bm11ZWQ0VXF3QUJOOVhwaFVoZkFIMmh2L2J0eitWanlTMk4yOCtOditidzZmMzRVc1Erbk1Bd3E5bjc1aEVYMzNERmlENndHY1NlUzVDRmlEeWdHY1ZkVTVDRmdEUUVxNEFVYzgwRlVTY20zQUYwTERuamtkMlZjY2sxRzFRelROTTFRbTNGdTNXYU1rVkFGaUVXUUY2ei82Unprb3o2Qm52U0t0QW1BTHNGV1VpWnJPTVc4UUwyeGFwdDBDRXYxLzJNVXhiZ093VDV5bnpXS1l0QUxCRnlnSmtQbU9Oa25WTVV4WUEySW9Db0RRS2dOSW9BRXFqQUNpTkFxQTBDb0RTS0FCS293QW9qUUtnTkFxQTBpZ0FTcU1BS0kwQ29EUUtnTklvQUVxakFDaU5BcUEwQ29EU0tBQktvd0FvalFLZ05BcUEwaWdBU3FNQUtJMENvRFFLZ05Jb0FFcWpBQ2lOQXFBMENvRFNVaFlnKysrMUdpSHJtS1lzQUxCVjJnSmtQV09Oa0hrczB4WkFKUGZFZWNrK2h1bC9UL0F5Z1ZsL3g1V1Y3TUZmcEMvQW9zcUVvazNxTFJCd0N3VkFhUlFBcFZFQWxFWUJVQm9GUUdrVUFLVlJBSlJHQVZBYUJVQnBGQUNsVVFDVVJnRlFHZ1ZBYVJRQXBhWDZmb0FmNzE2LytMTmYvdjUzd0pIa2tYMU1VeFRnMGlTZC8xMm1TZk5RWlV6RGI0R3VUZFNlcjBPdE1RMWRnTllKeURCaDFxcU5hZGdDN0IzNDZCTm1xZUtZaGkwQW9DSGtSWER2R2VmSHU5Zk5GM0RSZnF4SzYwL0JHREdtTTJBRjJDQmErRVZpSHZNSUZPQ0d5RUdLZk94ZUtBQktvd0EzUlA2SmNwR1AzVXZJQXZSZWJMWCsrNGhCYWoxbTd6R2RSY2k3UUNORUxBRnVDN2tDaU93LzQwUTlVM21vT0taaEN5RFNQdkNSSjhwTHRURU5YUUNSN1JNUWZhSThWUnJURk5jQXkwUmtmM2JkVTVVeFRWR0FSYWFKbVVYMk1RMi9CUUo2VUFDVVJnRlFXcGdDOEdCWEhKSG1La3dCQUF1aENoRHB6RkpWdERrS1ZRQkFXN2dDUkR2RFZCSnhic0lWQU5BVXNnQVJ6elRaUloyVGtBVVFpVHZnR1VXZWk5RFBBaDAvZkQ3NVJwVi8zdjZoOHJxL2ZmbEw1WFZtWXpFK2tjTXZFbmdGV0N3VG9EVzUycTgxQzR2eGlSNStrUVFGRUxFSmJLWVNNRDdyVWhRQTJJc0NvTFRRRjhIV011eHhSVVRrUzQ3dGlnVldBSlJHQVZBYUJVQnBGQUNsVVFDVVJnRlFHZ1ZBYVJRQXBYVVY0UHlESW42RU9LeWRaNnozdzBwV0FKU1dvZ0MvdnYwOXhHdU93dmlzVXkvQXFHMlE1b1JrbWR6bk1veVBSYllPSWlMM0Q0L0hyaGRSM3BjQmwyam43T2YzcjRjVVd5QmdMNVVDY0RjSTFxeDJHYXdBS00yc0FLd0MwR0tacFR1Ui95OEdlbC9vMHBKRUNkRHJVb1kwdGo5TDVsVlhBTzcrd0pwMnhzeXZBVmdGc0pkSGRwNEtvTEVORW1FckJCMVdXeCtSMDZ5YnJBQ1VBRDBzdzMvdXBBQmFxNEFJSmNBKzF1RS96N2pwTlFBbFFBdlBNLy9UZTE3Nnc5NW5nMTY4eVVyb3VXc0VFYjk4WE5yaHVId1N2UFlmWVRYQTZKUGo2cDVmZXhVUXVSNTRWb05hdkxPd2RuM3JXZ0NSYldkOXlwRFR5TGx2TG9DSVhRbEV0bTkvS0VOc004enp0YnViTjI5N3psQUM1RFlxL0NLREMzQnlJSlNoRksrVnZic0FJbjRsRUtFSTJYbHVhYmQ4c0x2NWsxL1BFanhISVdJYmRRMjM5YW1HcGtjZlJwVUFhTkh5U0UvVEIyR2F6d29CRmxvejJ2eEpNQ1hBclBaa2M5ZWpFSlFBczltYnlkM1BBbEVDektJbmkxMFB3MUVDak5hYndlNm5RU2tCUnRISW5tcDR1VTBLRDVvblhkWHZCMkExZ0RYdGpKa0ZsdFVBbXF4T3J1Wm5iSXFBSHRhN0NyY3RDMFZBQzYvdHRQdWVuU0xnR3UvcnlLRVhyWlFCSW1Odm5reDMxNFpTNURiYm5jTC9BQTEwaTkwRFZlbm9BQUFBQUVsRlRrU3VRbUNDIiwgInNpemVzIjogIjE5MngxOTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19">
+  <meta name="theme-color" content="#059669" id="meta-theme-color">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="CampusRide">
+  <meta name="description" content="ARKA JAIN University Real-Time Bus Finder, Pickup Zone Guide & Smart Transit Reminders with Offline PWA support">
+
+  <link rel="manifest" id="pwa-manifest-link" href="./manifest.json">
   <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAG1UlEQVR4nO3dMW4cRxCF4VpCiSICThjoBgRshQJ8EWW6gjMdwpmvoExHcSgHuoECJQIUOVwHxhDc5c7u9HRVdVfV/4UStTvqfm+6Z3ZIHmQy9w+Px9HHADs/v389jD6G54YeDGGHyNhSuL8xocc13mVwezOCjxZeRTB/E4KPHtZFMHtxgg9NVkVQf1GCD0vaRbjTfDHCD2vaGVNpE8HHCBqrQfcKQPgxikb2ugpA+DFabwZ3F4DwYxY9WdxVAMKP2ezNZHMBCD9mtSebTQUg/Jhda0Y330YaFf7Dp/cj3hZKjh8+D3nfrbdIN32RZ/gJfG6ehdhSgptf4BV+gl+LVxFulWBoAQg9RGzL0FWAGcI/ag8JHTPM87USrP6FVfi3DAihz2nk3K+VwLUA1waA0NfinYWmAniGn+DX5pmLSyVQ/X6ANYQfa9Yy4HWD5EUj1L/h4MJ/hODjEo+snK8CpisA4UeLS9mwXglOCqB59if82MO6BOcZN1kBCD96eK4ETwXQOvsTfmiwLMHzrJvfBSL82MsjO6oF4NkeWNPO2J2IzvaHrQ8sWG2FlsybbYEIP7RYZsnlk2BgVioFOF+SOPtD23mmtK4FWAFQ2l3vBTB3fjBKb/buHx6P6isA2x9YscjWK/VXnAirk47MJ7WUBSD4upbxzFiEQ881wGx3fwi+j9nmued4UqwABN9XphUhfAH2hv/btz+VjyS2N28+Nv+bw6f34UsQ+nMAwq9n75hEX33DFiD6wGcSeS5CFiDygGcVdU5CFgDQEq4AUc80FUScm3AF0LDnjkd2Vcck1G1QzTNM1Qm3Fu3WaMkVAFiEWQF6z/6Rzkoz6BnvSKtAmALsFWUiZrOMW8QL2xapt0CEv1/2MUxbgOwT5ynzWKYtALBFygJkPmONknVMUxYA2IoCoDQKgNIoAEqjACiNAqA0CoDSKABKowAojQKgNAqA0igASqMAKI0CoDQKgNIoAEqjACiNAqA0CoDSKABKowAojQKgNAqA0igASqMAKI0CoDQKgNIoAEqjACiNAqA0CoDSUhYg+++1GiHrmKYsALBV2gJkPWONkHks0xZAJPfEeck+hul/T/AygVl/x5WV7MFfpC/AosqEok3qLRBwCwVAaRQApVEAlEYBUBoFQGkUAKVRAJRGAVAaBUBpFAClUQCURgFQGgVAaRQApaX6foAf716/+LNf/v53wJHkkX1MUxTg0iSd/12mSfNQZUzDb4GuTdSer0OtMQ1dgNYJyDBh1qqNadgC7B346BNmqeKYhi0AoCHkRXDvGefHu9fNF3DRfqxK60/BGDGmM2AF2CBa+EViHvMIFOCGyEGKfOxeKABKowA3RP6JcpGP3UvIAvRebLX++4hBaj1m7zGdRci7QCNELAFuC7kCiOw/40Q9U3moOKZhCyDSPvCRJ8pLtTENXQCR7RMQfaI8VRrTFNcAy0Rkf3bdU5UxTVGARaaJmUX2MQ2/BQJ6UACURgFQWpgC8GBXHJHmKkwBAAuhChDpzFJVtDkKVQBAW7gCRDvDVBJxbsIVANAUsgARzzTZRZ2TkAUQiTvgGUWei9DPAh0/fD75RpV/3v6h8rq/fflL5XVmYzE+kcMvEngFWCwToDW52q81C4vxiR5+kQQFELEJbKYSMD7rUhQA2IsCoLTQF8HWMuxxRUTkS47tigVWAJRGAVAaBUBpFAClUQCURgFQGgVAaRQApXUV4PyDIn6EOKydZ6z3w0pWAJSWogC/vv09xGuOwvisUy/AqG2Q5oRkmdznMoyPRbYOIiL3D4/HrhdR3pcBl2jn7Of3r4cUWyBgL5UCcDcI1qx2GawAKM2sAKwC0GKZpTuR/y8Gel/o0pJECdDrUoY0tj9L5lVXAO7+wJp2xsyvAVgFsJdHdp4KoLENEmErBB1WWx+R06ybrACUAD0sw3/upABaq4AIJcA+1uE/z7jpNQAlQAvPM//Te176w95ng168yUrouWsEEb98XNrhuHwSvPYfYTXA6JPj6p5fexUQuR54VoNavLOwdn3rWgCRbWd9ypDTyLlvLoCIXQlEtm9/KENsM8zztbubN297zlAC5DYq/CKDC3ByIJShFK+VvbsAIn4lEKEI2Xluabd8sLv5k1/PEjxHIWIbdQ239amGpkcfRpUAaNHySE/TB2GazwoBFloz2vxJMCXArPZkc9ejEJQAs9mbyd3PAlECzKIni10Pw1ECjNabwe6nQSkBRtHInmp4uU0KD5onXdXvB2A1gDXtjJkFltUAmqxOruZnbIqAHta7CrctC0VAC6/ttPuenSLgGu/ryKEXrZQBImNvnkx314ZS5DbbncL/AA10i90DVenoAAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAG1UlEQVR4nO3dMW4cRxCF4VpCiSICThjoBgRshQJ8EWW6gjMdwpmvoExHcSgHuoECJQIUOVwHxhDc5c7u9HRVdVfV/4UStTvqfm+6Z3ZIHmQy9w+Px9HHADs/v389jD6G54YeDGGHyNhSuL8xocc13mVwezOCjxZeRTB/E4KPHtZFMHtxgg9NVkVQf1GCD0vaRbjTfDHCD2vaGVNpE8HHCBqrQfcKQPgxikb2ugpA+DFabwZ3F4DwYxY9WdxVAMKP2ezNZHMBCD9mtSebTQUg/Jhda0Y330YaFf7Dp/cj3hZKjh8+D3nfrbdIN32RZ/gJfG6ehdhSgptf4BV+gl+LVxFulWBoAQg9RGzL0FWAGcI/ag8JHTPM87USrP6FVfi3DAihz2nk3K+VwLUA1waA0NfinYWmAniGn+DX5pmLSyVQ/X6ANYQfa9Yy4HWD5EUj1L/h4MJ/hODjEo+snK8CpisA4UeLS9mwXglOCqB59if82MO6BOcZN1kBCD96eK4ETwXQOvsTfmiwLMHzrJvfBSL82MsjO6oF4NkeWNPO2J2IzvaHrQ8sWG2FlsybbYEIP7RYZsnlk2BgVioFOF+SOPtD23mmtK4FWAFQ2l3vBTB3fjBKb/buHx6P6isA2x9YscjWK/VXnAirk47MJ7WUBSD4upbxzFiEQ881wGx3fwi+j9nmued4UqwABN9XphUhfAH2hv/btz+VjyS2N28+Nv+bw6f34UsQ+nMAwq9n75hEX33DFiD6wGcSeS5CFiDygGcVdU5CFgDQEq4AUc80FUScm3AF0LDnjkd2Vcck1G1QzTNM1Qm3Fu3WaMkVAFiEWQF6z/6Rzkoz6BnvSKtAmALsFWUiZrOMW8QL2xapt0CEv1/2MUxbgOwT5ynzWKYtALBFygJkPmONknVMUxYA2IoCoDQKgNIoAEqjACiNAqA0CoDSKABKowAojQKgNAqA0igASqMAKI0CoDQKgNIoAEqjACiNAqA0CoDSKABKowAojQKgNAqA0igASqMAKI0CoDQKgNIoAEqjACiNAqA0CoDSUhYg+++1GiHrmKYsALBV2gJkPWONkHks0xZAJPfEeck+hul/T/AygVl/x5WV7MFfpC/AosqEok3qLRBwCwVAaRQApVEAlEYBUBoFQGkUAKVRAJRGAVAaBUBpFAClUQCURgFQGgVAaRQApaX6foAf716/+LNf/v53wJHkkX1MUxTg0iSd/12mSfNQZUzDb4GuTdSer0OtMQ1dgNYJyDBh1qqNadgC7B346BNmqeKYhi0AoCHkRXDvGefHu9fNF3DRfqxK60/BGDGmM2AF2CBa+EViHvMIFOCGyEGKfOxeKABKowA3RP6JcpGP3UvIAvRebLX++4hBaj1m7zGdRci7QCNELAFuC7kCiOw/40Q9U3moOKZhCyDSPvCRJ8pLtTENXQCR7RMQfaI8VRrTFNcAy0Rkf3bdU5UxTVGARaaJmUX2MQ2/BQJ6UACURgFQWpgC8GBXHJHmKkwBAAuhChDpzFJVtDkKVQBAW7gCRDvDVBJxbsIVANAUsgARzzTZRZ2TkAUQiTvgGUWei9DPAh0/fD75RpV/3v6h8rq/fflL5XVmYzE+kcMvEngFWCwToDW52q81C4vxiR5+kQQFELEJbKYSMD7rUhQA2IsCoLTQF8HWMuxxRUTkS47tigVWAJRGAVAaBUBpFAClUQCURgFQGgVAaRQApXUV4PyDIn6EOKydZ6z3w0pWAJSWogC/vv09xGuOwvisUy/AqG2Q5oRkmdznMoyPRbYOIiL3D4/HrhdR3pcBl2jn7Of3r4cUWyBgL5UCcDcI1qx2GawAKM2sAKwC0GKZpTuR/y8Gel/o0pJECdDrUoY0tj9L5lVXAO7+wJp2xsyvAVgFsJdHdp4KoLENEmErBB1WWx+R06ybrACUAD0sw3/upABaq4AIJcA+1uE/z7jpNQAlQAvPM//Te176w95ng168yUrouWsEEb98XNrhuHwSvPYfYTXA6JPj6p5fexUQuR54VoNavLOwdn3rWgCRbWd9ypDTyLlvLoCIXQlEtm9/KENsM8zztbubN297zlAC5DYq/CKDC3ByIJShFK+VvbsAIn4lEKEI2Xluabd8sLv5k1/PEjxHIWIbdQ239amGpkcfRpUAaNHySE/TB2GazwoBFloz2vxJMCXArPZkc9ejEJQAs9mbyd3PAlECzKIni10Pw1ECjNabwe6nQSkBRtHInmp4uU0KD5onXdXvB2A1gDXtjJkFltUAmqxOruZnbIqAHta7CrctC0VAC6/ttPuenSLgGu/ryKEXrZQBImNvnkx314ZS5DbbncL/AA10i90DVenoAAAAAElFTkSuQmCC">
-  <title>CampusRide — Digitalizing University Transit | ARKA JAIN University</title>
+
+  <title>CampusRide | AJU University Bus & Zone Finder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- OneSignal Web Push SDK v16 (Same Deployment Architecture as ClassRadar) -->
+
+  <!-- OneSignal Web Push SDK v16 for Mobile & Web Notifications (Same as ClassRadar) -->
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
   <style>
     :root {
-      --bg-canvas: #f1f5f9;
-      --bg-mesh-1: rgba(16, 185, 129, 0.10);
-      --bg-mesh-2: rgba(79, 70, 229, 0.08);
-      --surface-1: #ffffff;
-      --surface-2: #f8fafc;
-      --surface-3: #e2e8f0;
-      --surface-glass: rgba(255, 255, 255, 0.88);
-      --border-subtle: #e2e8f0;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-soft: #f1f5f9;
+      --border: #e2e8f0;
       --border-strong: #cbd5e1;
-      --text-primary: #0f172a;
-      --text-secondary: #475569;
+      --text: #0f172a;
+      --text-sub: #475569;
       --text-muted: #64748b;
-      --brand-emerald: #059669;
-      --brand-emerald-light: #10b981;
-      --brand-emerald-soft: rgba(16, 185, 129, 0.12);
-      --brand-indigo: #4f46e5;
-      --brand-indigo-soft: rgba(79, 70, 229, 0.10);
-      --brand-amber: #d97706;
-      --brand-amber-soft: rgba(245, 158, 11, 0.14);
-      --brand-rose: #e11d48;
-      --brand-rose-soft: rgba(225, 29, 72, 0.12);
-      --brand-sky: #0284c7;
-      --brand-sky-soft: rgba(2, 132, 199, 0.12);
+      --emerald: #059669;
+      --emerald-light: #10b981;
+      --emerald-soft: rgba(16, 185, 129, 0.12);
+      --sky: #0284c7;
+      --sky-soft: rgba(2, 132, 199, 0.12);
+      --amber: #d97706;
+      --amber-soft: rgba(245, 158, 11, 0.14);
+      --rose: #e11d48;
+      --rose-soft: rgba(225, 29, 72, 0.12);
       --plate-bg: #facc15;
       --plate-text: #0f172a;
       --plate-border: #ca8a04;
       --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
-      --shadow-md: 0 10px 30px -5px rgba(15, 23, 42, 0.07), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
-      --shadow-lg: 0 20px 40px -12px rgba(15, 23, 42, 0.12);
-      --radius-xl: 22px;
-      --radius-lg: 16px;
-      --radius-md: 12px;
+      --shadow-md: 0 12px 28px -6px rgba(15, 23, 42, 0.08);
+      --radius-lg: 20px;
+      --radius-md: 14px;
     }
 
     html[data-theme="dark"] {
-      --bg-canvas: #070d19;
-      --bg-mesh-1: rgba(16, 185, 129, 0.14);
-      --bg-mesh-2: rgba(56, 189, 248, 0.10);
-      --surface-1: #0f172a;
-      --surface-2: #1e293b;
-      --surface-3: #334155;
-      --surface-glass: rgba(15, 23, 42, 0.88);
-      --border-subtle: #1e293b;
+      --bg: #090e1a;
+      --surface: #111827;
+      --surface-soft: #1e293b;
+      --border: #1f2937;
       --border-strong: #334155;
-      --text-primary: #f8fafc;
-      --text-secondary: #cbd5e1;
+      --text: #f8fafc;
+      --text-sub: #cbd5e1;
       --text-muted: #94a3b8;
-      --brand-emerald: #10b981;
-      --brand-emerald-light: #34d399;
-      --brand-emerald-soft: rgba(16, 185, 129, 0.16);
-      --brand-indigo: #6366f1;
-      --brand-indigo-soft: rgba(99, 102, 241, 0.18);
-      --brand-amber: #f59e0b;
-      --brand-amber-soft: rgba(245, 158, 11, 0.18);
-      --brand-rose: #f43f5e;
-      --brand-rose-soft: rgba(244, 63, 94, 0.18);
-      --brand-sky: #38bdf8;
-      --brand-sky-soft: rgba(56, 189, 248, 0.16);
+      --emerald: #10b981;
+      --emerald-light: #34d399;
+      --emerald-soft: rgba(16, 185, 129, 0.16);
+      --sky: #38bdf8;
+      --sky-soft: rgba(56, 189, 248, 0.16);
+      --amber: #fbbf24;
+      --amber-soft: rgba(251, 191, 36, 0.16);
+      --rose: #f43f5e;
+      --rose-soft: rgba(244, 63, 94, 0.18);
       --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
-      --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
-      --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.5);
+      --shadow-md: 0 14px 32px rgba(0, 0, 0, 0.4);
     }
 
     * {
@@ -87,428 +79,214 @@
     }
 
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: var(--bg-canvas);
-      background-image:
-        radial-gradient(at 0% 0%, var(--bg-mesh-1) 0px, transparent 50%),
-        radial-gradient(at 100% 10%, var(--bg-mesh-2) 0px, transparent 50%);
-      background-attachment: fixed;
-      color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.5;
       min-height: 100vh;
-      padding-bottom: 92px;
-      transition: background-color 0.25s ease, color 0.25s ease;
+      padding-bottom: 48px;
+      transition: background 0.2s ease, color 0.2s ease;
     }
 
-    /* Floating Glass Header */
-    .top-nav-wrap {
+    /* Minimal Top Header */
+    header {
       position: sticky;
       top: 0;
-      z-index: 60;
-      padding: 12px 16px 0;
+      z-index: 40;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px;
     }
 
-    .top-nav {
-      max-width: 1240px;
+    .header-inner {
+      max-width: 780px;
       margin: 0 auto;
-      background: var(--surface-glass);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid var(--border-subtle);
-      border-radius: 999px;
-      padding: 8px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
-      box-shadow: var(--shadow-md);
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
-    .brand-cluster {
+    .brand {
       display: flex;
       align-items: center;
-      gap: 11px;
+      gap: 10px;
     }
 
-    .brand-logo-box {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
       background: linear-gradient(135deg, #059669, #10b981);
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #ffffff;
-      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
-      flex-shrink: 0;
+      font-size: 1.15rem;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.28);
     }
 
-    .brand-titles {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .brand-title-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .brand-name {
-      font-size: 1.12rem;
+    .brand-title {
+      font-size: 1.1rem;
       font-weight: 800;
-      letter-spacing: -0.03em;
-      color: var(--text-primary);
+      letter-spacing: -0.02em;
     }
 
-    .brand-name span {
-      color: var(--brand-emerald);
-    }
-
-    .event-badge {
-      font-size: 0.68rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: var(--brand-indigo-soft);
-      color: var(--brand-indigo);
-      border: 1px solid rgba(79, 70, 229, 0.2);
+    .brand-title span {
+      color: var(--emerald);
     }
 
     .brand-sub {
       font-size: 0.72rem;
       color: var(--text-muted);
-      font-weight: 500;
+      font-weight: 600;
     }
 
-    /* Desktop Pill Switcher */
-    .desktop-tabs {
-      display: flex;
-      align-items: center;
-      background: var(--surface-2);
-      padding: 4px;
-      border-radius: 999px;
-      border: 1px solid var(--border-subtle);
-      gap: 4px;
-    }
-
-    .nav-pill-btn {
-      border: none;
-      background: transparent;
-      color: var(--text-secondary);
-      font-family: inherit;
-      font-size: 0.82rem;
-      font-weight: 700;
-      padding: 7px 15px;
-      border-radius: 999px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-    }
-
-    .nav-pill-btn:hover {
-      color: var(--text-primary);
-    }
-
-    .nav-pill-btn.active {
-      background: var(--surface-1);
-      color: var(--brand-emerald);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .nav-actions {
+    .header-actions {
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
-    .sync-pill {
+    .pill-btn {
+      font-family: inherit;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: var(--brand-emerald-soft);
-      color: var(--brand-emerald);
-      border: 1px solid rgba(16, 185, 129, 0.25);
-      cursor: pointer;
-      transition: transform 0.15s ease;
+      transition: all 0.15s ease;
+      text-decoration: none;
     }
 
-    .sync-pill:hover {
-      transform: translateY(-1px);
+    .pill-btn:hover {
+      border-color: var(--emerald);
+    }
+
+    .pill-btn.primary {
+      background: linear-gradient(135deg, #059669, #10b981);
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    .btn-install-pulse {
+      animation: pulseBorder 2s infinite;
+    }
+
+    @keyframes pulseBorder {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.45); }
+      70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
     }
 
     .live-dot {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      background: var(--brand-emerald-light);
-      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
-      animation: pulseDot 1.8s infinite;
+      background: var(--emerald-light);
+      box-shadow: 0 0 0 3px var(--emerald-soft);
     }
 
-    @keyframes pulseDot {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.25); opacity: 0.65; }
-    }
-
-    .icon-btn {
-      height: 36px;
-      padding: 0 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border-subtle);
-      background: var(--surface-1);
-      color: var(--text-primary);
-      font-family: inherit;
-      font-size: 0.78rem;
-      font-weight: 700;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .icon-btn:hover {
-      border-color: var(--brand-emerald);
-      background: var(--surface-2);
-    }
-
-    .icon-btn.demo-active {
-      background: linear-gradient(135deg, #4f46e5, #6366f1);
-      color: #ffffff;
-      border-color: transparent;
-      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
-    }
-
-    /* Main Container */
-    .app-shell {
-      max-width: 1240px;
-      margin: 14px auto 0;
+    /* Main Single-Column Container */
+    .container {
+      max-width: 780px;
+      margin: 18px auto 0;
       padding: 0 16px;
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
 
-    /* Live Transit Simulation Controls Bar */
-    .stage-demo-bar {
-      background: linear-gradient(135deg, rgba(79, 70, 229, 0.10), rgba(16, 185, 129, 0.10));
-      border: 1px solid rgba(79, 70, 229, 0.28);
-      border-radius: var(--radius-lg);
+    /* Notification Opt-In Banner (Same User-Gesture Pattern as ClassRadar) */
+    .notif-banner {
+      background: linear-gradient(135deg, rgba(5, 150, 105, 0.14), rgba(2, 132, 199, 0.12));
+      border: 1.5px solid rgba(16, 185, 129, 0.4);
+      border-radius: 16px;
       padding: 12px 16px;
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
       gap: 12px;
-    }
-
-    .stage-demo-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
       flex-wrap: wrap;
     }
 
-    .stage-tag {
-      background: var(--brand-indigo);
-      color: #ffffff;
-      font-size: 0.7rem;
-      font-weight: 800;
-      padding: 4px 10px;
-      border-radius: 999px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .stage-demo-controls {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .mini-select, .mini-btn {
-      font-family: inherit;
-      font-size: 0.76rem;
-      font-weight: 700;
-      padding: 6px 11px;
-      border-radius: 10px;
-      border: 1px solid var(--border-strong);
-      background: var(--surface-1);
-      color: var(--text-primary);
-      cursor: pointer;
-    }
-
-    .mini-btn.accent {
-      background: var(--brand-emerald);
-      color: #ffffff;
-      border-color: transparent;
-    }
-
-    .mini-btn.warn {
-      background: var(--brand-rose);
-      color: #ffffff;
-      border-color: transparent;
-    }
-
-    /* 3-Step Visual Progress Ribbon (Slide 4: Search -> Go to Zone -> Assigned Bus) */
-    .three-taps-ribbon {
-      background: var(--surface-1);
-      border: 1px solid var(--border-subtle);
+    /* Card Base */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 12px 18px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .tap-step {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 8px 12px;
-      border-radius: 12px;
-      background: var(--surface-2);
-      border: 1px solid transparent;
-      transition: all 0.2s ease;
-      cursor: pointer;
-    }
-
-    .tap-step.done {
-      border-color: rgba(16, 185, 129, 0.35);
-      background: var(--brand-emerald-soft);
-    }
-
-    .tap-num {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: var(--brand-emerald);
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 0.78rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .tap-info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .tap-title {
-      font-size: 0.8rem;
-      font-weight: 800;
-      color: var(--text-primary);
-    }
-
-    .tap-desc {
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      font-weight: 600;
-    }
-
-    /* Bento Split Grid for View 1 (Commute Finder) */
-    .commute-bento {
-      display: grid;
-      grid-template-columns: 1.05fr 1.25fr;
-      gap: 18px;
-      align-items: start;
-    }
-
-    .panel-card {
-      background: var(--surface-1);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-xl);
       padding: 20px;
       box-shadow: var(--shadow-md);
     }
 
-    .panel-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 14px;
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--emerald);
+      margin-bottom: 4px;
     }
 
-    .panel-title {
-      font-size: 1.05rem;
+    .section-heading {
+      font-size: 1.25rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      color: var(--text-primary);
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      margin-bottom: 12px;
     }
 
-    .panel-subtitle {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
-
-    /* Search Input Box */
-    .search-box-wrap {
+    /* Search Input */
+    .search-wrap {
       position: relative;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .search-input {
       width: 100%;
-      padding: 13px 40px 13px 42px;
-      border-radius: 14px;
+      padding: 12px 36px 12px 38px;
+      border-radius: 12px;
       border: 1.5px solid var(--border-strong);
-      background: var(--surface-2);
-      color: var(--text-primary);
+      background: var(--surface-soft);
+      color: var(--text);
       font-family: inherit;
       font-size: 0.9rem;
       font-weight: 600;
       outline: none;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     .search-input:focus {
-      border-color: var(--brand-emerald);
-      box-shadow: 0 0 0 4px var(--brand-emerald-soft);
-      background: var(--surface-1);
+      border-color: var(--emerald);
+      background: var(--surface);
     }
 
-    .search-icon-left {
+    .search-icon {
       position: absolute;
-      left: 14px;
+      left: 12px;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 1rem;
+      font-size: 0.95rem;
       pointer-events: none;
     }
 
-    .search-clear-btn {
+    .clear-btn {
       position: absolute;
       right: 10px;
       top: 50%;
       transform: translateY(-50%);
       border: none;
-      background: var(--surface-3);
-      color: var(--text-secondary);
-      width: 24px;
-      height: 24px;
+      background: var(--border-strong);
+      color: var(--text);
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 800;
       cursor: pointer;
       display: none;
@@ -516,186 +294,110 @@
       justify-content: center;
     }
 
-    /* Route Destination Selector Cards */
-    .route-selector-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+    /* One-Tap Destination Pills */
+    .dest-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
     }
 
-    .route-pick-card {
-      text-align: left;
+    .dest-pill {
       font-family: inherit;
-      padding: 12px 14px;
-      border-radius: 15px;
-      border: 1.5px solid var(--border-subtle);
-      background: var(--surface-2);
-      color: var(--text-primary);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 9px 14px;
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: var(--surface-soft);
+      color: var(--text);
       cursor: pointer;
-      transition: all 0.18s ease;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: all 0.15s ease;
     }
 
-    .route-pick-card:hover {
-      border-color: var(--brand-emerald);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-sm);
+    .dest-pill:hover {
+      border-color: var(--emerald);
     }
 
-    .route-pick-card.active {
-      background: var(--brand-emerald-soft);
-      border-color: var(--brand-emerald);
-      box-shadow: 0 6px 18px rgba(16, 185, 129, 0.16);
+    .dest-pill.active {
+      background: var(--emerald);
+      color: #ffffff;
+      border-color: var(--emerald);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
     }
 
-    .route-pick-top {
+    /* Assigned Bus Result Card (3 Clear Answers: Bus, Plate, Zone) */
+    .assigned-card {
+      background: var(--surface);
+      border: 2px solid var(--emerald);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+
+    .assigned-top {
+      background: linear-gradient(135deg, #065f46, #059669);
+      color: #ffffff;
+      padding: 18px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 6px;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    .route-pick-zone {
-      font-size: 0.68rem;
+    .assigned-dest {
+      font-size: 1.35rem;
       font-weight: 800;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: var(--surface-1);
-      color: var(--text-secondary);
-      border: 1px solid var(--border-subtle);
+      letter-spacing: -0.02em;
     }
 
-    .route-pick-dest {
-      font-size: 0.9rem;
-      font-weight: 800;
-      color: var(--text-primary);
-      line-height: 1.25;
+    .assigned-via {
+      font-size: 0.8rem;
+      opacity: 0.9;
+      margin-top: 2px;
     }
 
-    .route-pick-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.73rem;
-      color: var(--text-muted);
-      font-weight: 600;
-    }
-
-    /* Status Pills */
-    .status-pill {
+    .status-badge {
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      font-size: 0.7rem;
+      font-size: 0.72rem;
       font-weight: 800;
-      padding: 3px 9px;
+      padding: 4px 10px;
       border-radius: 999px;
       text-transform: uppercase;
       letter-spacing: 0.03em;
     }
 
-    .status-boarding {
-      background: var(--brand-emerald-soft);
-      color: var(--brand-emerald);
-      border: 1px solid rgba(16, 185, 129, 0.35);
-    }
+    .status-boarding { background: var(--emerald-soft); color: var(--emerald); }
+    .status-ontime { background: var(--sky-soft); color: var(--sky); }
+    .status-scheduled { background: var(--surface-soft); color: var(--text-sub); }
+    .status-delayed { background: var(--rose-soft); color: var(--rose); }
 
-    .status-ontime {
-      background: var(--brand-sky-soft);
-      color: var(--brand-sky);
-      border: 1px solid rgba(2, 132, 199, 0.3);
-    }
-
-    .status-scheduled {
-      background: var(--brand-indigo-soft);
-      color: var(--brand-indigo);
-      border: 1px solid rgba(79, 70, 229, 0.25);
-    }
-
-    .status-delayed {
-      background: var(--brand-rose-soft);
-      color: var(--brand-rose);
-      border: 1px solid rgba(225, 29, 72, 0.35);
-    }
-
-    /* Perforated Boarding Ticket Card (Right Column of View 1) */
-    .boarding-ticket {
-      background: var(--surface-1);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-xl);
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-    }
-
-    .ticket-top-banner {
-      background: linear-gradient(135deg, #064e3b 0%, #047857 55%, #0f172a 100%);
-      color: #ffffff;
-      padding: 22px 24px 20px;
-      position: relative;
-    }
-
-    .ticket-top-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 12px;
-      flex-wrap: wrap;
-    }
-
-    .ticket-bus-pill {
-      background: rgba(255, 255, 255, 0.16);
-      backdrop-filter: blur(8px);
-      padding: 5px 12px;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .ticket-dest-heading {
-      font-size: 1.55rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      line-height: 1.15;
-      margin-bottom: 6px;
-    }
-
-    .ticket-via-sub {
-      font-size: 0.82rem;
-      color: rgba(255, 255, 255, 0.82);
-      font-weight: 500;
-    }
-
-    /* Indian HSRP Yellow License Plate & Zone Callout Strip */
-    .ticket-key-metrics {
+    /* 3 Big Key Info Boxes */
+    .three-info-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
-      padding: 18px 24px;
-      background: var(--surface-2);
-      border-bottom: 2px dashed var(--border-strong);
-      position: relative;
+      padding: 18px 20px;
+      background: var(--surface-soft);
+      border-bottom: 1px solid var(--border);
     }
 
-    .metric-tile {
-      background: var(--surface-1);
-      border: 1px solid var(--border-subtle);
-      border-radius: 14px;
-      padding: 11px 13px;
+    .info-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px;
       display: flex;
       flex-direction: column;
       gap: 4px;
     }
 
-    .metric-label {
+    .info-step {
       font-size: 0.68rem;
       font-weight: 800;
       text-transform: uppercase;
@@ -703,26 +405,30 @@
       color: var(--text-muted);
     }
 
-    .metric-value {
-      font-size: 0.98rem;
+    .info-main {
+      font-size: 1.08rem;
       font-weight: 800;
-      color: var(--text-primary);
+      color: var(--text);
     }
 
-    /* Authentic Indian HSRP Number Plate Badge */
+    .info-sub {
+      font-size: 0.74rem;
+      color: var(--text-sub);
+      font-weight: 600;
+    }
+
+    /* Indian HSRP Number Plate */
     .hsrp-plate {
       display: inline-flex;
       align-items: center;
       background: var(--plate-bg);
       color: var(--plate-text);
       border: 2px solid var(--plate-border);
-      border-radius: 7px;
+      border-radius: 6px;
       padding: 3px 8px;
       font-family: 'JetBrains Mono', monospace;
       font-weight: 800;
-      font-size: 0.82rem;
-      letter-spacing: 0.04em;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+      font-size: 0.84rem;
       width: fit-content;
     }
 
@@ -733,401 +439,137 @@
       padding: 1px 4px;
       border-radius: 3px;
       margin-right: 6px;
-      font-weight: 800;
     }
 
-    /* Stop-by-Stop Interactive Timeline */
-    .ticket-body {
-      padding: 20px 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .stop-timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      position: relative;
-      padding-left: 6px;
-    }
-
-    .stop-node {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 8px 10px;
-      border-radius: 10px;
-      position: relative;
-      transition: background 0.15s ease;
-      cursor: pointer;
-    }
-
-    .stop-node:hover {
-      background: var(--surface-2);
-    }
-
-    .stop-dot-col {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 4px;
-    }
-
-    .stop-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background: var(--brand-emerald);
-      border: 2px solid var(--surface-1);
-      box-shadow: 0 0 0 2px var(--brand-emerald);
-      z-index: 2;
-    }
-
-    .stop-node.origin .stop-dot {
-      background: var(--brand-indigo);
-      box-shadow: 0 0 0 3px var(--brand-indigo-soft);
-    }
-
-    .stop-node.terminal .stop-dot {
-      background: var(--brand-amber);
-      box-shadow: 0 0 0 3px var(--brand-amber-soft);
-    }
-
-    .stop-line {
-      width: 2px;
-      height: 26px;
-      background: var(--border-strong);
-      margin-top: 2px;
-      margin-bottom: -10px;
-    }
-
-    .stop-content {
-      flex: 1;
+    .assigned-footer {
+      padding: 14px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 8px;
-    }
-
-    .stop-name {
-      font-size: 0.86rem;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .stop-sub {
-      font-size: 0.72rem;
-      color: var(--text-muted);
-    }
-
-    .stop-eta {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.76rem;
-      font-weight: 700;
-      color: var(--brand-emerald);
-      background: var(--brand-emerald-soft);
-      padding: 3px 8px;
-      border-radius: 8px;
-    }
-
-    /* Action Buttons Row */
-    .ticket-actions {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      padding-top: 6px;
-    }
-
-    .action-btn {
-      font-family: inherit;
-      font-size: 0.8rem;
-      font-weight: 800;
-      padding: 11px 12px;
-      border-radius: 12px;
-      border: 1px solid var(--border-strong);
-      background: var(--surface-2);
-      color: var(--text-primary);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      transition: all 0.18s ease;
-      text-decoration: none;
-    }
-
-    .action-btn:hover {
-      transform: translateY(-1px);
-      border-color: var(--brand-emerald);
-    }
-
-    .action-btn.primary {
-      background: linear-gradient(135deg, #059669, #10b981);
-      color: #ffffff;
-      border-color: transparent;
-      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.28);
-    }
-
-    /* View 2: Interactive Campus Bay Radar Map */
-    .radar-layout {
-      display: grid;
-      grid-template-columns: 1.45fr 0.95fr;
-      gap: 18px;
-      align-items: start;
-    }
-
-    .svg-map-frame {
-      background: #0b1324;
-      border-radius: 18px;
-      border: 1px solid var(--border-strong);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .zone-cards-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .zone-detail-card {
-      padding: 14px 16px;
-      border-radius: 14px;
-      border: 1.5px solid var(--border-subtle);
-      background: var(--surface-2);
-      cursor: pointer;
-      transition: all 0.18s ease;
-    }
-
-    .zone-detail-card.active {
-      border-color: var(--brand-emerald);
-      background: var(--brand-emerald-soft);
-    }
-
-    /* View 3: Fleet Directory Grid */
-    .kpi-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
       gap: 12px;
-      margin-bottom: 14px;
+      flex-wrap: wrap;
     }
 
-    .kpi-card {
-      background: var(--surface-1);
-      border: 1px solid var(--border-subtle);
-      border-radius: 16px;
-      padding: 14px 16px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .kpi-num {
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: var(--brand-emerald);
-      letter-spacing: -0.02em;
-    }
-
-    .kpi-label {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      font-weight: 700;
-    }
-
-    .filter-chips-bar {
+    .stops-chips {
       display: flex;
       align-items: center;
-      gap: 8px;
       flex-wrap: wrap;
-      margin-bottom: 14px;
-    }
-
-    .filter-chip {
-      font-family: inherit;
+      gap: 6px;
       font-size: 0.78rem;
       font-weight: 700;
-      padding: 7px 14px;
+      color: var(--text-sub);
+    }
+
+    .stop-pill {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
       border-radius: 999px;
-      border: 1px solid var(--border-strong);
-      background: var(--surface-1);
-      color: var(--text-secondary);
-      cursor: pointer;
-      transition: all 0.15s ease;
     }
 
-    .filter-chip.active {
-      background: var(--brand-emerald);
-      color: #ffffff;
-      border-color: var(--brand-emerald);
-    }
-
-    .fleet-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 14px;
-    }
-
-    .fleet-bus-card {
-      background: var(--surface-1);
-      border: 1.5px solid var(--border-subtle);
-      border-radius: 18px;
-      padding: 18px;
+    /* Simple 2-Tab Switcher for All Buses / Pickup Zones */
+    .simple-tabs {
       display: flex;
-      flex-direction: column;
-      gap: 12px;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.2s ease;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 14px;
     }
 
-    .fleet-bus-card:hover {
-      border-color: var(--brand-emerald);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
-    }
-
-    /* View 4: QR Boarding Pass & Alerts */
-    .pass-bento {
-      display: grid;
-      grid-template-columns: 1.05fr 1.15fr;
-      gap: 18px;
-      align-items: start;
-    }
-
-    .qr-pass-visual {
-      background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
-      color: #ffffff;
-      border-radius: 22px;
-      padding: 24px;
-      border: 1px solid #334155;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .qr-box-center {
-      background: #ffffff;
-      padding: 16px;
-      border-radius: 16px;
-      width: 196px;
-      height: 196px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-    }
-
-    .form-row {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      margin-bottom: 12px;
-    }
-
-    .form-label {
-      font-size: 0.75rem;
-      font-weight: 800;
-      color: var(--text-secondary);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .form-input {
-      padding: 10px 12px;
-      border-radius: 10px;
-      border: 1px solid var(--border-strong);
-      background: var(--surface-2);
-      color: var(--text-primary);
+    .tab-btn {
       font-family: inherit;
-      font-size: 0.86rem;
-      font-weight: 600;
-    }
-
-    /* Floating Bottom Navigation Dock (Mobile) */
-    .mobile-bottom-dock {
-      position: fixed;
-      bottom: 12px;
-      left: 12px;
-      right: 12px;
-      max-width: 480px;
-      margin: 0 auto;
-      background: var(--surface-glass);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid var(--border-strong);
-      border-radius: 999px;
-      padding: 6px;
-      display: none;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 4px;
-      z-index: 70;
-      box-shadow: var(--shadow-lg);
-    }
-
-    .dock-btn {
-      border: none;
+      font-size: 0.84rem;
+      font-weight: 800;
+      padding: 8px 16px;
+      border-radius: 10px;
+      border: 1px solid transparent;
       background: transparent;
       color: var(--text-muted);
-      font-family: inherit;
-      font-size: 0.68rem;
-      font-weight: 800;
-      padding: 8px 4px;
-      border-radius: 999px;
       cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2px;
     }
 
-    .dock-btn.active {
-      background: var(--brand-emerald);
-      color: #ffffff;
+    .tab-btn.active {
+      background: var(--emerald-soft);
+      color: var(--emerald);
+      border-color: rgba(16, 185, 129, 0.3);
     }
 
-    /* Toast & Modal Overlays */
-    #toast-stack {
-      position: fixed;
-      top: 76px;
-      right: 20px;
-      z-index: 120;
+    /* Clean Bus List */
+    .bus-list {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      max-width: 380px;
-      width: calc(100% - 40px);
-      pointer-events: none;
+    }
+
+    .bus-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--border);
+      background: var(--surface-soft);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      flex-wrap: wrap;
+    }
+
+    .bus-row:hover, .bus-row.active {
+      border-color: var(--emerald);
+      background: var(--surface);
+    }
+
+    .zones-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .zone-box {
+      padding: 15px;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--border);
+      background: var(--surface-soft);
+      cursor: pointer;
+    }
+
+    .zone-box:hover {
+      border-color: var(--emerald);
+    }
+
+    /* Toasts & Modals */
+    #toast-stack {
+      position: fixed;
+      top: 70px;
+      right: 16px;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 340px;
     }
 
     .cr-toast {
-      background: var(--surface-1);
-      color: var(--text-primary);
-      border-left: 4px solid var(--brand-emerald);
+      background: var(--surface);
+      color: var(--text);
+      border-left: 4px solid var(--emerald);
       border-top: 1px solid var(--border-strong);
       border-right: 1px solid var(--border-strong);
       border-bottom: 1px solid var(--border-strong);
-      padding: 13px 16px;
-      border-radius: 14px;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      pointer-events: auto;
-      animation: toastSlide 0.25s ease;
-    }
-
-    @keyframes toastSlide {
-      from { transform: translateY(-12px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      padding: 12px 14px;
+      border-radius: 12px;
+      box-shadow: var(--shadow-md);
+      font-size: 0.8rem;
+      font-weight: 700;
     }
 
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(15, 23, 42, 0.72);
-      backdrop-filter: blur(6px);
-      z-index: 110;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(4px);
+      z-index: 90;
       display: none;
       align-items: center;
       justify-content: center;
@@ -1135,704 +577,252 @@
     }
 
     .modal-dialog {
-      background: var(--surface-1);
+      background: var(--surface);
       border: 1px solid var(--border-strong);
-      border-radius: 22px;
-      max-width: 540px;
+      border-radius: 18px;
+      max-width: 480px;
       width: 100%;
-      max-height: 88vh;
-      overflow-y: auto;
-      padding: 24px;
-      box-shadow: var(--shadow-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
       display: flex;
       flex-direction: column;
       gap: 14px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border-strong);
+      background: var(--surface-soft);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
     }
 
     .code-snippet {
       background: #0f172a;
       color: #38bdf8;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 0.76rem;
-      padding: 12px;
-      border-radius: 10px;
-      overflow-x: auto;
+      font-size: 0.74rem;
+      padding: 10px;
+      border-radius: 8px;
       word-break: break-all;
     }
 
-    @media (max-width: 960px) {
-      .desktop-tabs { display: none; }
-      .mobile-bottom-dock { display: grid; }
-      .commute-bento, .radar-layout, .pass-bento { grid-template-columns: 1fr; }
-      .kpi-strip { grid-template-columns: repeat(2, 1fr); }
-      .three-taps-ribbon { grid-template-columns: 1fr; gap: 8px; }
-    }
-
-    @media (max-width: 560px) {
-      .route-selector-grid { grid-template-columns: 1fr; }
-      .ticket-key-metrics { grid-template-columns: 1fr; }
-      .ticket-actions { grid-template-columns: 1fr; }
-      .sync-pill span.sync-label-text { display: none; }
+    @media (max-width: 640px) {
+      .three-info-grid { grid-template-columns: 1fr; }
+      .zones-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Toast Notification Stack -->
   <div id="toast-stack"></div>
 
-  <!-- Top Floating Glass Navigation -->
-  <div class="top-nav-wrap">
-    <nav class="top-nav">
-      <div class="brand-cluster">
-        <div class="brand-logo-box" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="3" width="18" height="14" rx="3"></rect>
-            <path d="M3 10h18"></path>
-            <path d="M7 21v-4"></path>
-            <path d="M17 21v-4"></path>
-            <circle cx="7.5" cy="14" r="1"></circle>
-            <circle cx="16.5" cy="14" r="1"></circle>
-          </svg>
-        </div>
-        <div class="brand-titles">
-          <div class="brand-title-row">
-            <span class="brand-name">Campus<span>Ride</span></span>
-            <span class="event-badge">AJU Transit</span>
-          </div>
-          <span class="brand-sub">ARKA JAIN University • Digital Transit Engine</span>
+  <!-- Minimal Header -->
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">🚌</div>
+        <div>
+          <div class="brand-title">Campus<span>Ride</span></div>
+          <div class="brand-sub">ARKA JAIN University • Bus & Zone Finder</div>
         </div>
       </div>
 
-      <!-- Segmented Desktop View Tabs -->
-      <div class="desktop-tabs" role="tablist">
-        <button type="button" class="nav-pill-btn active" id="nav-tab-finder" onclick="switchView('finder')">
-          <span>🧭</span><span>Commute Finder</span>
+      <div class="header-actions">
+        <button type="button" class="pill-btn" id="btn-cloud-sync" onclick="syncFromGoogleSheet(true)" title="Sync live schedule from Google Sheet">
+          <span class="live-dot"></span>
+          <span id="sync-status-label">Live</span>
         </button>
-        <button type="button" class="nav-pill-btn" id="nav-tab-radar" onclick="switchView('radar')">
-          <span>🗺️</span><span>Campus Bay Map</span>
+        <button type="button" class="pill-btn" id="btn-alert-test" onclick="testTransitNotification()" title="Test transit chime and notification">
+          🔔 Alerts
         </button>
-        <button type="button" class="nav-pill-btn" id="nav-tab-fleet" onclick="switchView('fleet')">
-          <span>🚌</span><span>Fleet Board</span>
-        </button>
-        <button type="button" class="nav-pill-btn" id="nav-tab-pass" onclick="switchView('pass')">
-          <span>🎫</span><span>QR Pass & Alerts</span>
-        </button>
-      </div>
-
-      <!-- Action Controls -->
-      <div class="nav-actions">
-        <button type="button" class="sync-pill" id="btn-cloud-sync" onclick="syncFromGoogleSheet(true)" title="Sync live bus data from Google Sheet">
-          <span class="live-dot" id="sync-dot"></span>
-          <span class="sync-label-text" id="sync-status-label">GViz Live</span>
-        </button>
-        <button type="button" class="icon-btn demo-active" id="btn-toggle-stage" onclick="toggleStageBar()" title="Toggle Live Simulation Controls">
-          <span>🎬</span><span id="stage-btn-label">Stage Demo</span>
-        </button>
-        <button type="button" class="icon-btn" id="btn-theme-toggle" onclick="toggleTheme()" title="Switch Light / Dark Mode">
+        <button type="button" class="pill-btn" id="btn-theme-toggle" onclick="toggleTheme()" title="Toggle Light / Dark theme">
           <span id="theme-icon">🌙</span>
         </button>
-        <button type="button" class="icon-btn" id="btn-open-sheet-modal" onclick="openSheetModal()" title="Google Sheet & GitHub Deployment Setup">
-          <span>⚙️</span>
-        </button>
-        <button type="button" class="icon-btn" id="btn-install-pwa" onclick="openInstallModal()" style="background:var(--brand-emerald); color:#fff; border-color:transparent;">
-          <span>📲</span><span>App</span>
+        <button type="button" class="pill-btn primary btn-install-pulse" id="btn-install-pwa" onclick="oneTapInstallApp()">
+          📲 1-Tap Install
         </button>
       </div>
-    </nav>
-  </div>
+    </div>
+  </header>
 
-  <!-- Main Workspace -->
-  <main class="app-shell">
+  <main class="container">
 
-    <!-- Emergency / Delay Broadcast Banner (Hidden unless triggered or active in sheet) -->
-    <div id="live-alert-banner" style="display:none; background:linear-gradient(135deg, rgba(225,29,72,0.14), rgba(245,158,11,0.14)); border:1.5px solid var(--brand-rose); border-radius:16px; padding:13px 18px; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
-      <div style="display:flex; align-items:center; gap:12px;">
-        <span style="font-size:1.45rem;">🚨</span>
+    <!-- 1-Tap PWA App Install Banner (Auto-hides once installed in standalone mode) -->
+    <div id="one-tap-install-banner" class="notif-banner" style="display:flex; background:linear-gradient(135deg, rgba(5, 150, 105, 0.16), rgba(16, 185, 129, 0.08)); border:1.5px solid var(--emerald);">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="font-size:1.4rem;">📲</span>
         <div>
-          <div id="live-alert-title" style="font-weight:800; font-size:0.92rem; color:var(--text-primary);">Transit Delay Advisory</div>
-          <div id="live-alert-body" style="font-size:0.8rem; color:var(--text-secondary); font-weight:600;">Campus Bus 08 (Chaibasa) delayed by 15 mins due to highway traffic.</div>
+          <div style="font-weight:800; font-size:0.88rem;">Install CampusRide App</div>
+          <div style="font-size:0.75rem; color:var(--text-sub);" id="one-tap-install-sub">Add to your Home Screen in one tap for instant offline access.</div>
         </div>
       </div>
-      <button type="button" class="mini-btn" onclick="dismissAlertBanner()">Dismiss</button>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <button type="button" class="pill-btn primary btn-install-pulse" id="btn-banner-one-tap" onclick="oneTapInstallApp()" style="padding:8px 14px; font-size:0.8rem;">
+          ⚡ 1-Tap Install
+        </button>
+        <button type="button" class="pill-btn" onclick="dismissInstallBanner()" title="Hide banner">✕</button>
+      </div>
     </div>
 
-    <!-- Live Transit Simulation Controls Bar -->
-    <section class="stage-demo-bar" id="stage-demo-bar">
-      <div class="stage-demo-left">
-        <span class="stage-tag">🎛️ Live Transit Simulator</span>
-        <span style="font-size:0.78rem; font-weight:700; color:var(--text-secondary);">
-          Clock: <strong id="live-clock-readout" style="font-family:'JetBrains Mono',monospace; color:var(--brand-emerald);">05:10:00 PM</strong>
+    <!-- Top Notification Opt-In Banner (Satisfies Android Chrome User-Gesture Rule like ClassRadar) -->
+    <div id="notif-permission-banner" class="notif-banner">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="font-size:1.35rem;">🔔</span>
+        <div>
+          <div style="font-weight:800; font-size:0.86rem;">Enable Live Bus & Delay Alerts</div>
+          <div style="font-size:0.75rem; color:var(--text-sub);">Get instant notifications when your bus starts boarding or is delayed.</div>
+        </div>
+      </div>
+      <div style="display:flex; gap:8px;">
+        <button type="button" class="pill-btn primary" onclick="triggerAppNotificationPrompt()">Allow Alerts</button>
+        <button type="button" class="pill-btn" onclick="dismissNotifBanner()">Later</button>
+      </div>
+    </div>
+
+    <!-- STEP 1: SELECT DESTINATION -->
+    <section class="card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+        <div class="section-label">Step 1 · Select Your Destination</div>
+        <button type="button" class="pill-btn" style="padding:4px 10px; font-size:0.72rem;" onclick="saveFavoriteRoute()">
+          ⭐ Pin My Route
+        </button>
+      </div>
+      <h1 class="section-heading">Where are you travelling today?</h1>
+
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="route-search-input"
+          class="search-input"
+          placeholder="Search destination, stop (e.g. Kadma, Gamharia, Sakchi, Purulia) or bus number..."
+          oninput="handleRouteSearch(this.value)"
+        >
+        <button type="button" class="clear-btn" id="btn-clear-search" onclick="clearRouteSearch()">✕</button>
+      </div>
+
+      <div class="dest-pills" id="dest-pills-container">
+        <!-- Populated by JS -->
+      </div>
+    </section>
+
+    <!-- STEPS 2 & 3: YOUR ASSIGNED BUS & PICKUP ZONE -->
+    <section class="assigned-card" id="assigned-bus-card">
+      <div class="assigned-top">
+        <div>
+          <div style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; opacity:0.9;">
+            Assigned Campus Bus
+          </div>
+          <div class="assigned-dest" id="card-destination">Jamshedpur (Bistupur / Kadma)</div>
+          <div class="assigned-via" id="card-route-via">Via Gamharia → Adityapur Bridge → Bistupur → Kadma</div>
+        </div>
+        <span class="status-badge" id="card-status-badge" style="background:#ffffff; color:#065f46;">
+          ● Boarding
         </span>
       </div>
-      <div class="stage-demo-controls">
-        <button type="button" class="mini-btn accent" id="btn-clock-mode" onclick="toggleClockSimulation()">
-          ⚡ Rush Hour Sim (5:10 PM)
-        </button>
-        <select id="demo-bus-picker" class="mini-select" aria-label="Select Bus to Simulate" onchange="syncDemoStatusDropdown()">
-          <option value="BUS_02">Bus 02 (Bistupur / Kadma)</option>
-          <option value="BUS_01">Bus 01 (Purulia)</option>
-          <option value="BUS_03">Bus 03 (Adityapur)</option>
-          <option value="BUS_04">Bus 04 (Sakchi / Golmuri)</option>
-          <option value="BUS_05">Bus 05 (Telco / Tinplate)</option>
-          <option value="BUS_06">Bus 06 (Mango / Dimna)</option>
-          <option value="BUS_07">Bus 07 (Ghatshila)</option>
-          <option value="BUS_08">Bus 08 (Chaibasa)</option>
-        </select>
-        <select id="demo-status-picker" class="mini-select" aria-label="Select Status to Apply" onchange="applyDemoBusStatus(this.value)">
-          <option value="Boarding">Set: 🟢 Boarding</option>
-          <option value="On Time">Set: 🔵 On Time</option>
-          <option value="Scheduled">Set: ⚪ Scheduled</option>
-          <option value="Delayed">Set: 🔴 Delayed (+15m)</option>
-        </select>
-        <button type="button" class="mini-btn warn" onclick="simulateBreakdownAlert()">
-          🔔 Simulate Delay Push
-        </button>
-      </div>
-    </section>
 
-    <!-- Slide 4 MVP Flow: "Three Taps to the Right Bus" Interactive Stepper -->
-    <section class="three-taps-ribbon" aria-label="Three taps to the right bus">
-      <div class="tap-step done" id="step-indicator-1" onclick="switchView('finder')">
-        <div class="tap-num">01</div>
-        <div class="tap-info">
-          <span class="tap-title">1. Search Destination</span>
-          <span class="tap-desc" id="step-1-sub">Selected: Bistupur / Kadma</span>
+      <!-- The 3 Essential Answers: Pickup Zone, Assigned Bus & Plate, Departure Time -->
+      <div class="three-info-grid">
+        <div class="info-box">
+          <span class="info-step">Step 2 · Pickup Zone</span>
+          <span class="info-main" id="card-pickup-zone" style="color:var(--emerald);">📍 Zone B</span>
+          <span class="info-sub" id="card-zone-landmark">Admin & Library Bay</span>
+        </div>
+
+        <div class="info-box">
+          <span class="info-step">Step 3 · Assigned Bus</span>
+          <span class="info-main" id="card-bus-name">🚌 Campus Bus 02</span>
+          <span class="info-sub" id="card-bus-sub">AJU Official Transit</span>
+        </div>
+
+        <div class="info-box">
+          <span class="info-step">Departure Time</span>
+          <span class="info-main" id="card-departure-time">5:15 PM</span>
+          <span class="info-sub" id="card-status-sub">Evening Commute</span>
         </div>
       </div>
-      <div class="tap-step done" id="step-indicator-2" onclick="switchView('radar')">
-        <div class="tap-num">02</div>
-        <div class="tap-info">
-          <span class="tap-title">2. Go to Pickup Zone</span>
-          <span class="tap-desc" id="step-2-sub">Proceed to Zone B (Admin Bay)</span>
-        </div>
-      </div>
-      <div class="tap-step done" id="step-indicator-3" onclick="switchView('pass')">
-        <div class="tap-num">03</div>
-        <div class="tap-info">
-          <span class="tap-title">3. Board Assigned Bus</span>
-          <span class="tap-desc" id="step-3-sub">Campus Bus 02 • JH 05 XX 5678</span>
+
+      <div class="assigned-footer">
+        <div class="stops-chips" id="card-stops-list">
+          <!-- Route stops chips -->
         </div>
       </div>
     </section>
 
-    <!-- =================================================================== -->
-    <!-- VIEW 1: COMMUTE FINDER (3-TAP BUS RESOLVER & LIVE BOARDING TICKET)  -->
-    <!-- =================================================================== -->
-    <div id="view-finder">
-      <div class="commute-bento">
-
-        <!-- Left Column: Destination & Stop Search + 1-Tap Route Cards -->
-        <div class="panel-card">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">
-                <span>📍</span><span>Where are you heading this evening?</span>
-              </h2>
-              <p class="panel-subtitle">Tap your destination or search any stop to resolve your bus, plate & bay in under 1 second.</p>
-            </div>
-            <button type="button" class="mini-btn" id="btn-save-fav-route" onclick="saveFavoriteRoute()" title="Save current route as default daily commute">
-              ⭐ Pin Route
-            </button>
-          </div>
-
-          <div class="search-box-wrap">
-            <span class="search-icon-left">🔍</span>
-            <input
-              type="text"
-              id="route-search-input"
-              class="search-input"
-              placeholder="Search destination, stop (e.g. Kadma, Gamharia, NIT, Sakchi) or plate..."
-              oninput="handleRouteSearch(this.value)"
-            >
-            <button type="button" class="search-clear-btn" id="btn-clear-search" onclick="clearRouteSearch()">✕</button>
-          </div>
-
-          <div class="route-selector-grid" id="route-selector-grid">
-            <!-- Dynamically populated by JS -->
-          </div>
-        </div>
-
-        <!-- Right Column: Perforated Digital Transit Boarding Card -->
-        <div class="boarding-ticket" id="active-boarding-card">
-          <div class="ticket-top-banner">
-            <div class="ticket-top-row">
-              <span class="ticket-bus-pill" id="card-bus-name">🚌 CAMPUS BUS 02</span>
-              <span class="status-pill status-boarding" id="card-status-badge" style="background:#10b981; color:#042f2e; border:none;">
-                ● BOARDING NOW
-              </span>
-            </div>
-            <h2 class="ticket-dest-heading" id="card-destination">Jamshedpur (Bistupur / Kadma)</h2>
-            <p class="ticket-via-sub" id="card-route-via">Via Gamharia → Adityapur Bridge → Bistupur → Kadma</p>
-          </div>
-
-          <!-- Key Commuter Metrics: Pickup Bay, HSRP License Plate, Departure Countdown -->
-          <div class="ticket-key-metrics">
-            <div class="metric-tile">
-              <span class="metric-label">Pickup Bay Zone</span>
-              <span class="metric-value" id="card-pickup-zone" style="color:var(--brand-emerald);">📍 Zone B</span>
-              <span style="font-size:0.72rem; color:var(--text-muted); font-weight:600;" id="card-zone-landmark">Admin & Library Bay</span>
-            </div>
-            <div class="metric-tile">
-              <span class="metric-label">Assigned Vehicle Plate</span>
-              <div class="hsrp-plate">
-                <span class="hsrp-ind">IND</span>
-                <span id="card-license-plate">JH 05 XX 5678</span>
-              </div>
-              <span style="font-size:0.71rem; color:var(--text-muted); font-weight:600;">Verified AJU Fleet</span>
-            </div>
-            <div class="metric-tile">
-              <span class="metric-label">Evening Departure</span>
-              <span class="metric-value" id="card-departure-time">5:15 PM</span>
-              <span style="font-size:0.72rem; font-weight:800; color:var(--brand-amber);" id="card-countdown-text">Departs in 5 mins</span>
-            </div>
-          </div>
-
-          <!-- Seat Occupancy + Stop-by-Stop Interactive Timeline -->
-          <div class="ticket-body">
-            <div style="display:flex; flex-direction:column; gap:6px; background:var(--surface-2); padding:12px 14px; border-radius:12px; border:1px solid var(--border-subtle);">
-              <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.78rem; font-weight:800;">
-                <span style="color:var(--text-secondary);">💺 Live Boarding Capacity & Seat Load</span>
-                <span id="card-occupancy-label" style="color:var(--brand-emerald);">34 / 45 Seats (11 Left)</span>
-              </div>
-              <div style="width:100%; height:8px; background:var(--surface-3); border-radius:999px; overflow:hidden;">
-                <div id="card-occupancy-bar" style="width:75%; height:100%; background:linear-gradient(90deg, #10b981, #059669); border-radius:999px; transition:width 0.3s ease;"></div>
-              </div>
-            </div>
-
-            <div>
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <span style="font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted);">
-                  🛣️ Stop-by-Stop Route & Live ETAs
-                </span>
-                <span style="font-size:0.72rem; font-weight:700; color:var(--brand-indigo);" id="card-total-duration">Est. Journey: 45 mins</span>
-              </div>
-              <div class="stop-timeline" id="card-stops-timeline">
-                <!-- Populated by JS -->
-              </div>
-            </div>
-
-            <div class="ticket-actions">
-              <button type="button" class="action-btn primary" onclick="switchView('pass')">
-                <span>🎫</span><span>Digital QR Pass</span>
-              </button>
-              <button type="button" class="action-btn" onclick="openBayOnRadar()">
-                <span>🗺️</span><span>Locate Bay Map</span>
-              </button>
-              <button type="button" class="action-btn" onclick="openDriverModal()">
-                <span>📞</span><span>Driver / Desk</span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- =================================================================== -->
-    <!-- VIEW 2: CAMPUS BAY MAP & LIVE GPS RADAR (SLIDE 4 & SLIDE 6)         -->
-    <!-- =================================================================== -->
-    <div id="view-radar" style="display:none;">
-      <div class="radar-layout">
-
-        <!-- Interactive SVG Campus Bay & Route Radar Map -->
-        <div class="panel-card">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">
-                <span>🗺️</span><span>ARKA JAIN University — Interactive Pickup Zones & GPS Radar</span>
-              </h2>
-              <p class="panel-subtitle">Click any Campus Pickup Bay (Zone A–D) or live bus marker to inspect staged vehicles and walking routes.</p>
-            </div>
-            <div style="display:flex; gap:6px;">
-              <button type="button" class="mini-btn accent" id="btn-map-campus" onclick="setRadarMode('campus')">🏫 Campus Bays</button>
-              <button type="button" class="mini-btn" id="btn-map-corridor" onclick="setRadarMode('corridor')">🛰️ Live GPS Route</button>
-            </div>
-          </div>
-
-          <div class="svg-map-frame">
-            <svg id="campus-radar-svg" viewBox="0 0 760 440" style="width:100%; height:auto; display:block;">
-              <defs>
-                <pattern id="radarGrid" width="38" height="38" patternUnits="userSpaceOnUse">
-                  <path d="M 38 0 L 0 0 0 38" fill="none" stroke="rgba(148, 163, 184, 0.12)" stroke-width="1"/>
-                </pattern>
-                <radialGradient id="radarSweep" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="rgba(16, 185, 129, 0.22)"/>
-                  <stop offset="100%" stop-color="rgba(16, 185, 129, 0)"/>
-                </radialGradient>
-              </defs>
-
-              <!-- Background Grid -->
-              <rect width="760" height="440" fill="#091122"/>
-              <rect width="760" height="440" fill="url(#radarGrid)"/>
-              <circle cx="380" cy="220" r="190" fill="url(#radarSweep)" stroke="rgba(16, 185, 129, 0.18)" stroke-dasharray="4 4"/>
-              <circle cx="380" cy="220" r="115" fill="none" stroke="rgba(56, 189, 248, 0.16)" stroke-dasharray="3 5"/>
-
-              <!-- Campus Roads & Driveways -->
-              <path d="M 40 370 L 720 370" stroke="#1e293b" stroke-width="26" stroke-linecap="round"/>
-              <path d="M 40 370 L 720 370" stroke="#334155" stroke-width="2" stroke-dasharray="10 8"/>
-              <text x="610" y="398" fill="#64748b" font-size="11" font-weight="700">MAIN GAMHARIA - KANDRA HIGHWAY ➔</text>
-
-              <!-- Internal Campus Ring Road -->
-              <path d="M 150 370 L 150 110 L 610 110 L 610 370" fill="none" stroke="#1e293b" stroke-width="18" stroke-linejoin="round"/>
-              <path d="M 150 370 L 150 110 L 610 110 L 610 370" fill="none" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 6"/>
-
-              <!-- Central Academic Quad & Buildings -->
-              <rect x="275" y="165" width="210" height="95" rx="14" fill="#111c33" stroke="#334155" stroke-width="2"/>
-              <text x="380" y="205" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="800">🏛️ CENTRAL ACADEMIC QUADRANGLE</text>
-              <text x="380" y="225" text-anchor="middle" fill="#94a3b8" font-size="10" font-weight="600">B.Tech CSE (Block F / Room 327) • Central Library</text>
-              <text x="380" y="243" text-anchor="middle" fill="#34d399" font-size="10" font-weight="700">🚶 You Are Here (1–3 min walk to all bays)</text>
-
-              <!-- Walking Dashed Paths from Academic Quad to Zones A, B, C, D -->
-              <path id="walk-path-ZONE_A" d="M 320 260 L 165 320" stroke="#10b981" stroke-width="2.5" stroke-dasharray="5 5"/>
-              <path id="walk-path-ZONE_B" d="M 320 165 L 200 105" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5 5"/>
-              <path id="walk-path-ZONE_C" d="M 440 165 L 555 105" stroke="#a855f7" stroke-width="2.5" stroke-dasharray="5 5"/>
-              <path id="walk-path-ZONE_D" d="M 445 260 L 595 315" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="5 5"/>
-
-              <!-- ZONE A: Main Gate Plaza (Bottom-Left) -->
-              <g id="svg-zone-ZONE_A" style="cursor:pointer;" onclick="selectRadarZone('Zone A')">
-                <rect x="68" y="285" width="185" height="68" rx="12" fill="#064e3b" fill-opacity="0.75" stroke="#10b981" stroke-width="2.5"/>
-                <text x="82" y="308" fill="#34d399" font-size="12" font-weight="800">📍 ZONE A • MAIN GATE BAY</text>
-                <text x="82" y="325" fill="#ecfdf5" font-size="10" font-weight="700">Bus 01 (Purulia) • Bus 04 (Sakchi)</text>
-                <text x="82" y="341" fill="#a7f3d0" font-size="9.5" font-weight="600">🚶 1.5 min walk from Main Entrance</text>
-              </g>
-
-              <!-- ZONE B: Admin & Library Bay (Top-Left) -->
-              <g id="svg-zone-ZONE_B" style="cursor:pointer;" onclick="selectRadarZone('Zone B')">
-                <rect x="68" y="42" width="210" height="72" rx="12" fill="#0c4a6e" fill-opacity="0.82" stroke="#38bdf8" stroke-width="2.5"/>
-                <text x="82" y="65" fill="#7dd3fc" font-size="12" font-weight="800">📍 ZONE B • ADMIN & LIBRARY BAY</text>
-                <text x="82" y="82" fill="#f0f9ff" font-size="10" font-weight="700">Bus 02 (Kadma/Bistupur) • Bus 05 (Telco)</text>
-                <text x="82" y="99" fill="#bae6fd" font-size="9.5" font-weight="600">🚶 2 min walk • Near Central Library</text>
-              </g>
-
-              <!-- ZONE C: Engineering & Science Block (Top-Right) -->
-              <g id="svg-zone-ZONE_C" style="cursor:pointer;" onclick="selectRadarZone('Zone C')">
-                <rect x="475" y="42" width="215" height="72" rx="12" fill="#3b0764" fill-opacity="0.78" stroke="#c084fc" stroke-width="2.5"/>
-                <text x="489" y="65" fill="#e9d5ff" font-size="12" font-weight="800">📍 ZONE C • ENGINEERING QUAD</text>
-                <text x="489" y="82" fill="#faf5ff" font-size="10" font-weight="700">Bus 03 (Adityapur) • Bus 06 (Mango)</text>
-                <text x="489" y="99" fill="#d8b4fe" font-size="9.5" font-weight="600">🚶 1 min walk from CSE / Workshop Block</text>
-              </g>
-
-              <!-- ZONE D: Sports Complex & Hostel Bay (Bottom-Right) -->
-              <g id="svg-zone-ZONE_D" style="cursor:pointer;" onclick="selectRadarZone('Zone D')">
-                <rect x="485" y="285" width="205" height="68" rx="12" fill="#78350f" fill-opacity="0.78" stroke="#fbbf24" stroke-width="2.5"/>
-                <text x="499" y="308" fill="#fde68a" font-size="12" font-weight="800">📍 ZONE D • SPORTS & HOSTEL BAY</text>
-                <text x="499" y="325" fill="#fffbeb" font-size="10" font-weight="700">Bus 07 (Ghatshila) • Bus 08 (Chaibasa)</text>
-                <text x="499" y="341" fill="#fcd34d" font-size="9.5" font-weight="600">🚶 3 min walk • Near Sports Ground</text>
-              </g>
-
-              <!-- Dynamic Live GPS Bus Markers Overlay Group -->
-              <g id="svg-live-bus-pins"></g>
-            </svg>
-          </div>
-        </div>
-
-        <!-- Right Column: Campus Pickup Zones Inspector -->
-        <div class="panel-card">
-          <div class="panel-header">
-            <div>
-              <h3 class="panel-title" id="radar-inspector-title">📍 Pickup Zone Directory (Zones A–D)</h3>
-              <p class="panel-subtitle" id="radar-inspector-sub">Select a zone card to highlight its buses and walking route.</p>
-            </div>
-          </div>
-
-          <div class="zone-cards-list" id="zone-inspector-list">
-            <!-- Populated by JS -->
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- =================================================================== -->
-    <!-- VIEW 3: LIVE FLEET DIRECTORY (ALL 8 UNIVERSITY BUSES)               -->
-    <!-- =================================================================== -->
-    <div id="view-fleet" style="display:none;">
-      <div class="kpi-strip">
-        <div class="kpi-card">
-          <div class="kpi-num" id="kpi-total-buses">8 Buses</div>
-          <div class="kpi-label">Active Evening Fleet</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-num" id="kpi-boarding-count" style="color:var(--brand-emerald);">2 Boarding</div>
-          <div class="kpi-label">Ready at Pickup Bays</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-num" id="kpi-zones-count" style="color:var(--brand-indigo);">4 Zones</div>
-          <div class="kpi-label">Designated Campus Bays</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-num" id="kpi-lookup-time" style="color:var(--brand-amber);">&lt; 1 Sec</div>
-          <div class="kpi-label">Zero-Queue Bus Matching</div>
-        </div>
+    <!-- ALL FLEET & CAMPUS ZONES DIRECTORY -->
+    <section class="card">
+      <div class="simple-tabs">
+        <button type="button" class="tab-btn active" id="tab-btn-fleet" onclick="switchSubTab('fleet')">
+          🚌 All Campus Buses (8)
+        </button>
+        <button type="button" class="tab-btn" id="tab-btn-zones" onclick="switchSubTab('zones')">
+          📍 Campus Pickup Zones (A–D)
+        </button>
       </div>
 
-      <div class="panel-card">
-        <div class="panel-header">
-          <div>
-            <h2 class="panel-title">🚌 Active University Transit Fleet Directory</h2>
-            <p class="panel-subtitle">Live synchronized schedule from your Google Sheet with offline fallback caching.</p>
-          </div>
-          <button type="button" class="mini-btn accent" onclick="syncFromGoogleSheet(true)">🔄 Refresh Sheet Data</button>
-        </div>
-
-        <div class="filter-chips-bar" id="fleet-filter-bar">
-          <button type="button" class="filter-chip active" data-filter="ALL" onclick="setFleetFilter('ALL')">All Buses (8)</button>
-          <button type="button" class="filter-chip" data-filter="Boarding" onclick="setFleetFilter('Boarding')">🟢 Boarding</button>
-          <button type="button" class="filter-chip" data-filter="On Time" onclick="setFleetFilter('On Time')">🔵 On Time</button>
-          <button type="button" class="filter-chip" data-filter="Scheduled" onclick="setFleetFilter('Scheduled')">⚪ Scheduled</button>
-          <button type="button" class="filter-chip" data-filter="Delayed" onclick="setFleetFilter('Delayed')">🔴 Delayed</button>
-          <button type="button" class="filter-chip" data-filter="Zone A" onclick="setFleetFilter('Zone A')">📍 Zone A</button>
-          <button type="button" class="filter-chip" data-filter="Zone B" onclick="setFleetFilter('Zone B')">📍 Zone B</button>
-          <button type="button" class="filter-chip" data-filter="Zone C" onclick="setFleetFilter('Zone C')">📍 Zone C</button>
-          <button type="button" class="filter-chip" data-filter="Zone D" onclick="setFleetFilter('Zone D')">📍 Zone D</button>
-        </div>
-
-        <div class="fleet-grid" id="fleet-cards-container">
+      <div id="subview-fleet">
+        <div class="bus-list" id="fleet-list-container">
           <!-- Populated by JS -->
         </div>
       </div>
-    </div>
 
-    <!-- =================================================================== -->
-    <!-- VIEW 4: DIGITAL QR BOARDING PASS & SMART ALERTS (PHASE 2 SHOWCASE)  -->
-    <!-- =================================================================== -->
-    <div id="view-pass" style="display:none;">
-      <div class="pass-bento">
-
-        <!-- Left Column: Digital QR Boarding Pass Generator -->
-        <div class="panel-card">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">🎫 Digital QR Boarding Pass</h2>
-              <p class="panel-subtitle">Phase 2 seat allocation & verifiable digital pass to prevent route overcrowding.</p>
-            </div>
-            <button type="button" class="mini-btn accent" onclick="triggerQrScanDemo()">✨ Simulate Scan</button>
-          </div>
-
-          <div class="qr-pass-visual" id="qr-pass-card">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <div>
-                <div style="font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; color:#34d399; font-weight:800;">ARKA JAIN UNIVERSITY TRANSIT PASS</div>
-                <div style="font-size:1.2rem; font-weight:800;" id="pass-student-name">Jayanta Mahanty</div>
-                <div style="font-size:0.78rem; color:#94a3b8; font-weight:600;" id="pass-student-meta">Enrollment: AJU/260911 • B.Tech CSE (1st Year)</div>
-              </div>
-              <span class="status-pill status-boarding" id="pass-verify-badge" style="background:#10b981; color:#042f2e; border:none;">✓ VERIFIED</span>
-            </div>
-
-            <div class="qr-box-center" id="qr-svg-container">
-              <!-- Dynamic SVG QR Code rendered by JS -->
-            </div>
-
-            <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; background:rgba(255,255,255,0.06); padding:12px; border-radius:14px; font-size:0.8rem;">
-              <div>
-                <div style="color:#94a3b8; font-size:0.68rem; font-weight:700; text-transform:uppercase;">Assigned Bus & Plate</div>
-                <div style="font-weight:800; color:#fff;" id="pass-bus-plate">Campus Bus 02 (JH 05 XX 5678)</div>
-              </div>
-              <div>
-                <div style="color:#94a3b8; font-size:0.68rem; font-weight:700; text-transform:uppercase;">Destination & Bay</div>
-                <div style="font-weight:800; color:#34d399;" id="pass-dest-zone">Bistupur / Kadma • Zone B</div>
-              </div>
-              <div>
-                <div style="color:#94a3b8; font-size:0.68rem; font-weight:700; text-transform:uppercase;">Allocated Seat</div>
-                <div style="font-weight:800; color:#fbbf24;" id="pass-seat-no">Seat 14A (Window)</div>
-              </div>
-              <div>
-                <div style="color:#94a3b8; font-size:0.68rem; font-weight:700; text-transform:uppercase;">Pass Token ID</div>
-                <div style="font-family:'JetBrains Mono',monospace; font-weight:700; color:#38bdf8;" id="pass-token-id">CR-260911-B02</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Customize Student Commuter Details -->
-          <div style="margin-top:16px; padding-top:14px; border-top:1px solid var(--border-subtle);">
-            <div style="font-size:0.82rem; font-weight:800; margin-bottom:10px; color:var(--text-primary);">Customize Commuter Pass Profile</div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-              <div class="form-row">
-                <label class="form-label" for="input-pass-name">Student Name</label>
-                <input type="text" id="input-pass-name" class="form-input" value="Jayanta Mahanty" oninput="updatePassProfile()">
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="input-pass-id">Enrollment / Roll No.</label>
-                <input type="text" id="input-pass-id" class="form-input" value="AJU/260911" oninput="updatePassProfile()">
-              </div>
-            </div>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-              <div class="form-row">
-                <label class="form-label" for="input-pass-dept">Course & Year</label>
-                <input type="text" id="input-pass-dept" class="form-input" value="B.Tech CSE • 1st Year" oninput="updatePassProfile()">
-              </div>
-              <div class="form-row">
-                <label class="form-label" for="input-pass-seat">Preferred Seat</label>
-                <select id="input-pass-seat" class="form-input" onchange="updatePassProfile()">
-                  <option value="Seat 14A (Window)">Seat 14A (Window)</option>
-                  <option value="Seat 08B (Aisle)">Seat 08B (Aisle)</option>
-                  <option value="Seat 19A (Window)">Seat 19A (Window)</option>
-                  <option value="Seat 22C (Front Bay)">Seat 22C (Front Bay)</option>
-                </select>
-              </div>
-            </div>
-          </div>
+      <div id="subview-zones" style="display:none;">
+        <div class="zones-grid" id="zones-grid-container">
+          <!-- Populated by JS -->
         </div>
-
-        <!-- Right Column: Smart Notifications & OneSignal Push Engine -->
-        <div class="panel-card">
-          <div class="panel-header">
-            <div>
-              <h2 class="panel-title">🔔 Smart Transit Alerts & Push Engine</h2>
-              <p class="panel-subtitle">Local departure countdown chimes + OneSignal cloud push alerts from Google Sheets.</p>
-            </div>
-            <span class="status-pill status-boarding" id="notif-perm-pill">Active</span>
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:14px;">
-            <div style="background:var(--surface-2); border:1px solid var(--border-subtle); border-radius:14px; padding:14px;">
-              <div style="font-size:0.86rem; font-weight:800; margin-bottom:6px;">⏰ Evening Departure Chime Lead Time</div>
-              <p style="font-size:0.76rem; color:var(--text-muted); margin-bottom:10px;">
-                Automatically plays a synthesized Web Audio transit chime and shows a lock-screen alert before your assigned bus departs.
-              </p>
-              <div style="display:flex; gap:8px; flex-wrap:wrap;">
-                <select id="select-alert-lead" class="form-input" style="flex:1;" onchange="updateAlertLeadTime(this.value)">
-                  <option value="5">Alert 5 minutes before departure</option>
-                  <option value="10" selected>Alert 10 minutes before departure</option>
-                  <option value="15">Alert 15 minutes before departure</option>
-                </select>
-                <button type="button" class="action-btn primary" style="width:auto; padding:10px 16px;" onclick="testTransitNotification()">
-                  🔔 Test Chime & Push
-                </button>
-              </div>
-            </div>
-
-            <div style="background:var(--surface-2); border:1px solid var(--border-subtle); border-radius:14px; padding:14px;">
-              <div style="font-size:0.86rem; font-weight:800; margin-bottom:6px;">📡 OneSignal Cloud Route Subscription Tags</div>
-              <p style="font-size:0.76rem; color:var(--text-muted); margin-bottom:10px;">
-                Just like ClassRadar, CampusRide tags your device with your selected route and pickup zone so transport coordinators can send targeted delay alerts directly from Google Sheets.
-              </p>
-              <div style="display:flex; gap:8px; flex-wrap:wrap; font-family:'JetBrains Mono',monospace; font-size:0.74rem;">
-                <span style="background:var(--brand-emerald-soft); color:var(--brand-emerald); padding:4px 10px; border-radius:8px;" id="tag-route-val">route: Bistupur / Kadma</span>
-                <span style="background:var(--brand-indigo-soft); color:var(--brand-indigo); padding:4px 10px; border-radius:8px;" id="tag-zone-val">zone: Zone B</span>
-                <span style="background:var(--brand-amber-soft); color:var(--brand-amber); padding:4px 10px; border-radius:8px;" id="tag-bus-val">bus: Campus Bus 02</span>
-              </div>
-            </div>
-
-            <div>
-              <div style="font-size:0.84rem; font-weight:800; margin-bottom:8px;">📢 Live Transit Announcements Feed</div>
-              <div id="transit-feed-list" style="display:flex; flex-direction:column; gap:8px;">
-                <!-- Populated by JS -->
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer style="text-align:center; font-size:0.76rem; color:var(--text-muted); padding:8px 0;">
+      <span>CampusRide PWA • ARKA JAIN University Transit Portal</span>
+    </footer>
 
   </main>
 
-  <!-- Mobile Floating Bottom Navigation Dock -->
-  <div class="mobile-bottom-dock" role="navigation" aria-label="Mobile Navigation">
-    <button type="button" class="dock-btn active" id="mob-tab-finder" onclick="switchView('finder')">
-      <span style="font-size:1.1rem;">🧭</span>
-      <span>Finder</span>
-    </button>
-    <button type="button" class="dock-btn" id="mob-tab-radar" onclick="switchView('radar')">
-      <span style="font-size:1.1rem;">🗺️</span>
-      <span>Bay Map</span>
-    </button>
-    <button type="button" class="dock-btn" id="mob-tab-fleet" onclick="switchView('fleet')">
-      <span style="font-size:1.1rem;">🚌</span>
-      <span>Fleet (8)</span>
-    </button>
-    <button type="button" class="dock-btn" id="mob-tab-pass" onclick="switchView('pass')">
-      <span style="font-size:1.1rem;">🎫</span>
-      <span>QR Pass</span>
-    </button>
-  </div>
 
-  <!-- ===================================================================== -->
-  <!-- MODAL 1: GOOGLE SHEETS & GITHUB PAGES DEPLOYMENT SETTINGS             -->
-  <!-- ===================================================================== -->
-  <div class="modal-backdrop" id="sheet-settings-modal" onclick="closeSheetModal(event)">
-    <div class="modal-dialog" onclick="event.stopPropagation()">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <h3 style="font-size:1.1rem; font-weight:800;">⚙️ Google Sheets GViz & Deployment Setup</h3>
-        <button type="button" class="mini-btn" onclick="closeSheetModal()">✕</button>
-      </div>
-      <p style="font-size:0.82rem; color:var(--text-secondary);">
-        CampusRide uses the exact same <strong>Zero-Backend Headless Google Sheets GViz Architecture</strong> as <em>ClassRadar</em>. Any status or zone edit in your Google Sheet updates the app in real time.
-      </p>
-      <div class="form-row">
-        <label class="form-label" for="input-sheet-id">Connected Google Sheet ID</label>
-        <input type="text" id="input-sheet-id" class="form-input" value="1RwPnt6XPI_52NyJC4lXgiuJx0Zs2v-dDdRZZPmf_P0U">
-      </div>
-      <div style="display:flex; gap:8px; flex-wrap:wrap;">
-        <button type="button" class="action-btn primary" style="flex:1;" onclick="saveSheetIdAndSync()">💾 Save & Sync Now</button>
-        <a href="https://docs.google.com/spreadsheets/d/1RwPnt6XPI_52NyJC4lXgiuJx0Zs2v-dDdRZZPmf_P0U/edit" target="_blank" rel="noopener" class="action-btn" style="flex:1;">↗ Open Live Sheet</a>
-      </div>
-      <div style="border-top:1px solid var(--border-subtle); padding-top:12px;">
-        <div style="font-size:0.8rem; font-weight:800; margin-bottom:6px;">Sheet Column Structure (Row 1 Headers):</div>
-        <div class="code-snippet">Destination | Bus_Name | License_Plate | Pickup_Zone | Departure_Time | Route_Via | Status | Driver_Contact</div>
-      </div>
-    </div>
-  </div>
 
-  <!-- ===================================================================== -->
-  <!-- MODAL 2: DRIVER & TRANSPORT HELPDESK CONTACT                          -->
-  <!-- ===================================================================== -->
-  <div class="modal-backdrop" id="driver-contact-modal" onclick="closeDriverModal(event)">
-    <div class="modal-dialog" onclick="event.stopPropagation()">
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <h3 style="font-size:1.1rem; font-weight:800;" id="driver-modal-title">📞 Driver & Bay Coordinator Desk</h3>
-        <button type="button" class="mini-btn" onclick="closeDriverModal()">✕</button>
-      </div>
-      <div style="background:var(--surface-2); border:1px solid var(--border-subtle); border-radius:14px; padding:16px; display:flex; flex-direction:column; gap:8px;">
-        <div style="font-size:0.75rem; font-weight:800; color:var(--brand-emerald); text-transform:uppercase;" id="driver-modal-bus">CAMPUS BUS 02 • ZONE B</div>
-        <div style="font-size:1.15rem; font-weight:800;" id="driver-modal-number">+91 98351 22102</div>
-        <div style="font-size:0.8rem; color:var(--text-muted);" id="driver-modal-route">Route: Gamharia → Adityapur Bridge → Bistupur → Kadma</div>
-      </div>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <a id="driver-call-link" href="tel:+919835122102" class="action-btn primary" style="flex:1;">📞 Call Driver Now</a>
-        <button type="button" class="action-btn" style="flex:1;" onclick="copyDriverNumber()">📋 Copy Phone Number</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===================================================================== -->
-  <!-- MODAL 3: PWA HOME SCREEN & TERMUX INSTALL ASSISTANT                   -->
-  <!-- ===================================================================== -->
+  <!-- MODAL 3: SMART PWA INSTALL ASSISTANT (EXACT CLASSRADAR V16 FLOW) -->
   <div class="modal-backdrop" id="install-pwa-modal" onclick="closeInstallModal(event)">
     <div class="modal-dialog" onclick="event.stopPropagation()">
       <div style="display:flex; justify-content:space-between; align-items:center;">
-        <h3 style="font-size:1.1rem; font-weight:800;">📲 Install CampusRide PWA (Like ClassRadar)</h3>
-        <button type="button" class="mini-btn" onclick="closeInstallModal()">✕</button>
+        <h3 style="font-size:1rem; font-weight:800;">📲 Install CampusRide to Home Screen</h3>
+        <button type="button" class="pill-btn" onclick="closeInstallModal()">✕</button>
       </div>
-      <p style="font-size:0.82rem; color:var(--text-secondary);">
-        Install CampusRide to your phone's home screen for <strong>100% offline access</strong> inside campus network dead zones, or host it on GitHub Pages.
-      </p>
-      <div id="native-pwa-install-box" style="display:none; background:var(--brand-emerald-soft); border:1px solid var(--brand-emerald); padding:12px; border-radius:12px; text-align:center;">
-        <button type="button" class="action-btn primary" style="width:100%;" onclick="triggerNativePwaInstall()">🚀 Install CampusRide to Home Screen</button>
+
+      <div id="install-modal-status-box"></div>
+
+      <div id="native-pwa-install-box" style="display:none; text-align:center; padding:12px; background:var(--emerald-soft); border:1px solid var(--emerald); border-radius:12px;">
+        <p style="font-weight:800; color:var(--emerald); font-size:0.84rem; margin-bottom:8px;">Browser Ready for Native PWA Installation!</p>
+        <button type="button" class="pill-btn primary" style="width:100%; justify-content:center; padding:10px;" onclick="triggerNativePwaInstall()">
+          Confirm & Add to Home Screen
+        </button>
       </div>
+
       <div>
-        <div style="font-size:0.78rem; font-weight:800; margin-bottom:6px;">Run Locally in Termux (Android):</div>
+        <div style="font-size:0.78rem; font-weight:800; margin-bottom:4px;">Quickest way to run locally in Termux:</div>
         <div class="code-snippet" id="termux-cmd-box">cd "/sdcard/Download/CampusRide_PWA" && python -m http.server 8080</div>
       </div>
+
       <div style="display:flex; gap:8px; flex-wrap:wrap;">
-        <button type="button" class="action-btn" style="flex:1;" onclick="copyTermuxSnippet()">📋 Copy Termux Command</button>
-        <button type="button" class="action-btn primary" style="flex:1;" onclick="closeInstallModal()">Done</button>
+        <button type="button" class="pill-btn" style="flex:1; justify-content:center; padding:10px;" onclick="copyTermuxSnippet()">📋 Copy Termux Command</button>
+        <a href="http://localhost:8080" target="_blank" rel="noopener" class="pill-btn primary" style="flex:1; justify-content:center; padding:10px;">🚀 Open localhost:8080</a>
       </div>
     </div>
   </div>
 
   <script>
     // =========================================================================
-    // 🔔 CAMPSRIDE MAIN CONFIGURATION (SAME ARCHITECTURE AS CLASSRADAR V16)
+    // 🔔 CAMPSRIDE MAIN CONFIGURATION (EDIT YOUR KEYS & SHEETS HERE)
     // =========================================================================
     const ONESIGNAL_APP_ID = "YOUR_ONESIGNAL_APP_ID"; // 1. Paste OneSignal App ID here
-    let TRANSPORT_SHEET_ID = "1RwPnt6XPI_52NyJC4lXgiuJx0Zs2v-dDdRZZPmf_P0U"; // 2. Live CampusRide Transport Schedule Sheet ID
+    const TRANSPORT_SHEET_ID = "1RwPnt6XPI_52NyJC4lXgiuJx0Zs2v-dDdRZZPmf_P0U"; // 2. Live CampusRide Transport Schedule Sheet ID
 
-    // =========================================================================
-    // SAFE LOCALSTORAGE WRAPPER (SANDBOX & PRIVACY-MODE SAFE)
-    // =========================================================================
     function safeGetStorage(key, fallback = null) {
       try {
         const val = window.localStorage.getItem(key);
@@ -1845,14 +835,9 @@
     function safeSetStorage(key, val) {
       try {
         window.localStorage.setItem(key, val);
-      } catch (e) {
-        // Ignore storage quota or sandbox blocks
-      }
+      } catch (e) {}
     }
 
-    // =========================================================================
-    // MASTER CAMPUS TRANSIT FLEET DATA (SYNCHRONIZED WITH YOUR GOOGLE SHEET)
-    // =========================================================================
     const DEFAULT_FLEET_DATA = [
       {
         id: "BUS_01",
@@ -1860,23 +845,11 @@
         busName: "Campus Bus 01",
         plate: "JH 05 XX 1234",
         zone: "Zone A",
-        zoneLandmark: "Main Gate Plaza • Front Visitor Bay",
+        zoneLandmark: "Main Gate Plaza",
         departure: "5:15 PM",
-        departure24: "17:15",
         routeVia: "Chandil -> Balarampur -> Purulia",
-        stops: [
-          { name: "AJU Campus (Zone A)", time: "5:15 PM", desc: "Main Gate Plaza Boarding" },
-          { name: "Chandil Station Chowk", time: "5:45 PM", desc: "NH-32 Highway Stop" },
-          { name: "Balarampur", time: "6:10 PM", desc: "Town Market Drop" },
-          { name: "Purulia Bus Stand", time: "6:40 PM", desc: "Terminal Stop" }
-        ],
         status: "On Time",
-        driverContact: "+91 98351 22101",
-        seatsOccupied: 36,
-        seatsTotal: 45,
-        duration: "1 hr 25 mins",
-        svgX: 118,
-        svgY: 360
+        driverContact: "+91 98351 22101"
       },
       {
         id: "BUS_02",
@@ -1884,24 +857,11 @@
         busName: "Campus Bus 02",
         plate: "JH 05 XX 5678",
         zone: "Zone B",
-        zoneLandmark: "Admin & Library Bay • Central Roundabout",
+        zoneLandmark: "Admin & Library Bay",
         departure: "5:15 PM",
-        departure24: "17:15",
         routeVia: "Gamharia -> Adityapur Bridge -> Bistupur -> Kadma",
-        stops: [
-          { name: "AJU Campus (Zone B)", time: "5:15 PM", desc: "Admin & Library Bay Boarding" },
-          { name: "Gamharia Red Light", time: "5:28 PM", desc: "Main Kandra Road" },
-          { name: "Adityapur Toll Bridge", time: "5:42 PM", desc: "Kharkai Bridge Crossing" },
-          { name: "Bistupur Main Road (PM Mall)", time: "5:50 PM", desc: "Central Commuter Drop" },
-          { name: "Kadma Rankin / Uliyan", time: "6:00 PM", desc: "Terminal Commuter Hub" }
-        ],
         status: "Boarding",
-        driverContact: "+91 98351 22102",
-        seatsOccupied: 34,
-        seatsTotal: 45,
-        duration: "45 mins",
-        svgX: 122,
-        svgY: 122
+        driverContact: "+91 98351 22102"
       },
       {
         id: "BUS_03",
@@ -1909,23 +869,11 @@
         busName: "Campus Bus 03",
         plate: "JH 05 XX 9012",
         zone: "Zone C",
-        zoneLandmark: "Engineering & Science Block Quad",
+        zoneLandmark: "Engineering Block Quad",
         departure: "5:20 PM",
-        departure24: "17:20",
         routeVia: "NIT Roundabout -> S-Type -> Sher-e-Punjab",
-        stops: [
-          { name: "AJU Campus (Zone C)", time: "5:20 PM", desc: "CSE / Engineering Quad Bay" },
-          { name: "NIT Jamshedpur Roundabout", time: "5:35 PM", desc: "Hostel & College Junction" },
-          { name: "Adityapur S-Type Chowk", time: "5:44 PM", desc: "Housing Colony Stop" },
-          { name: "Sher-e-Punjab Chowk", time: "5:52 PM", desc: "Terminal Drop" }
-        ],
         status: "On Time",
-        driverContact: "+91 98351 22103",
-        seatsOccupied: 29,
-        seatsTotal: 40,
-        duration: "32 mins",
-        svgX: 525,
-        svgY: 122
+        driverContact: "+91 98351 22103"
       },
       {
         id: "BUS_04",
@@ -1933,23 +881,11 @@
         busName: "Campus Bus 04",
         plate: "JH 05 XX 3456",
         zone: "Zone A",
-        zoneLandmark: "Main Gate Plaza • Bay 02",
+        zoneLandmark: "Main Gate Plaza",
         departure: "5:15 PM",
-        departure24: "17:15",
         routeVia: "Mango Bridge -> Sakchi Market -> Golmuri",
-        stops: [
-          { name: "AJU Campus (Zone A)", time: "5:15 PM", desc: "Main Gate Plaza Boarding" },
-          { name: "Marine Drive / Mango Bridge", time: "5:40 PM", desc: "Riverfront Corridor" },
-          { name: "Sakchi Roundabout", time: "5:50 PM", desc: "Main Market Drop" },
-          { name: "Golmuri Clock Tower", time: "6:05 PM", desc: "Terminal Stop" }
-        ],
         status: "Scheduled",
-        driverContact: "+91 98351 22104",
-        seatsOccupied: 25,
-        seatsTotal: 45,
-        duration: "50 mins",
-        svgX: 205,
-        svgY: 360
+        driverContact: "+91 98351 22104"
       },
       {
         id: "BUS_05",
@@ -1957,23 +893,11 @@
         busName: "Campus Bus 05",
         plate: "JH 05 XX 7890",
         zone: "Zone B",
-        zoneLandmark: "Admin & Library Bay • Bay 04",
+        zoneLandmark: "Admin & Library Bay",
         departure: "5:25 PM",
-        departure24: "17:25",
         routeVia: "Baridih -> Tinplate -> Telco Colony",
-        stops: [
-          { name: "AJU Campus (Zone B)", time: "5:25 PM", desc: "Admin & Library Bay Boarding" },
-          { name: "Baridih Market", time: "5:55 PM", desc: "Tube Colony Stop" },
-          { name: "Tinplate Chowk", time: "6:05 PM", desc: "Hospital Junction" },
-          { name: "Telco Plaza / HUDCO", time: "6:18 PM", desc: "Terminal Stop" }
-        ],
         status: "Scheduled",
-        driverContact: "+91 98351 22105",
-        seatsOccupied: 22,
-        seatsTotal: 45,
-        duration: "53 mins",
-        svgX: 215,
-        svgY: 122
+        driverContact: "+91 98351 22105"
       },
       {
         id: "BUS_06",
@@ -1981,23 +905,11 @@
         busName: "Campus Bus 06",
         plate: "JH 05 XX 2345",
         zone: "Zone C",
-        zoneLandmark: "Engineering & Science Block Quad",
+        zoneLandmark: "Engineering Block Quad",
         departure: "5:15 PM",
-        departure24: "17:15",
         routeVia: "Dimna Chowk -> Mango Bus Stand -> Pardih",
-        stops: [
-          { name: "AJU Campus (Zone C)", time: "5:15 PM", desc: "Engineering Quad Boarding" },
-          { name: "Mango Bus Stand", time: "5:45 PM", desc: "Payal Cinema Road" },
-          { name: "Dimna Road / MGM", time: "5:56 PM", desc: "Dimna Main Corridor" },
-          { name: "Pardih Kali Mandir", time: "6:05 PM", desc: "Terminal Stop" }
-        ],
         status: "Boarding",
-        driverContact: "+91 98351 22106",
-        seatsOccupied: 38,
-        seatsTotal: 42,
-        duration: "50 mins",
-        svgX: 625,
-        svgY: 122
+        driverContact: "+91 98351 22106"
       },
       {
         id: "BUS_07",
@@ -2007,21 +919,9 @@
         zone: "Zone D",
         zoneLandmark: "Sports Complex & Hostel Bay",
         departure: "5:30 PM",
-        departure24: "17:30",
         routeVia: "Galudih -> Ghatshila College -> Station",
-        stops: [
-          { name: "AJU Campus (Zone D)", time: "5:30 PM", desc: "Sports Complex Bay Boarding" },
-          { name: "Galudih Barrage Chowk", time: "6:15 PM", desc: "NH-18 Highway Stop" },
-          { name: "Ghatshila College Road", time: "6:32 PM", desc: "College Gate Drop" },
-          { name: "Ghatshila Railway Station", time: "6:45 PM", desc: "Terminal Stop" }
-        ],
         status: "Scheduled",
-        driverContact: "+91 98351 22107",
-        seatsOccupied: 19,
-        seatsTotal: 45,
-        duration: "1 hr 15 mins",
-        svgX: 530,
-        svgY: 360
+        driverContact: "+91 98351 22107"
       },
       {
         id: "BUS_08",
@@ -2031,428 +931,213 @@
         zone: "Zone D",
         zoneLandmark: "Sports Complex & Hostel Bay",
         departure: "5:30 PM",
-        departure24: "17:30",
         routeVia: "Rajnagar -> Chaibasa Bus Stand",
-        stops: [
-          { name: "AJU Campus (Zone D)", time: "5:30 PM", desc: "Sports Complex Bay Boarding" },
-          { name: "Hata Chowk", time: "6:05 PM", desc: "Junction Stop" },
-          { name: "Rajnagar Main Market", time: "6:25 PM", desc: "Town Drop" },
-          { name: "Chaibasa Bus Stand", time: "6:55 PM", desc: "Terminal Stop" }
-        ],
         status: "Delayed",
-        driverContact: "+91 98351 22108",
-        seatsOccupied: 31,
-        seatsTotal: 45,
-        duration: "1 hr 25 mins",
-        svgX: 628,
-        svgY: 360
+        driverContact: "+91 98351 22108"
       }
     ];
 
-    const CAMPUS_ZONES_META = {
-      "Zone A": {
-        code: "Zone A",
-        name: "Zone A • Main Gate Plaza",
-        walk: "1.5 min walk from Main Academic Gate",
-        location: "Adjacent to the Front Security Gate & Visitor Parking Plaza",
-        color: "#10b981"
-      },
-      "Zone B": {
-        code: "Zone B",
-        name: "Zone B • Admin & Library Bay",
-        walk: "2 min walk from Block F / Room 327",
-        location: "In front of the Central Administrative Building & Library Roundabout",
-        color: "#0284c7"
-      },
-      "Zone C": {
-        code: "Zone C",
-        name: "Zone C • Engineering & Science Quad",
-        walk: "1 min walk from CSE / Engineering Labs",
-        location: "Beside the Engineering Workshop Quadrangle & Central Bus Shed",
-        color: "#9333ea"
-      },
-      "Zone D": {
-        code: "Zone D",
-        name: "Zone D • Sports Complex & Hostel Bay",
-        walk: "3 min walk from Academic Quadrangle",
-        location: "Near the University Sports Ground, Indoor Stadium & Hostel Gate",
-        color: "#d97706"
-      }
+    const ZONES_INFO = {
+      "Zone A": { code: "Zone A", title: "Zone A · Main Gate Plaza", desc: "Right beside the university front entrance and visitor parking bay." },
+      "Zone B": { code: "Zone B", title: "Zone B · Admin & Library Bay", desc: "In front of the Central Administrative Building and Library roundabout." },
+      "Zone C": { code: "Zone C", title: "Zone C · Engineering Quad", desc: "Adjacent to the CSE / Engineering workshop quadrangle and bus shed." },
+      "Zone D": { code: "Zone D", title: "Zone D · Sports & Hostel Bay", desc: "Near the university sports ground, indoor stadium, and hostel entrance." }
     };
 
-    // =========================================================================
-    // RUNTIME STATE & SYNCHRONOUS CACHE HYDRATION (ZERO-FLICKER ARCHITECTURE)
-    // =========================================================================
+    // Synchronous Zero-Flicker Cache Hydration
     let FLEET_STATE = JSON.parse(JSON.stringify(DEFAULT_FLEET_DATA));
-    const cachedFleetJson = safeGetStorage("campusride_fleet_cache_v1");
-    if (cachedFleetJson) {
+    const cached = safeGetStorage("campusride_fleet_cache_v1");
+    if (cached) {
       try {
-        const parsed = JSON.parse(cachedFleetJson);
-        if (Array.isArray(parsed) && parsed.length >= 3) {
-          FLEET_STATE = parsed;
-        }
+        const parsed = JSON.parse(cached);
+        if (Array.isArray(parsed) && parsed.length >= 3) FLEET_STATE = parsed;
       } catch (e) {}
     }
 
-    const savedSheetId = safeGetStorage("campusride_sheet_id");
-    if (savedSheetId) TRANSPORT_SHEET_ID = savedSheetId;
+
 
     let selectedBusId = safeGetStorage("campusride_selected_bus") || "BUS_02";
-    let currentView = "finder";
-    let currentFleetFilter = "ALL";
     let routeSearchQuery = "";
-    let selectedRadarZone = "Zone B";
-    let radarMode = "campus";
-    let isRushHourSim = true; // Starts in 5:10 PM Evening Rush simulation for live transit preview
-    let simSecondsOffset = 0;
-    let alertLeadMinutes = parseInt(safeGetStorage("campusride_alert_lead") || "10", 10);
-    let deferredInstallPrompt = null;
-    let transitFeedItems = [
-      {
-        time: "5:08 PM",
-        title: "🟢 Campus Bus 02 (Bistupur / Kadma) Boarding Started",
-        body: "Vehicle JH 05 XX 5678 is staged at Zone B (Admin & Library Bay). Departure at 5:15 PM."
-      },
-      {
-        time: "5:05 PM",
-        title: "🟢 Campus Bus 06 (Mango / Dimna) Boarding Started",
-        body: "Vehicle JH 05 XX 2345 is open for boarding at Zone C (Engineering Quad)."
-      },
-      {
-        time: "4:58 PM",
-        title: "🔴 Campus Bus 08 (Chaibasa) Delayed (+15m)",
-        body: "Expected departure shifted from 5:30 PM to 5:45 PM at Zone D due to highway traffic."
-      }
-    ];
+    let deferredPrompt = null;
 
-    // =========================================================================
-    // WEB AUDIO API SYNTHESIZED TRANSIT CHIME (NO EXTERNAL MP3 REQUIRED)
-    // =========================================================================
-    function playTransitChime(type = "boarding") {
+    function getSelectedBus() {
+      return FLEET_STATE.find((b) => b.id === selectedBusId) || FLEET_STATE[1] || FLEET_STATE[0];
+    }
+
+    function getStatusClass(status) {
+      const s = String(status || "").toLowerCase();
+      if (s.includes("board")) return "status-badge status-boarding";
+      if (s.includes("on time") || s.includes("ontime")) return "status-badge status-ontime";
+      if (s.includes("delay")) return "status-badge status-delayed";
+      return "status-badge status-scheduled";
+    }
+
+    function showToast(msg) {
+      const stack = document.getElementById("toast-stack");
+      if (!stack) return;
+      const el = document.createElement("div");
+      el.className = "cr-toast";
+      el.textContent = msg;
+      stack.appendChild(el);
+      setTimeout(() => el.remove(), 3200);
+    }
+
+    function playChime() {
       try {
         const AudioCtx = window.AudioContext || window.webkitAudioContext;
         if (!AudioCtx) return;
         const ctx = new AudioCtx();
-        const notes = type === "alert" ? [587.33, 440.0, 587.33] : [523.25, 659.25, 783.99, 1046.5];
-        notes.forEach((freq, idx) => {
+        [523.25, 659.25, 783.99].forEach((freq, i) => {
           const osc = ctx.createOscillator();
           const gain = ctx.createGain();
-          osc.type = "sine";
-          osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.11);
-          gain.gain.setValueAtTime(0.14, ctx.currentTime + idx * 0.11);
-          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + idx * 0.11 + 0.28);
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.1);
+          gain.gain.setValueAtTime(0.12, ctx.currentTime + i * 0.1);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.1 + 0.25);
           osc.connect(gain);
           gain.connect(ctx.destination);
-          osc.start(ctx.currentTime + idx * 0.11);
-          osc.stop(ctx.currentTime + idx * 0.11 + 0.3);
+          osc.start(ctx.currentTime + i * 0.1);
+          osc.stop(ctx.currentTime + i * 0.1 + 0.26);
         });
       } catch (e) {}
     }
 
     // =========================================================================
-    // TOAST & ANDROID-SAFE SERVICE WORKER NOTIFICATION ENGINE
+    // ANDROID-SAFE SERVICE WORKER NOTIFICATION DISPATCHER (FROM CLASSRADAR V16)
     // =========================================================================
-    function showToast(title, message, tone = "emerald") {
-      const stack = document.getElementById("toast-stack");
-      if (!stack) return;
-      const toast = document.createElement("div");
-      toast.className = "cr-toast";
-      const borderMap = {
-        emerald: "var(--brand-emerald)",
-        indigo: "var(--brand-indigo)",
-        rose: "var(--brand-rose)",
-        amber: "var(--brand-amber)"
+    async function sendNotification(title, body) {
+      if (!("Notification" in window) || Notification.permission !== "granted") return;
+      const notifOptions = {
+        body: body,
+        icon: "./icon-192.png",
+        badge: "./icon-192.png",
+        vibrate: [200, 100, 200],
+        tag: "campusride-alert"
       };
-      toast.style.borderLeftColor = borderMap[tone] || "var(--brand-emerald)";
-      toast.innerHTML = `
-        <div style="font-size:1.25rem;">🚌</div>
-        <div style="flex:1;">
-          <div style="font-weight:800; font-size:0.84rem; margin-bottom:2px;">${title}</div>
-          <div style="font-size:0.76rem; color:var(--text-secondary); font-weight:600;">${message}</div>
-        </div>
-      `;
-      stack.appendChild(toast);
-      setTimeout(() => {
-        toast.style.opacity = "0";
-        toast.style.transition = "opacity 0.25s ease";
-        setTimeout(() => toast.remove(), 260);
-      }, 4200);
-    }
 
-    function sendSystemNotification(title, body) {
-      if (!("Notification" in window)) return;
-      if (Notification.permission === "granted" && "serviceWorker" in navigator) {
-        navigator.serviceWorker.getRegistration().then((reg) => {
-          if (reg && reg.showNotification) {
-            reg.showNotification(title, {
-              body: body,
-              icon: "./icon-192.png",
-              badge: "./icon-192.png",
-              vibrate: [200, 100, 200]
-            });
+      if ("serviceWorker" in navigator && (window.location.protocol === "http:" || window.location.protocol === "https:")) {
+        try {
+          let reg = await navigator.serviceWorker.getRegistration();
+          if (!reg) {
+            reg = await navigator.serviceWorker.register("./sw.js", { scope: "./" });
           }
-        }).catch(() => {});
+          if (reg && typeof reg.showNotification === "function") {
+            await reg.showNotification(title, notifOptions);
+            return;
+          }
+          const readyReg = await navigator.serviceWorker.ready;
+          if (readyReg && typeof readyReg.showNotification === "function") {
+            await readyReg.showNotification(title, notifOptions);
+            return;
+          }
+        } catch (swErr) {}
       }
+
+      try {
+        new Notification(title, notifOptions);
+      } catch (e) {}
     }
 
-    // =========================================================================
-    // TIME & DEPARTURE COUNTDOWN ENGINE
-    // =========================================================================
-    function getActiveClockMinutes() {
-      if (isRushHourSim) {
-        // 5:10 PM = 17 * 60 + 10 = 1030 mins
-        return 1030 + Math.floor(simSecondsOffset / 60);
-      }
-      const now = new Date();
-      return now.getHours() * 60 + now.getMinutes();
-    }
-
-    function parse12hToMinutes(timeStr) {
-      if (!timeStr) return 1035;
-      const clean = String(timeStr).trim();
-      const m = clean.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
-      if (!m) return 1035;
-      let h = parseInt(m[1], 10);
-      const mins = parseInt(m[2], 10);
-      const ampm = (m[3] || "PM").toUpperCase();
-      if (ampm === "PM" && h < 12) h += 12;
-      if (ampm === "AM" && h === 12) h = 0;
-      return h * 60 + mins;
-    }
-
-    function computeCountdownLabel(bus) {
-      const nowMins = getActiveClockMinutes();
-      let depMins = parse12hToMinutes(bus.departure);
-      if (String(bus.status).toLowerCase().includes("delay")) {
-        depMins += 15;
-      }
-      const diff = depMins - nowMins;
-      if (diff > 0 && diff <= 60) {
-        return `Departs in ${diff} min${diff === 1 ? "" : "s"}`;
-      } else if (diff === 0) {
-        return "Departing Now!";
-      } else if (diff < 0 && diff >= -30) {
-        return `Departed ${Math.abs(diff)}m ago`;
-      }
-      return `Scheduled • ${bus.departure}`;
-    }
-
-    function updateClockTick() {
-      simSecondsOffset = (simSecondsOffset + 1) % 300;
-      const clockEl = document.getElementById("live-clock-readout");
-      if (!clockEl) return;
-      if (isRushHourSim) {
-        const mins = 10 + Math.floor(simSecondsOffset / 60);
-        const secs = simSecondsOffset % 60;
-        clockEl.textContent = `05:${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")} PM (Sim)`;
-      } else {
-        const now = new Date();
-        clockEl.textContent = now.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-      }
-      const currentBus = getSelectedBus();
-      const cdEl = document.getElementById("card-countdown-text");
-      if (cdEl && currentBus) {
-        cdEl.textContent = computeCountdownLabel(currentBus);
-      }
-    }
-
-    function toggleClockSimulation() {
-      isRushHourSim = !isRushHourSim;
-      simSecondsOffset = 0;
-      const btn = document.getElementById("btn-clock-mode");
-      if (btn) {
-        btn.textContent = isRushHourSim ? "⚡ Rush Hour Sim (5:10 PM)" : "🕒 Real System Clock";
-        btn.className = isRushHourSim ? "mini-btn accent" : "mini-btn";
-      }
-      updateClockTick();
-      renderAllViews();
-      showToast(
-        isRushHourSim ? "Evening Rush Simulation Active" : "Real System Clock Active",
-        isRushHourSim
-          ? "Clock set to 5:10 PM to preview live 5-minute evening boarding countdowns."
-          : "Using your device's actual wall clock.",
-        "indigo"
-      );
-    }
-
-    // =========================================================================
-    // HELPERS FOR STATUS STYLING & BUS LOOKUP
-    // =========================================================================
-    function getSelectedBus() {
-      return FLEET_STATE.find((b) => b.id === selectedBusId) || FLEET_STATE[1] || FLEET_STATE[0];
-    }
-
-    function getStatusBadgeClass(status) {
-      const s = String(status || "").toLowerCase();
-      if (s.includes("board")) return "status-pill status-boarding";
-      if (s.includes("on time") || s.includes("ontime")) return "status-pill status-ontime";
-      if (s.includes("delay")) return "status-pill status-delayed";
-      return "status-pill status-scheduled";
-    }
-
-    function getStatusDotColor(status) {
-      const s = String(status || "").toLowerCase();
-      if (s.includes("board")) return "#10b981";
-      if (s.includes("on time") || s.includes("ontime")) return "#0284c7";
-      if (s.includes("delay")) return "#e11d48";
-      return "#6366f1";
-    }
-
-    // =========================================================================
-    // RENDER VIEW 1: COMMUTE FINDER & PERFORATED BOARDING CARD
-    // =========================================================================
-    function renderRouteSelectorGrid() {
-      const grid = document.getElementById("route-selector-grid");
-      if (!grid) return;
-      const q = routeSearchQuery.trim().toLowerCase();
-
-      const filtered = FLEET_STATE.filter((bus) => {
-        if (!q) return true;
-        const hay = `${bus.destination} ${bus.busName} ${bus.plate} ${bus.zone} ${bus.routeVia}`.toLowerCase();
-        return hay.includes(q);
-      });
-
-      if (filtered.length === 0) {
-        grid.innerHTML = `
-          <div style="grid-column:1/-1; text-align:center; padding:24px; color:var(--text-muted); font-size:0.85rem; font-weight:600;">
-            No bus route matches "<strong>${routeSearchQuery}</strong>". Try searching <em>Kadma</em>, <em>Purulia</em>, <em>Adityapur</em>, or <em>Sakchi</em>.
-          </div>
-        `;
+    function triggerAppNotificationPrompt() {
+      if (!("Notification" in window)) {
+        showToast("Notifications are not supported in this browser.");
         return;
       }
-
-      grid.innerHTML = filtered.map((bus) => {
-        const isSelected = bus.id === selectedBusId;
-        const dotColor = getStatusDotColor(bus.status);
-        return `
-          <button type="button" class="route-pick-card ${isSelected ? "active" : ""}" onclick="selectBusRoute('${bus.id}')">
-            <div class="route-pick-top">
-              <span class="route-pick-zone">📍 ${bus.zone}</span>
-              <span style="display:inline-flex; align-items:center; gap:5px; font-size:0.7rem; font-weight:800; color:${dotColor};">
-                <span style="width:7px; height:7px; border-radius:50%; background:${dotColor};"></span>
-                ${bus.status}
-              </span>
-            </div>
-            <div class="route-pick-dest">${bus.destination}</div>
-            <div class="route-pick-meta">
-              <span>${bus.busName}</span>
-              <span style="font-family:'JetBrains Mono',monospace;">${bus.departure}</span>
-            </div>
-          </button>
-        `;
-      }).join("");
+      Notification.requestPermission().then((perm) => {
+        if (perm === "granted") {
+          dismissNotifBanner();
+          playChime();
+          const bus = getSelectedBus();
+          sendNotification(`🚌 ${bus.busName} Alerts Enabled`, `You will receive live updates for ${bus.destination} (${bus.zone}).`);
+          showToast("✅ Bus & Delay Alerts Enabled!");
+        }
+      }).catch(() => {});
     }
 
-    function renderActiveBoardingCard() {
-      const bus = getSelectedBus();
-      if (!bus) return;
+    function dismissNotifBanner() {
+      const banner = document.getElementById("notif-permission-banner");
+      if (banner) banner.style.display = "none";
+      safeSetStorage("campusride_notif_banner_dismissed", "1");
+    }
 
-      // Update 3-Tap Ribbon at top
-      const s1 = document.getElementById("step-1-sub");
-      const s2 = document.getElementById("step-2-sub");
-      const s3 = document.getElementById("step-3-sub");
-      if (s1) s1.textContent = `Selected: ${bus.destination}`;
-      if (s2) s2.textContent = `Proceed to ${bus.zone} (${(CAMPUS_ZONES_META[bus.zone] || {}).walk || "Campus Bay"})`;
-      if (s3) s3.textContent = `${bus.busName} • ${bus.plate}`;
+    function renderApp() {
+      const pillsEl = document.getElementById("dest-pills-container");
+      const q = routeSearchQuery.trim().toLowerCase();
+      const filtered = FLEET_STATE.filter((b) => {
+        if (!q) return true;
+        return `${b.destination} ${b.busName} ${b.zone} ${b.routeVia}`.toLowerCase().includes(q);
+      });
 
-      // Update Card Header
-      const nameEl = document.getElementById("card-bus-name");
-      const statusEl = document.getElementById("card-status-badge");
-      const destEl = document.getElementById("card-destination");
-      const viaEl = document.getElementById("card-route-via");
-
-      if (nameEl) nameEl.textContent = `🚌 ${bus.busName.toUpperCase()}`;
-      if (statusEl) {
-        statusEl.textContent = `● ${bus.status.toUpperCase()}`;
-        const stLower = bus.status.toLowerCase();
-        if (stLower.includes("delay")) {
-          statusEl.style.background = "#f43f5e";
-          statusEl.style.color = "#ffffff";
-        } else if (stLower.includes("board")) {
-          statusEl.style.background = "#10b981";
-          statusEl.style.color = "#042f2e";
+      if (pillsEl) {
+        if (filtered.length === 0) {
+          pillsEl.innerHTML = `<div style="font-size:0.84rem; color:var(--text-muted); padding:6px 0;">No route matches "${routeSearchQuery}".</div>`;
         } else {
-          statusEl.style.background = "#38bdf8";
-          statusEl.style.color = "#082f49";
+          pillsEl.innerHTML = filtered.map((b) => `
+            <button type="button" class="dest-pill ${b.id === selectedBusId ? "active" : ""}" onclick="selectBusRoute('${b.id}')">
+              <span>📍 ${b.destination}</span>
+            </button>
+          `).join("");
         }
       }
-      if (destEl) destEl.textContent = bus.destination;
-      if (viaEl) viaEl.textContent = `Route: ${bus.routeVia.replace(/->/g, "→")}`;
 
-      // Metrics
-      const zoneEl = document.getElementById("card-pickup-zone");
-      const landEl = document.getElementById("card-zone-landmark");
-      const plateEl = document.getElementById("card-license-plate");
-      const depEl = document.getElementById("card-departure-time");
-      const cdEl = document.getElementById("card-countdown-text");
+      const bus = getSelectedBus();
+      if (bus) {
+        document.getElementById("card-destination").textContent = bus.destination;
+        document.getElementById("card-route-via").textContent = `Route: ${bus.routeVia.replace(/->/g, "→")}`;
+        document.getElementById("card-status-badge").textContent = `● ${bus.status}`;
+        document.getElementById("card-pickup-zone").textContent = `📍 ${bus.zone}`;
+        document.getElementById("card-zone-landmark").textContent = (ZONES_INFO[bus.zone] && ZONES_INFO[bus.zone].title.split("·")[1]) || bus.zoneLandmark || "Campus Bay";
+        document.getElementById("card-bus-name").textContent = `🚌 ${bus.busName}`;
+        document.getElementById("card-departure-time").textContent = bus.departure;
+        document.getElementById("card-status-sub").textContent = `Status: ${bus.status}`;
 
-      if (zoneEl) zoneEl.textContent = `📍 ${bus.zone}`;
-      if (landEl) landEl.textContent = bus.zoneLandmark || (CAMPUS_ZONES_META[bus.zone] ? CAMPUS_ZONES_META[bus.zone].name : "Campus Transit Bay");
-      if (plateEl) plateEl.textContent = bus.plate;
-      if (depEl) depEl.textContent = bus.departure;
-      if (cdEl) cdEl.textContent = computeCountdownLabel(bus);
+        const stopsContainer = document.getElementById("card-stops-list");
+        if (stopsContainer) {
+          const parts = bus.routeVia.split("->").map((s) => s.trim()).filter(Boolean);
+          stopsContainer.innerHTML = `<span class="stop-pill">🏫 AJU (${bus.zone})</span>` +
+            parts.map((s) => `<span>→</span><span class="stop-pill">${s}</span>`).join("");
+        }
+      }
 
-      // Seat Occupancy
-      const occLabel = document.getElementById("card-occupancy-label");
-      const occBar = document.getElementById("card-occupancy-bar");
-      const occPct = Math.min(100, Math.round((bus.seatsOccupied / bus.seatsTotal) * 100));
-      const seatsLeft = Math.max(0, bus.seatsTotal - bus.seatsOccupied);
-      if (occLabel) occLabel.textContent = `${bus.seatsOccupied} / ${bus.seatsTotal} Seats (${seatsLeft} Left)`;
-      if (occBar) occBar.style.width = `${occPct}%`;
-
-      // Stops Timeline
-      const durEl = document.getElementById("card-total-duration");
-      if (durEl) durEl.textContent = `Est. Journey: ${bus.duration || "45 mins"}`;
-
-      const timelineEl = document.getElementById("card-stops-timeline");
-      if (timelineEl) {
-        const stopsList = Array.isArray(bus.stops) && bus.stops.length > 0
-          ? bus.stops
-          : bus.routeVia.split("->").map((s, idx) => ({
-              name: s.trim(),
-              time: idx === 0 ? bus.departure : `Stop ${idx + 1}`,
-              desc: idx === 0 ? `Pickup at ${bus.zone}` : "Scheduled Route Stop"
-            }));
-
-        timelineEl.innerHTML = stopsList.map((stop, idx) => {
-          const isFirst = idx === 0;
-          const isLast = idx === stopsList.length - 1;
-          const cls = isFirst ? "stop-node origin" : (isLast ? "stop-node terminal" : "stop-node");
-          return `
-            <div class="${cls}" onclick="highlightStopToast('${stop.name.replace(/'/g, "")}', '${stop.time}')">
-              <div class="stop-dot-col">
-                <div class="stop-dot"></div>
-                ${!isLast ? '<div class="stop-line"></div>' : ''}
+      const fleetEl = document.getElementById("fleet-list-container");
+      if (fleetEl) {
+        fleetEl.innerHTML = FLEET_STATE.map((b) => `
+          <div class="bus-row ${b.id === selectedBusId ? "active" : ""}" onclick="selectBusRoute('${b.id}')">
+            <div>
+              <div style="font-weight:800; font-size:0.95rem;">${b.destination}</div>
+              <div style="font-size:0.76rem; color:var(--text-muted); font-weight:600;">
+                🚌 ${b.busName} • 📍 ${b.zone} • Departs ${b.departure}
               </div>
-              <div class="stop-content">
-                <div>
-                  <div class="stop-name">${stop.name}</div>
-                  <div class="stop-sub">${stop.desc || "Commuter Stop"}</div>
-                </div>
-                <span class="stop-eta">${stop.time}</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span class="${getStatusClass(b.status)}">${b.status}</span>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      const zonesEl = document.getElementById("zones-grid-container");
+      if (zonesEl) {
+        zonesEl.innerHTML = Object.values(ZONES_INFO).map((z) => {
+          const busesHere = FLEET_STATE.filter((b) => b.zone.toLowerCase() === z.code.toLowerCase());
+          return `
+            <div class="zone-box" onclick="filterByZone('${z.code}')">
+              <div style="font-weight:800; font-size:0.92rem; color:var(--emerald); margin-bottom:4px;">📍 ${z.title}</div>
+              <div style="font-size:0.76rem; color:var(--text-sub); margin-bottom:8px;">${z.desc}</div>
+              <div style="font-size:0.75rem; font-weight:700; color:var(--text);">
+                Assigned: ${busesHere.map((b) => `${b.busName} (${b.destination})`).join(" • ") || "None"}
               </div>
             </div>
           `;
         }).join("");
       }
-
-      // Sync OneSignal Tags Display & Pass View
-      updatePassProfile();
     }
 
     function selectBusRoute(busId) {
       selectedBusId = busId;
       safeSetStorage("campusride_selected_bus", busId);
-      const bus = getSelectedBus();
-      if (bus) {
-        selectedRadarZone = bus.zone;
-      }
-      const demoPicker = document.getElementById("demo-bus-picker");
-      if (demoPicker) demoPicker.value = busId;
-      syncDemoStatusDropdown();
-      renderAllViews();
+      renderApp();
 
-      // Sync OneSignal Tags if configured
+      const bus = getSelectedBus();
       if (window.OneSignalDeferred && bus) {
         window.OneSignalDeferred.push(function(OneSignal) {
           try {
@@ -2468,13 +1153,26 @@
       }
     }
 
+    function filterByZone(zoneCode) {
+      const match = FLEET_STATE.find((b) => b.zone.toLowerCase() === zoneCode.toLowerCase());
+      if (match) {
+        selectBusRoute(match.id);
+        showToast(`📍 Showing ${match.busName} staged at ${zoneCode}`);
+      }
+    }
+
     function handleRouteSearch(val) {
       routeSearchQuery = val || "";
       const clearBtn = document.getElementById("btn-clear-search");
-      if (clearBtn) {
-        clearBtn.style.display = routeSearchQuery.length > 0 ? "inline-flex" : "none";
+      if (clearBtn) clearBtn.style.display = routeSearchQuery ? "inline-flex" : "none";
+      const q = routeSearchQuery.trim().toLowerCase();
+      if (q) {
+        const firstMatch = FLEET_STATE.find((b) =>
+          `${b.destination} ${b.busName} ${b.zone} ${b.routeVia}`.toLowerCase().includes(q)
+        );
+        if (firstMatch) selectedBusId = firstMatch.id;
       }
-      renderRouteSelectorGrid();
+      renderApp();
     }
 
     function clearRouteSearch() {
@@ -2486,396 +1184,40 @@
     function saveFavoriteRoute() {
       const bus = getSelectedBus();
       safeSetStorage("campusride_selected_bus", bus.id);
-      playTransitChime("boarding");
-      showToast("Daily Commute Pinned ⭐", `${bus.destination} (${bus.busName} • ${bus.zone}) saved as your default startup route.`);
+      playChime();
+      showToast(`⭐ Saved ${bus.destination} (${bus.busName}) as your default route.`);
     }
 
-    function highlightStopToast(stopName, stopTime) {
+    function switchSubTab(tab) {
+      document.getElementById("subview-fleet").style.display = tab === "fleet" ? "block" : "none";
+      document.getElementById("subview-zones").style.display = tab === "zones" ? "block" : "none";
+      document.getElementById("tab-btn-fleet").classList.toggle("active", tab === "fleet");
+      document.getElementById("tab-btn-zones").classList.toggle("active", tab === "zones");
+    }
+
+    function toggleTheme() {
+      const root = document.documentElement;
+      const next = (root.getAttribute("data-theme") || "light") === "light" ? "dark" : "light";
+      root.setAttribute("data-theme", next);
+      safeSetStorage("campusride_theme", next);
+      document.getElementById("theme-icon").textContent = next === "dark" ? "☀️" : "🌙";
+      const metaTheme = document.getElementById("meta-theme-color");
+      if (metaTheme) metaTheme.setAttribute("content", next === "dark" ? "#090e1a" : "#059669");
+    }
+
+    function testTransitNotification() {
       const bus = getSelectedBus();
-      showToast(`📍 ${stopName}`, `${bus.busName} (${bus.plate}) scheduled arrival: ${stopTime}.`, "indigo");
+      playChime();
+      showToast(`🔔 ${bus.busName} (${bus.destination}) • Pickup: ${bus.zone} at ${bus.departure}`);
+      if ("Notification" in window && Notification.permission === "default") {
+        triggerAppNotificationPrompt();
+      } else {
+        sendNotification(`🚌 ${bus.busName} (${bus.destination})`, `Pickup: ${bus.zone} | Departs: ${bus.departure} | Status: ${bus.status}`);
+      }
     }
 
     // =========================================================================
-    // RENDER VIEW 2: INTERACTIVE CAMPUS BAY MAP & LIVE GPS PINS
-    // =========================================================================
-    function renderRadarMapAndZones() {
-      const pinsGroup = document.getElementById("svg-live-bus-pins");
-      if (pinsGroup) {
-        pinsGroup.innerHTML = FLEET_STATE.map((bus, idx) => {
-          const isSelected = bus.id === selectedBusId;
-          const color = getStatusDotColor(bus.status);
-          const x = bus.svgX || (120 + idx * 70);
-          const y = bus.svgY || 200;
-          const labelShort = bus.busName.replace("Campus ", "").toUpperCase();
-          return `
-            <g style="cursor:pointer;" onclick="selectBusFromRadar('${bus.id}')">
-              ${isSelected ? `<circle cx="${x}" cy="${y}" r="22" fill="${color}" fill-opacity="0.28"><animate attributeName="r" values="16;26;16" dur="1.8s" repeatCount="indefinite"/></circle>` : ""}
-              <rect x="${x - 30}" y="${y - 13}" width="60" height="26" rx="8" fill="${isSelected ? color : "#0f172a"}" stroke="${color}" stroke-width="2.2"/>
-              <text x="${x}" y="${y + 4}" text-anchor="middle" fill="#ffffff" font-size="9.5" font-weight="800" font-family="JetBrains Mono, monospace">${labelShort}</text>
-            </g>
-          `;
-        }).join("");
-      }
-
-      // Highlight active walking path
-      ["Zone A", "Zone B", "Zone C", "Zone D"].forEach((z) => {
-        const key = z.replace(" ", "_").toUpperCase();
-        const pathEl = document.getElementById(`walk-path-${key}`);
-        if (pathEl) {
-          pathEl.setAttribute("stroke-width", selectedRadarZone === z ? "4" : "2");
-          pathEl.setAttribute("stroke-opacity", selectedRadarZone === z ? "1" : "0.45");
-        }
-      });
-
-      const listEl = document.getElementById("zone-inspector-list");
-      if (!listEl) return;
-
-      listEl.innerHTML = Object.values(CAMPUS_ZONES_META).map((z) => {
-        const zoneBuses = FLEET_STATE.filter((b) => b.zone.toLowerCase() === z.code.toLowerCase());
-        const isActive = selectedRadarZone.toLowerCase() === z.code.toLowerCase();
-        return `
-          <div class="zone-detail-card ${isActive ? "active" : ""}" onclick="selectRadarZone('${z.code}')">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-              <span style="font-weight:800; font-size:0.9rem; color:var(--text-primary);">${z.name}</span>
-              <span style="font-size:0.72rem; font-weight:800; color:${z.color}; background:var(--surface-1); padding:2px 8px; border-radius:999px; border:1px solid var(--border-subtle);">
-                ${zoneBuses.length} Buses Staged
-              </span>
-            </div>
-            <div style="font-size:0.76rem; color:var(--text-secondary); font-weight:600; margin-bottom:8px;">
-              🚶 ${z.walk} • ${z.location}
-            </div>
-            <div style="display:flex; flex-direction:column; gap:6px;">
-              ${zoneBuses.map((b) => `
-                <div onclick="event.stopPropagation(); selectBusFromRadar('${b.id}')" style="display:flex; justify-content:space-between; align-items:center; background:var(--surface-1); padding:8px 10px; border-radius:10px; border:1px solid var(--border-subtle);">
-                  <div>
-                    <div style="font-weight:800; font-size:0.8rem;">🚌 ${b.busName} → ${b.destination}</div>
-                    <div style="font-size:0.71rem; color:var(--text-muted); font-family:'JetBrains Mono',monospace;">Plate: ${b.plate} • Departs ${b.departure}</div>
-                  </div>
-                  <span class="${getStatusBadgeClass(b.status)}">${b.status}</span>
-                </div>
-              `).join("")}
-            </div>
-          </div>
-        `;
-      }).join("");
-    }
-
-    function selectRadarZone(zoneCode) {
-      selectedRadarZone = zoneCode;
-      renderRadarMapAndZones();
-    }
-
-    function selectBusFromRadar(busId) {
-      selectBusRoute(busId);
-      const bus = getSelectedBus();
-      showToast(`📍 ${bus.busName} Selected`, `Assigned to ${bus.zone} (${bus.plate}) • ${bus.destination}.`);
-    }
-
-    function openBayOnRadar() {
-      const bus = getSelectedBus();
-      selectedRadarZone = bus.zone;
-      switchView("radar");
-      showToast(`🗺️ ${bus.zone} Highlighted`, `Showing walking path from Academic Block to ${bus.zone} for ${bus.busName}.`);
-    }
-
-    function setRadarMode(mode) {
-      radarMode = mode;
-      const bCampus = document.getElementById("btn-map-campus");
-      const bCorr = document.getElementById("btn-map-corridor");
-      if (bCampus) bCampus.className = mode === "campus" ? "mini-btn accent" : "mini-btn";
-      if (bCorr) bCorr.className = mode === "corridor" ? "mini-btn accent" : "mini-btn";
-      showToast(
-        mode === "campus" ? "🏫 Campus Pickup Bays View" : "🛰️ Live GPS Corridor Telemetry",
-        mode === "campus"
-          ? "Showing Zones A–D around the ARKA JAIN University quadrangle."
-          : "Simulating Phase 2 real-time GPS vehicle telemetry across Jamshedpur routes.",
-        "indigo"
-      );
-    }
-
-    // =========================================================================
-    // RENDER VIEW 3: LIVE FLEET DIRECTORY
-    // =========================================================================
-    function setFleetFilter(filterVal) {
-      currentFleetFilter = filterVal;
-      const bar = document.getElementById("fleet-filter-bar");
-      if (bar) {
-        bar.querySelectorAll(".filter-chip").forEach((btn) => {
-          btn.classList.toggle("active", btn.getAttribute("data-filter") === filterVal);
-        });
-      }
-      renderFleetBoard();
-    }
-
-    function renderFleetBoard() {
-      const totalEl = document.getElementById("kpi-total-buses");
-      const boardEl = document.getElementById("kpi-boarding-count");
-      if (totalEl) totalEl.textContent = `${FLEET_STATE.length} Buses`;
-      if (boardEl) {
-        const bCount = FLEET_STATE.filter((b) => b.status.toLowerCase().includes("board")).length;
-        boardEl.textContent = `${bCount} Boarding`;
-      }
-
-      const container = document.getElementById("fleet-cards-container");
-      if (!container) return;
-
-      const list = FLEET_STATE.filter((bus) => {
-        if (currentFleetFilter === "ALL") return true;
-        if (currentFleetFilter.startsWith("Zone")) {
-          return bus.zone.toLowerCase() === currentFleetFilter.toLowerCase();
-        }
-        return bus.status.toLowerCase().includes(currentFleetFilter.toLowerCase());
-      });
-
-      container.innerHTML = list.map((bus) => {
-        const occPct = Math.min(100, Math.round((bus.seatsOccupied / bus.seatsTotal) * 100));
-        return `
-          <div class="fleet-bus-card">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <span style="font-size:0.76rem; font-weight:800; color:var(--brand-emerald); background:var(--brand-emerald-soft); padding:4px 10px; border-radius:999px;">
-                🚌 ${bus.busName} • ${bus.zone}
-              </span>
-              <span class="${getStatusBadgeClass(bus.status)}">${bus.status}</span>
-            </div>
-            <div>
-              <div style="font-size:1.08rem; font-weight:800; color:var(--text-primary); margin-bottom:3px;">${bus.destination}</div>
-              <div style="font-size:0.76rem; color:var(--text-muted); font-weight:600;">${bus.routeVia.replace(/->/g, "→")}</div>
-            </div>
-            <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;">
-              <div class="hsrp-plate">
-                <span class="hsrp-ind">IND</span>
-                <span>${bus.plate}</span>
-              </div>
-              <div style="text-align:right;">
-                <div style="font-size:0.88rem; font-weight:800;">Departs ${bus.departure}</div>
-                <div style="font-size:0.72rem; font-weight:700; color:var(--brand-amber);">${computeCountdownLabel(bus)}</div>
-              </div>
-            </div>
-            <div>
-              <div style="display:flex; justify-content:space-between; font-size:0.72rem; font-weight:700; color:var(--text-muted); margin-bottom:4px;">
-                <span>Seat Occupancy</span>
-                <span>${bus.seatsOccupied}/${bus.seatsTotal} Seats</span>
-              </div>
-              <div style="width:100%; height:6px; background:var(--surface-3); border-radius:999px; overflow:hidden;">
-                <div style="width:${occPct}%; height:100%; background:var(--brand-emerald);"></div>
-              </div>
-            </div>
-            <div style="display:flex; gap:8px; margin-top:auto;">
-              <button type="button" class="mini-btn accent" style="flex:1; padding:8px;" onclick="selectBusRoute('${bus.id}'); switchView('finder');">
-                Select Bus
-              </button>
-              <button type="button" class="mini-btn" style="flex:1; padding:8px;" onclick="selectBusRoute('${bus.id}'); openBayOnRadar();">
-                🗺️ Zone Map
-              </button>
-              <button type="button" class="mini-btn" style="flex:1; padding:8px;" onclick="selectBusRoute('${bus.id}'); switchView('pass');">
-                🎫 QR Pass
-              </button>
-            </div>
-          </div>
-        `;
-      }).join("");
-    }
-
-    // =========================================================================
-    // RENDER VIEW 4: DIGITAL QR BOARDING PASS & SMART NOTIFICATIONS
-    // =========================================================================
-    function generateDeterministicQrSvg(seedText) {
-      // Generates a crisp 21x21 QR-style matrix SVG with finder patterns
-      const size = 21;
-      let hash = 2166136261;
-      for (let i = 0; i < seedText.length; i++) {
-        hash ^= seedText.charCodeAt(i);
-        hash = Math.imul(hash, 16777619);
-      }
-
-      function isFinder(r, c) {
-        const inTL = r < 7 && c < 7;
-        const inTR = r < 7 && c >= size - 7;
-        const inBL = r >= size - 7 && c < 7;
-        return inTL || inTR || inBL;
-      }
-
-      function finderBit(r, c, r0, c0) {
-        const dr = r - r0;
-        const dc = c - c0;
-        if (dr === 0 || dr === 6 || dc === 0 || dc === 6) return true;
-        if (dr >= 2 && dr <= 4 && dc >= 2 && dc <= 4) return true;
-        return false;
-      }
-
-      let rects = "";
-      for (let r = 0; r < size; r++) {
-        for (let c = 0; c < size; c++) {
-          let on = false;
-          if (r < 7 && c < 7) {
-            on = finderBit(r, c, 0, 0);
-          } else if (r < 7 && c >= size - 7) {
-            on = finderBit(r, c, 0, size - 7);
-          } else if (r >= size - 7 && c < 7) {
-            on = finderBit(r, c, size - 7, 0);
-          } else if (!isFinder(r, c)) {
-            const bitSeed = Math.imul(hash ^ (r * 31 + c * 17), 2654435761) >>> 0;
-            on = (bitSeed % 10) < 5;
-          }
-          if (on) {
-            rects += `<rect x="${c * 7 + 8}" y="${r * 7 + 8}" width="6.2" height="6.2" rx="1.2" fill="#0f172a"/>`;
-          }
-        }
-      }
-      return `<svg viewBox="0 0 163 163" width="164" height="164" xmlns="http://www.w3.org/2000/svg">${rects}</svg>`;
-    }
-
-    function updatePassProfile() {
-      const bus = getSelectedBus();
-      if (!bus) return;
-
-      const nameInp = document.getElementById("input-pass-name");
-      const idInp = document.getElementById("input-pass-id");
-      const deptInp = document.getElementById("input-pass-dept");
-      const seatInp = document.getElementById("input-pass-seat");
-
-      const studentName = (nameInp && nameInp.value) || "Jayanta Mahanty";
-      const studentId = (idInp && idInp.value) || "AJU/260911";
-      const studentDept = (deptInp && deptInp.value) || "B.Tech CSE (1st Year)";
-      const seatNo = (seatInp && seatInp.value) || "Seat 14A (Window)";
-
-      const pName = document.getElementById("pass-student-name");
-      const pMeta = document.getElementById("pass-student-meta");
-      const pBus = document.getElementById("pass-bus-plate");
-      const pDest = document.getElementById("pass-dest-zone");
-      const pSeat = document.getElementById("pass-seat-no");
-      const pToken = document.getElementById("pass-token-id");
-      const qrBox = document.getElementById("qr-svg-container");
-
-      const cleanId = studentId.replace(/[^A-Z0-9]/gi, "").slice(-6).toUpperCase() || "260911";
-      const busNum = bus.busName.replace(/\D/g, "") || "02";
-      const tokenStr = `CR-${cleanId}-B${busNum}`;
-
-      if (pName) pName.textContent = studentName;
-      if (pMeta) pMeta.textContent = `Enrollment: ${studentId} • ${studentDept}`;
-      if (pBus) pBus.textContent = `${bus.busName} (${bus.plate})`;
-      if (pDest) pDest.textContent = `${bus.destination} • ${bus.zone}`;
-      if (pSeat) pSeat.textContent = seatNo;
-      if (pToken) pToken.textContent = tokenStr;
-
-      if (qrBox) {
-        qrBox.innerHTML = generateDeterministicQrSvg(`${tokenStr}|${bus.plate}|${seatNo}|${studentName}`);
-      }
-
-      // Update OneSignal tag pills in View 4
-      const tRoute = document.getElementById("tag-route-val");
-      const tZone = document.getElementById("tag-zone-val");
-      const tBus = document.getElementById("tag-bus-val");
-      if (tRoute) tRoute.textContent = `route: ${bus.destination}`;
-      if (tZone) tZone.textContent = `zone: ${bus.zone}`;
-      if (tBus) tBus.textContent = `bus: ${bus.busName}`;
-    }
-
-    function triggerQrScanDemo() {
-      const bus = getSelectedBus();
-      const badge = document.getElementById("pass-verify-badge");
-      playTransitChime("boarding");
-      if (badge) {
-        badge.textContent = "✨ SCANNED & BOARDED";
-        badge.style.background = "#38bdf8";
-      }
-      showToast(
-        "✅ Digital Boarding Pass Verified!",
-        `Pass confirmed for ${bus.busName} (${bus.plate}) at ${bus.zone}. Seat reserved.`,
-        "emerald"
-      );
-    }
-
-    function renderTransitFeed() {
-      const feedEl = document.getElementById("transit-feed-list");
-      if (!feedEl) return;
-      feedEl.innerHTML = transitFeedItems.map((item) => `
-        <div style="background:var(--surface-2); border:1px solid var(--border-subtle); border-radius:12px; padding:11px 14px;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
-            <span style="font-weight:800; font-size:0.8rem; color:var(--text-primary);">${item.title}</span>
-            <span style="font-size:0.7rem; font-family:'JetBrains Mono',monospace; color:var(--text-muted);">${item.time}</span>
-          </div>
-          <div style="font-size:0.76rem; color:var(--text-secondary); font-weight:500;">${item.body}</div>
-        </div>
-      `).join("");
-    }
-
-    // =========================================================================
-    // LIVE TRANSIT SIMULATION CONTROLS
-    // =========================================================================
-    function toggleStageBar() {
-      const bar = document.getElementById("stage-demo-bar");
-      const btn = document.getElementById("btn-toggle-stage");
-      if (!bar) return;
-      const isHidden = bar.style.display === "none";
-      bar.style.display = isHidden ? "flex" : "none";
-      if (btn) btn.classList.toggle("demo-active", isHidden);
-    }
-
-    function syncDemoStatusDropdown() {
-      const picker = document.getElementById("demo-bus-picker");
-      const statusSel = document.getElementById("demo-status-picker");
-      if (!picker || !statusSel) return;
-      const bus = FLEET_STATE.find((b) => b.id === picker.value);
-      if (bus) {
-        statusSel.value = bus.status;
-      }
-    }
-
-    function applyDemoBusStatus(newStatus) {
-      const picker = document.getElementById("demo-bus-picker");
-      const targetId = (picker && picker.value) || selectedBusId;
-      const bus = FLEET_STATE.find((b) => b.id === targetId);
-      if (!bus) return;
-
-      bus.status = newStatus;
-      selectedBusId = bus.id;
-      safeSetStorage("campusride_fleet_cache_v1", JSON.stringify(FLEET_STATE));
-
-      transitFeedItems.unshift({
-        time: "Just Now",
-        title: `🔔 ${bus.busName} (${bus.destination}) → ${newStatus.toUpperCase()}`,
-        body: `Pickup at ${bus.zone} • Vehicle Plate ${bus.plate} • Scheduled ${bus.departure}`
-      });
-
-      playTransitChime(newStatus === "Delayed" ? "alert" : "boarding");
-      renderAllViews();
-      showToast(
-        `${bus.busName} Status Updated`,
-        `${bus.destination} (${bus.plate}) is now marked "${newStatus}" at ${bus.zone}.`,
-        newStatus === "Delayed" ? "rose" : "emerald"
-      );
-    }
-
-    function simulateBreakdownAlert() {
-      const bus = getSelectedBus();
-      bus.status = "Delayed";
-      const banner = document.getElementById("live-alert-banner");
-      const bTitle = document.getElementById("live-alert-title");
-      const bBody = document.getElementById("live-alert-body");
-      if (bTitle) bTitle.textContent = `🚨 Live Transit Alert: ${bus.busName} (${bus.destination}) Delayed +15m`;
-      if (bBody) bBody.textContent = `Vehicle ${bus.plate} at ${bus.zone} will depart 15 mins late due to traffic congestion. Backup coordinator assigned.`;
-      if (banner) banner.style.display = "flex";
-
-      transitFeedItems.unshift({
-        time: "Live Alert",
-        title: `🚨 ${bus.busName} (${bus.destination}) Delayed +15 Mins`,
-        body: `Push broadcast sent to subscribed commuters at ${bus.zone}.`
-      });
-
-      playTransitChime("alert");
-      renderAllViews();
-      showToast("🚨 Smart Delay Alert Broadcasted!", `Push alert + chime triggered for ${bus.busName} (${bus.destination}).`, "rose");
-      sendSystemNotification(`🚨 ${bus.busName} Delayed (+15m)`, `${bus.destination} (${bus.plate}) at ${bus.zone} delayed by 15 minutes.`);
-    }
-
-    function dismissAlertBanner() {
-      const banner = document.getElementById("live-alert-banner");
-      if (banner) banner.style.display = "none";
-    }
-
-    // =========================================================================
-    // HEADLESS GOOGLE SHEETS GVIZ API SYNC (EXACT CLASSRADAR ARCHITECTURE)
+    // HEADLESS GOOGLE SHEETS GVIZ LIVE SYNC + CHANGE NOTIFICATION
     // =========================================================================
     function getRowField(rowObj, aliases) {
       if (!rowObj) return "";
@@ -2885,190 +1227,82 @@
         for (const k of keys) {
           if (k.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanAlias) {
             const val = rowObj[k];
-            if (val !== undefined && val !== null && String(val).trim() !== "") {
-              return String(val).trim();
-            }
+            if (val !== undefined && val !== null && String(val).trim() !== "") return String(val).trim();
           }
         }
       }
       return "";
     }
 
-    async function syncFromGoogleSheet(manualTrigger = false) {
+    async function syncFromGoogleSheet(manual = false) {
       const labelEl = document.getElementById("sync-status-label");
-      if (labelEl && manualTrigger) labelEl.textContent = "Syncing...";
-
-      const gvizUrl = `https://docs.google.com/spreadsheets/d/${encodeURIComponent(TRANSPORT_SHEET_ID)}/gviz/tq?tqx=out:json`;
+      if (labelEl && manual) labelEl.textContent = "Syncing...";
+      const url = `https://docs.google.com/spreadsheets/d/${encodeURIComponent(TRANSPORT_SHEET_ID)}/gviz/tq?tqx=out:json`;
       try {
-        const res = await fetch(gvizUrl);
+        const res = await fetch(url);
         const text = await res.text();
-        const jsonMatch = text.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\);?/);
-        if (!jsonMatch) throw new Error("Invalid GViz response");
-
-        const data = JSON.parse(jsonMatch[1]);
-        const table = data.table;
-        if (!table || !table.rows || table.rows.length === 0) throw new Error("Empty sheet");
-
+        const m = text.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\);?/);
+        if (!m) throw new Error("Invalid GViz");
+        const table = JSON.parse(m[1]).table;
         const cols = (table.cols || []).map((c, idx) => (c && c.label ? c.label.trim() : `col_${idx}`));
-        const parsedRows = [];
+        const rows = [];
 
-        table.rows.forEach((r, rIdx) => {
+        (table.rows || []).forEach((r, rIdx) => {
           if (!r || !r.c) return;
-          const rowObj = {};
+          const obj = {};
           r.c.forEach((cell, cIdx) => {
-            const colName = cols[cIdx] || `col_${cIdx}`;
             const val = cell ? (cell.f !== undefined && cell.f !== null ? cell.f : cell.v) : "";
-            rowObj[colName] = val !== null && val !== undefined ? String(val).trim() : "";
-            rowObj[`col_${cIdx}`] = rowObj[colName];
+            obj[cols[cIdx] || `col_${cIdx}`] = val !== null && val !== undefined ? String(val).trim() : "";
+            obj[`col_${cIdx}`] = obj[cols[cIdx] || `col_${cIdx}`];
           });
-
-          const dest = getRowField(rowObj, ["Destination", "Route", "col_0"]);
-          const busName = getRowField(rowObj, ["Bus_Name", "BusName", "Bus", "col_1"]);
+          const dest = getRowField(obj, ["Destination", "Route", "col_0"]);
+          const busName = getRowField(obj, ["Bus_Name", "Bus", "col_1"]);
           if (!dest || !busName || dest.toLowerCase() === "destination") return;
+          const fb = DEFAULT_FLEET_DATA[rIdx % DEFAULT_FLEET_DATA.length] || DEFAULT_FLEET_DATA[0];
+          let contact = getRowField(obj, ["Driver_Contact", "Contact", "col_7"]);
+          if (!contact || contact.includes("ERROR")) contact = fb.driverContact;
 
-          const fallbackBus = DEFAULT_FLEET_DATA[rIdx % DEFAULT_FLEET_DATA.length] || DEFAULT_FLEET_DATA[0];
-          const plate = getRowField(rowObj, ["License_Plate", "Plate", "col_2"]) || fallbackBus.plate;
-          const zone = getRowField(rowObj, ["Pickup_Zone", "Zone", "col_3"]) || fallbackBus.zone;
-          const dep = getRowField(rowObj, ["Departure_Time", "Departure", "col_4"]) || fallbackBus.departure;
-          const via = getRowField(rowObj, ["Route_Via", "Via", "col_5"]) || fallbackBus.routeVia;
-          const status = getRowField(rowObj, ["Status", "col_6"]) || fallbackBus.status;
-          let contact = getRowField(rowObj, ["Driver_Contact", "Contact", "col_7"]);
-          if (!contact || contact.includes("ERROR")) {
-            contact = fallbackBus.driverContact;
-          }
-
-          parsedRows.push({
-            id: fallbackBus.id || `BUS_0${parsedRows.length + 1}`,
+          rows.push({
+            id: fb.id || `BUS_0${rows.length + 1}`,
             destination: dest,
             busName: busName,
-            plate: plate,
-            zone: zone,
-            zoneLandmark: (CAMPUS_ZONES_META[zone] && CAMPUS_ZONES_META[zone].name) || fallbackBus.zoneLandmark,
-            departure: dep,
-            routeVia: via,
-            stops: fallbackBus.stops,
-            status: status,
-            driverContact: contact,
-            seatsOccupied: fallbackBus.seatsOccupied,
-            seatsTotal: fallbackBus.seatsTotal,
-            duration: fallbackBus.duration,
-            svgX: fallbackBus.svgX,
-            svgY: fallbackBus.svgY
+            plate: getRowField(obj, ["License_Plate", "Plate", "col_2"]) || fb.plate,
+            zone: getRowField(obj, ["Pickup_Zone", "Zone", "col_3"]) || fb.zone,
+            zoneLandmark: fb.zoneLandmark,
+            departure: getRowField(obj, ["Departure_Time", "Departure", "col_4"]) || fb.departure,
+            routeVia: getRowField(obj, ["Route_Via", "Via", "col_5"]) || fb.routeVia,
+            status: getRowField(obj, ["Status", "col_6"]) || fb.status,
+            driverContact: contact
           });
         });
 
-        if (parsedRows.length > 0) {
-          FLEET_STATE = parsedRows;
+        if (rows.length > 0) {
+          // Detect status changes on user's selected bus to chime & notify
+          const prevSelected = FLEET_STATE.find((b) => b.id === selectedBusId);
+          const nextSelected = rows.find((b) => b.id === selectedBusId);
+          if (prevSelected && nextSelected && prevSelected.status !== nextSelected.status) {
+            playChime();
+            sendNotification(
+              `🚌 ${nextSelected.busName} — ${nextSelected.status}`,
+              `${nextSelected.destination} • Pickup at ${nextSelected.zone} (${nextSelected.departure})`
+            );
+          }
+
+          FLEET_STATE = rows;
           safeSetStorage("campusride_fleet_cache_v1", JSON.stringify(FLEET_STATE));
-          renderAllViews();
-          if (labelEl) labelEl.textContent = `GViz Live (${FLEET_STATE.length})`;
-          if (manualTrigger) {
-            playTransitChime("boarding");
-            showToast("☁️ Google Sheet Synced!", `Loaded ${FLEET_STATE.length} live campus bus routes via GViz API.`);
-          }
-          return;
+          renderApp();
+          if (labelEl) labelEl.textContent = "Live";
+          if (manual) showToast(`☁️ Synced ${FLEET_STATE.length} bus routes from Google Sheets.`);
         }
-      } catch (err) {
-        if (labelEl) labelEl.textContent = "Offline Ready";
-        if (manualTrigger) {
-          showToast("⚡ Offline-First Cache Active", "Displaying verified ARKA JAIN University transit routes from local cache.", "indigo");
-        }
+      } catch (e) {
+        if (labelEl) labelEl.textContent = "Offline";
+        if (manual) showToast("⚡ Using cached offline bus schedule.");
       }
     }
 
-    // =========================================================================
-    // NAVIGATION, THEME & MODALS
-    // =========================================================================
-    function switchView(viewName) {
-      currentView = viewName;
-      ["finder", "radar", "fleet", "pass"].forEach((v) => {
-        const el = document.getElementById(`view-${v}`);
-        if (el) el.style.display = v === viewName ? "block" : "none";
-        const dTab = document.getElementById(`nav-tab-${v}`);
-        if (dTab) dTab.classList.toggle("active", v === viewName);
-        const mTab = document.getElementById(`mob-tab-${v}`);
-        if (mTab) mTab.classList.toggle("active", v === viewName);
-      });
-      renderAllViews();
-    }
 
-    function toggleTheme() {
-      const root = document.documentElement;
-      const curr = root.getAttribute("data-theme") || "light";
-      const next = curr === "light" ? "dark" : "light";
-      root.setAttribute("data-theme", next);
-      safeSetStorage("campusride_theme", next);
-      const iconEl = document.getElementById("theme-icon");
-      if (iconEl) iconEl.textContent = next === "dark" ? "☀️" : "🌙";
-    }
 
-    function updateAlertLeadTime(val) {
-      alertLeadMinutes = parseInt(val || "10", 10);
-      safeSetStorage("campusride_alert_lead", String(alertLeadMinutes));
-      showToast("⏰ Reminder Updated", `CampusRide will chime ${alertLeadMinutes} minutes before your bus departs.`);
-    }
 
-    function testTransitNotification() {
-      const bus = getSelectedBus();
-      playTransitChime("boarding");
-      showToast(
-        `🔔 Transit Reminder: ${bus.busName}`,
-        `${bus.destination} (${bus.plate}) is boarding at ${bus.zone}. Departs at ${bus.departure}.`
-      );
-      if ("Notification" in window && Notification.permission === "default") {
-        Notification.requestPermission().then((perm) => {
-          if (perm === "granted") {
-            sendSystemNotification(`🚌 ${bus.busName} Boarding at ${bus.zone}`, `Plate: ${bus.plate} • Departs ${bus.departure}`);
-          }
-        }).catch(() => {});
-      } else {
-        sendSystemNotification(`🚌 ${bus.busName} Boarding at ${bus.zone}`, `Plate: ${bus.plate} • Departs ${bus.departure}`);
-      }
-    }
-
-    function openSheetModal() {
-      const m = document.getElementById("sheet-settings-modal");
-      const inp = document.getElementById("input-sheet-id");
-      if (inp) inp.value = TRANSPORT_SHEET_ID;
-      if (m) m.style.display = "flex";
-    }
-
-    function closeSheetModal(e) {
-      if (e && e.target && e.target.id !== "sheet-settings-modal") return;
-      const m = document.getElementById("sheet-settings-modal");
-      if (m) m.style.display = "none";
-    }
-
-    function saveSheetIdAndSync() {
-      const inp = document.getElementById("input-sheet-id");
-      if (inp && inp.value.trim()) {
-        TRANSPORT_SHEET_ID = inp.value.trim();
-        safeSetStorage("campusride_sheet_id", TRANSPORT_SHEET_ID);
-      }
-      closeSheetModal();
-      syncFromGoogleSheet(true);
-    }
-
-    function openDriverModal() {
-      const bus = getSelectedBus();
-      const m = document.getElementById("driver-contact-modal");
-      const bEl = document.getElementById("driver-modal-bus");
-      const nEl = document.getElementById("driver-modal-number");
-      const rEl = document.getElementById("driver-modal-route");
-      const cLink = document.getElementById("driver-call-link");
-
-      if (bEl) bEl.textContent = `${bus.busName.toUpperCase()} • ${bus.zone.toUpperCase()} (${bus.plate})`;
-      if (nEl) nEl.textContent = bus.driverContact;
-      if (rEl) rEl.textContent = `Route: ${bus.routeVia.replace(/->/g, "→")}`;
-      if (cLink) cLink.href = `tel:${bus.driverContact.replace(/\s+/g, "")}`;
-      if (m) m.style.display = "flex";
-    }
-
-    function closeDriverModal(e) {
-      if (e && e.target && e.target.id !== "driver-contact-modal") return;
-      const m = document.getElementById("driver-contact-modal");
-      if (m) m.style.display = "none";
-    }
 
     function copyTextFallback(text) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -3079,97 +1313,179 @@
       ta.value = text;
       document.body.appendChild(ta);
       ta.select();
-      try {
-        document.execCommand("copy");
-      } catch (e) {}
+      try { document.execCommand("copy"); } catch (e) {}
       ta.remove();
     }
 
-    function copyDriverNumber() {
-      const bus = getSelectedBus();
-      copyTextFallback(bus.driverContact);
-      showToast("📋 Driver Contact Copied", `${bus.driverContact} (${bus.busName}) copied to clipboard.`);
+
+
+    // =========================================================================
+    // TRUE 1-TAP PWA INSTALLATION ENGINE (DIRECT NATIVE PROMPT ON FIRST TAP)
+    // =========================================================================
+    function isRunningStandalone() {
+      return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true;
     }
 
-    function openInstallModal() {
-      const m = document.getElementById("install-pwa-modal");
-      if (m) m.style.display = "flex";
+    function hideInstallUIOnInstalled() {
+      const banner = document.getElementById("one-tap-install-banner");
+      const headerBtn = document.getElementById("btn-install-pwa");
+      if (banner) banner.style.display = "none";
+      if (headerBtn) headerBtn.style.display = "none";
+    }
+
+    function dismissInstallBanner() {
+      const banner = document.getElementById("one-tap-install-banner");
+      if (banner) banner.style.display = "none";
+    }
+
+    async function oneTapInstallApp() {
+      // Direct 1-Tap Native Install when Chrome/Edge/Android has queued beforeinstallprompt
+      if (deferredPrompt) {
+        try {
+          deferredPrompt.prompt();
+          const choice = await deferredPrompt.userChoice;
+          deferredPrompt = null;
+          if (choice && choice.outcome === "accepted") {
+            showToast("✅ Installing CampusRide to your Home Screen!");
+            hideInstallUIOnInstalled();
+            closeInstallModal();
+          }
+          return;
+        } catch (err) {}
+      }
+
+      // If already installed in standalone mode
+      if (isRunningStandalone()) {
+        showToast("✅ CampusRide is already installed on your device!");
+        hideInstallUIOnInstalled();
+        return;
+      }
+
+      // Fallback guide if browser requires manual menu or localhost server
+      handleInstallButtonClick();
+    }
+
+    function handleInstallButtonClick() {
+      const modal = document.getElementById("install-pwa-modal");
+      const statusBox = document.getElementById("install-modal-status-box");
+      const nativeBox = document.getElementById("native-pwa-install-box");
+      if (!modal) return;
+      modal.style.display = "flex";
+
+      if (deferredPrompt && nativeBox) {
+        nativeBox.style.display = "block";
+        if (statusBox) {
+          statusBox.innerHTML = `
+            <div style="background:var(--emerald-soft); border:1px solid var(--emerald); padding:12px; border-radius:10px; color:var(--emerald); font-size:0.82rem; font-weight:700;">
+              ✅ 1-Tap Installation Ready! Tap below to install CampusRide immediately.
+            </div>
+          `;
+        }
+      } else {
+        if (nativeBox) nativeBox.style.display = "none";
+        if (statusBox) {
+          statusBox.innerHTML = `
+            <div style="background:var(--sky-soft); border:1px solid var(--sky); padding:12px; border-radius:10px; color:var(--text); font-size:0.8rem; line-height:1.55;">
+              📱 <strong>How to enable 1-Tap Install:</strong><br>
+              • Open your hosted <strong>GitHub Pages HTTPS link</strong> or <strong>http://localhost:8080</strong> in Chrome and tap <strong>⚡ 1-Tap Install</strong>.<br>
+              • <strong>iPhone (Safari):</strong> Tap <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong>.
+            </div>
+          `;
+        }
+      }
     }
 
     function closeInstallModal(e) {
       if (e && e.target && e.target.id !== "install-pwa-modal") return;
-      const m = document.getElementById("install-pwa-modal");
-      if (m) m.style.display = "none";
+      document.getElementById("install-pwa-modal").style.display = "none";
     }
 
     function copyTermuxSnippet() {
-      const box = document.getElementById("termux-cmd-box");
-      if (box) copyTextFallback(box.textContent);
-      showToast("📋 Termux Command Copied", "Paste into Termux to launch your local PWA server on port 8080.");
+      copyTextFallback(document.getElementById("termux-cmd-box").textContent);
+      showToast("📋 Termux command copied!");
     }
 
     function triggerNativePwaInstall() {
-      if (!deferredInstallPrompt) return;
-      deferredInstallPrompt.prompt();
-      deferredInstallPrompt.userChoice.then(() => {
-        deferredInstallPrompt = null;
-        const box = document.getElementById("native-pwa-install-box");
-        if (box) box.style.display = "none";
-      });
+      oneTapInstallApp();
     }
 
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault();
-      deferredInstallPrompt = e;
-      const box = document.getElementById("native-pwa-install-box");
-      if (box) box.style.display = "block";
+      deferredPrompt = e;
+      const btn = document.getElementById("btn-install-pwa");
+      if (btn) btn.style.display = "inline-flex";
+      const banner = document.getElementById("one-tap-install-banner");
+      if (banner && !isRunningStandalone()) banner.style.display = "flex";
+      const sub = document.getElementById("one-tap-install-sub");
+      if (sub) sub.textContent = "✅ Browser ready! Tap the button to install CampusRide in one click.";
     });
 
-    function renderAllViews() {
-      renderRouteSelectorGrid();
-      renderActiveBoardingCard();
-      renderRadarMapAndZones();
-      renderFleetBoard();
-      renderTransitFeed();
-    }
+    window.addEventListener("appinstalled", () => {
+      deferredPrompt = null;
+      hideInstallUIOnInstalled();
+      showToast("🎉 CampusRide installed to your Home Screen!");
+    });
+
+    window.addEventListener("online", () => {
+      syncFromGoogleSheet(false);
+    });
 
     // =========================================================================
-    // INITIALIZE APPLICATION & SERVICE WORKER
+    // INITIALIZE PWA, SERVICE WORKER & ONESIGNAL (EXACT CLASSRADAR SETUP)
     // =========================================================================
-    (function initCampusRide() {
+    (function init() {
+      if (isRunningStandalone()) {
+        hideInstallUIOnInstalled();
+      }
       const savedTheme = safeGetStorage("campusride_theme");
       if (savedTheme === "dark" || savedTheme === "light") {
         document.documentElement.setAttribute("data-theme", savedTheme);
-        const iconEl = document.getElementById("theme-icon");
-        if (iconEl) iconEl.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+        document.getElementById("theme-icon").textContent = savedTheme === "dark" ? "☀️" : "🌙";
       }
 
-      renderAllViews();
-      updateClockTick();
-      setInterval(updateClockTick, 1000);
-
-      // Register Offline-First Service Worker when hosted over HTTP/HTTPS
-      if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")) {
-        navigator.serviceWorker.register("./sw.js").catch(() => {});
+      // Show opt-in banner if notifications not yet granted
+      if ("Notification" in window && Notification.permission === "default" && !safeGetStorage("campusride_notif_banner_dismissed")) {
+        const banner = document.getElementById("notif-permission-banner");
+        if (banner) banner.style.display = "flex";
       }
 
-      // Initialize OneSignal Web SDK v16 if App ID is configured
+      renderApp();
+
+      // When hosted on HTTP/HTTPS (GitHub Pages or Termux localhost), link manifest.json & register Service Worker
+      if (window.location.protocol === "http:" || window.location.protocol === "https:") {
+        const manifestLink = document.getElementById("pwa-manifest-link");
+        if (manifestLink) manifestLink.setAttribute("href", "./manifest.json");
+
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("./sw.js", { scope: "./" }).then((reg) => {
+            setInterval(() => {
+              reg.update().catch(() => {});
+            }, 3 * 60 * 1000);
+          }).catch(() => {});
+        }
+      }
+
+      // Initialize OneSignal Web Push SDK v16 with sw.js
       if (ONESIGNAL_APP_ID && ONESIGNAL_APP_ID !== "YOUR_ONESIGNAL_APP_ID") {
         window.OneSignalDeferred = window.OneSignalDeferred || [];
         window.OneSignalDeferred.push(async function(OneSignal) {
           try {
             await OneSignal.init({
-              appId: ONESIGNAL_APP_ID,
-              notifyButton: { enable: false },
-              allowLocalhostAsSecureOrigin: true
+              appId: ONESIGNAL_APP_ID.trim(),
+              allowLocalhostAsSecureOrigin: true,
+              serviceWorkerPath: "sw.js",
+              serviceWorkerParam: { scope: "./" },
+              notifyButton: { enable: false }
             });
+            setTimeout(() => {
+              try { OneSignal.Slidedown.promptPush(); } catch (e) {}
+            }, 1200);
           } catch (e) {}
         });
       }
 
-      // Perform non-blocking live Google Sheets GViz sync
       syncFromGoogleSheet(false);
-      setInterval(() => syncFromGoogleSheet(false), 20000);
+      setInterval(() => syncFromGoogleSheet(false), 15000);
     })();
   </script>
 </body>

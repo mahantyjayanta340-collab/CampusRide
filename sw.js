@@ -7,7 +7,7 @@ try {
   // Offline or local environment fallback
 }
 
-const CACHE_NAME = 'campusride-aju-v2';
+const CACHE_NAME = 'campusride-aju-v3';
 const ASSETS = [
   './',
   './index.html',
