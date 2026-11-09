@@ -8,19 +8,13 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="CampusRide">
-  <meta name="description" content="ARKA JAIN University Real-Time Bus Finder, Pickup Zone Guide & Smart Transit Reminders with Offline PWA support">
+  <meta name="description" content="ARKA JAIN University Real-Time Bus Finder & Pickup Zone Guide with Offline PWA Support">
 
   <link rel="manifest" id="pwa-manifest-link" href="./manifest.json">
   <link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
   <link rel="apple-touch-icon" href="data:image/png;base64,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">
 
   <title>CampusRide | AJU University Bus & Zone Finder</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- OneSignal Web Push SDK v16 for Mobile & Web Notifications (Same as ClassRadar) -->
-  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
   <style>
     :root {
       --bg: #f8fafc;
@@ -40,9 +34,6 @@
       --amber-soft: rgba(245, 158, 11, 0.14);
       --rose: #e11d48;
       --rose-soft: rgba(225, 29, 72, 0.12);
-      --plate-bg: #facc15;
-      --plate-text: #0f172a;
-      --plate-border: #ca8a04;
       --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
       --shadow-md: 0 12px 28px -6px rgba(15, 23, 42, 0.08);
       --radius-lg: 20px;
@@ -79,7 +70,7 @@
     }
 
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.5;
@@ -88,7 +79,6 @@
       transition: background 0.2s ease, color 0.2s ease;
     }
 
-    /* Minimal Top Header */
     header {
       position: sticky;
       top: 0;
@@ -147,6 +137,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      flex-wrap: wrap;
     }
 
     .pill-btn {
@@ -187,14 +178,19 @@
     }
 
     .live-dot {
-      width: 7px;
-      height: 7px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background: var(--emerald-light);
       box-shadow: 0 0 0 3px var(--emerald-soft);
+      transition: background 0.2s ease;
     }
 
-    /* Main Single-Column Container */
+    .live-dot.offline {
+      background: var(--amber);
+      box-shadow: 0 0 0 3px var(--amber-soft);
+    }
+
     .container {
       max-width: 780px;
       margin: 18px auto 0;
@@ -204,7 +200,6 @@
       gap: 16px;
     }
 
-    /* Notification Opt-In Banner (Same User-Gesture Pattern as ClassRadar) */
     .notif-banner {
       background: linear-gradient(135deg, rgba(5, 150, 105, 0.14), rgba(2, 132, 199, 0.12));
       border: 1.5px solid rgba(16, 185, 129, 0.4);
@@ -217,7 +212,20 @@
       flex-wrap: wrap;
     }
 
-    /* Card Base */
+    .offline-toast-bar {
+      background: var(--amber-soft);
+      border: 1px solid var(--amber);
+      color: var(--text);
+      border-radius: 14px;
+      padding: 10px 14px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -242,7 +250,6 @@
       margin-bottom: 12px;
     }
 
-    /* Search Input */
     .search-wrap {
       position: relative;
       margin-bottom: 12px;
@@ -294,7 +301,6 @@
       justify-content: center;
     }
 
-    /* One-Tap Destination Pills */
     .dest-pills {
       display: flex;
       flex-wrap: wrap;
@@ -328,7 +334,6 @@
       box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
     }
 
-    /* Assigned Bus Result Card (3 Clear Answers: Bus, Plate, Zone) */
     .assigned-card {
       background: var(--surface);
       border: 2px solid var(--emerald);
@@ -377,7 +382,6 @@
     .status-scheduled { background: var(--surface-soft); color: var(--text-sub); }
     .status-delayed { background: var(--rose-soft); color: var(--rose); }
 
-    /* 3 Big Key Info Boxes */
     .three-info-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -417,30 +421,6 @@
       font-weight: 600;
     }
 
-    /* Indian HSRP Number Plate */
-    .hsrp-plate {
-      display: inline-flex;
-      align-items: center;
-      background: var(--plate-bg);
-      color: var(--plate-text);
-      border: 2px solid var(--plate-border);
-      border-radius: 6px;
-      padding: 3px 8px;
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 800;
-      font-size: 0.84rem;
-      width: fit-content;
-    }
-
-    .hsrp-ind {
-      font-size: 0.55rem;
-      background: #1d4ed8;
-      color: #ffffff;
-      padding: 1px 4px;
-      border-radius: 3px;
-      margin-right: 6px;
-    }
-
     .assigned-footer {
       padding: 14px 20px;
       display: flex;
@@ -467,7 +447,6 @@
       border-radius: 999px;
     }
 
-    /* Simple 2-Tab Switcher for All Buses / Pickup Zones */
     .simple-tabs {
       display: flex;
       gap: 8px;
@@ -494,7 +473,6 @@
       border-color: rgba(16, 185, 129, 0.3);
     }
 
-    /* Clean Bus List */
     .bus-list {
       display: flex;
       flex-direction: column;
@@ -538,7 +516,6 @@
       border-color: var(--emerald);
     }
 
-    /* Toasts & Modals */
     #toast-stack {
       position: fixed;
       top: 70px;
@@ -589,22 +566,10 @@
       gap: 14px;
     }
 
-    .form-input {
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 10px;
-      border: 1px solid var(--border-strong);
-      background: var(--surface-soft);
-      color: var(--text);
-      font-family: inherit;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
     .code-snippet {
       background: #0f172a;
       color: #38bdf8;
-      font-family: 'JetBrains Mono', monospace;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 0.74rem;
       padding: 10px;
       border-radius: 8px;
@@ -634,7 +599,7 @@
 
       <div class="header-actions">
         <button type="button" class="pill-btn" id="btn-cloud-sync" onclick="syncFromGoogleSheet(true)" title="Sync live schedule from Google Sheet">
-          <span class="live-dot"></span>
+          <span class="live-dot" id="sync-dot"></span>
           <span id="sync-status-label">Live</span>
         </button>
         <button type="button" class="pill-btn" id="btn-alert-test" onclick="testTransitNotification()" title="Test transit chime and notification">
@@ -652,13 +617,19 @@
 
   <main class="container">
 
+    <!-- Offline Mode Status Banner (Appears automatically when device has no internet) -->
+    <div id="offline-mode-banner" class="offline-toast-bar">
+      <span>⚡ <strong>Offline Mode Active:</strong> Showing saved ARKA JAIN University bus schedule from device memory.</span>
+      <button type="button" class="pill-btn" style="padding:4px 10px; font-size:0.72rem;" onclick="syncFromGoogleSheet(true)">Retry</button>
+    </div>
+
     <!-- 1-Tap PWA App Install Banner (Auto-hides once installed in standalone mode) -->
     <div id="one-tap-install-banner" class="notif-banner" style="display:flex; background:linear-gradient(135deg, rgba(5, 150, 105, 0.16), rgba(16, 185, 129, 0.08)); border:1.5px solid var(--emerald);">
       <div style="display:flex; align-items:center; gap:10px;">
         <span style="font-size:1.4rem;">📲</span>
         <div>
           <div style="font-weight:800; font-size:0.88rem;">Install CampusRide App</div>
-          <div style="font-size:0.75rem; color:var(--text-sub);" id="one-tap-install-sub">Add to your Home Screen in one tap for instant offline access.</div>
+          <div style="font-size:0.75rem; color:var(--text-sub);" id="one-tap-install-sub">Add to your Home Screen in one tap for 100% offline campus access.</div>
         </div>
       </div>
       <div style="display:flex; gap:8px; align-items:center;">
@@ -669,7 +640,7 @@
       </div>
     </div>
 
-    <!-- Top Notification Opt-In Banner (Satisfies Android Chrome User-Gesture Rule like ClassRadar) -->
+    <!-- Top Notification Opt-In Banner -->
     <div id="notif-permission-banner" class="notif-banner">
       <div style="display:flex; align-items:center; gap:10px;">
         <span style="font-size:1.35rem;">🔔</span>
@@ -726,7 +697,6 @@
         </span>
       </div>
 
-      <!-- The 3 Essential Answers: Pickup Zone, Assigned Bus & Plate, Departure Time -->
       <div class="three-info-grid">
         <div class="info-box">
           <span class="info-step">Step 2 · Pickup Zone</span>
@@ -743,7 +713,7 @@
         <div class="info-box">
           <span class="info-step">Departure Time</span>
           <span class="info-main" id="card-departure-time">5:15 PM</span>
-          <span class="info-sub" id="card-status-sub">Evening Commute</span>
+          <span class="info-sub" id="card-status-sub">Status: Boarding</span>
         </div>
       </div>
 
@@ -778,16 +748,13 @@
       </div>
     </section>
 
-    <!-- Simple Footer -->
     <footer style="text-align:center; font-size:0.76rem; color:var(--text-muted); padding:8px 0;">
-      <span>CampusRide PWA • ARKA JAIN University Transit Portal</span>
+      <span>CampusRide PWA • Offline-First ARKA JAIN University Transit Portal</span>
     </footer>
 
   </main>
 
-
-
-  <!-- MODAL 3: SMART PWA INSTALL ASSISTANT (EXACT CLASSRADAR V16 FLOW) -->
+  <!-- MODAL: SMART PWA INSTALL ASSISTANT -->
   <div class="modal-backdrop" id="install-pwa-modal" onclick="closeInstallModal(event)">
     <div class="modal-dialog" onclick="event.stopPropagation()">
       <div style="display:flex; justify-content:space-between; align-items:center;">
@@ -843,97 +810,81 @@
         id: "BUS_01",
         destination: "Purulia",
         busName: "Campus Bus 01",
-        plate: "JH 05 XX 1234",
         zone: "Zone A",
         zoneLandmark: "Main Gate Plaza",
         departure: "5:15 PM",
         routeVia: "Chandil -> Balarampur -> Purulia",
-        status: "On Time",
-        driverContact: "+91 98351 22101"
+        status: "On Time"
       },
       {
         id: "BUS_02",
         destination: "Jamshedpur (Bistupur / Kadma)",
         busName: "Campus Bus 02",
-        plate: "JH 05 XX 5678",
         zone: "Zone B",
         zoneLandmark: "Admin & Library Bay",
         departure: "5:15 PM",
         routeVia: "Gamharia -> Adityapur Bridge -> Bistupur -> Kadma",
-        status: "Boarding",
-        driverContact: "+91 98351 22102"
+        status: "Boarding"
       },
       {
         id: "BUS_03",
         destination: "Adityapur",
         busName: "Campus Bus 03",
-        plate: "JH 05 XX 9012",
         zone: "Zone C",
         zoneLandmark: "Engineering Block Quad",
         departure: "5:20 PM",
         routeVia: "NIT Roundabout -> S-Type -> Sher-e-Punjab",
-        status: "On Time",
-        driverContact: "+91 98351 22103"
+        status: "On Time"
       },
       {
         id: "BUS_04",
         destination: "Sakchi / Golmuri",
         busName: "Campus Bus 04",
-        plate: "JH 05 XX 3456",
         zone: "Zone A",
         zoneLandmark: "Main Gate Plaza",
         departure: "5:15 PM",
         routeVia: "Mango Bridge -> Sakchi Market -> Golmuri",
-        status: "Scheduled",
-        driverContact: "+91 98351 22104"
+        status: "Scheduled"
       },
       {
         id: "BUS_05",
         destination: "Telco / Tinplate",
         busName: "Campus Bus 05",
-        plate: "JH 05 XX 7890",
         zone: "Zone B",
         zoneLandmark: "Admin & Library Bay",
         departure: "5:25 PM",
         routeVia: "Baridih -> Tinplate -> Telco Colony",
-        status: "Scheduled",
-        driverContact: "+91 98351 22105"
+        status: "Scheduled"
       },
       {
         id: "BUS_06",
         destination: "Mango / Dimna",
         busName: "Campus Bus 06",
-        plate: "JH 05 XX 2345",
         zone: "Zone C",
         zoneLandmark: "Engineering Block Quad",
         departure: "5:15 PM",
         routeVia: "Dimna Chowk -> Mango Bus Stand -> Pardih",
-        status: "Boarding",
-        driverContact: "+91 98351 22106"
+        status: "Boarding"
       },
       {
         id: "BUS_07",
         destination: "Ghatshila",
         busName: "Campus Bus 07",
-        plate: "JH 05 XX 6789",
         zone: "Zone D",
         zoneLandmark: "Sports Complex & Hostel Bay",
         departure: "5:30 PM",
         routeVia: "Galudih -> Ghatshila College -> Station",
-        status: "Scheduled",
-        driverContact: "+91 98351 22107"
+        status: "Scheduled"
       },
       {
         id: "BUS_08",
         destination: "Chaibasa",
         busName: "Campus Bus 08",
-        plate: "JH 05 XX 4321",
         zone: "Zone D",
         zoneLandmark: "Sports Complex & Hostel Bay",
         departure: "5:30 PM",
         routeVia: "Rajnagar -> Chaibasa Bus Stand",
-        status: "Delayed",
-        driverContact: "+91 98351 22108"
+        status: "Delayed"
       }
     ];
 
@@ -944,17 +895,19 @@
       "Zone D": { code: "Zone D", title: "Zone D · Sports & Hostel Bay", desc: "Near the university sports ground, indoor stadium, and hostel entrance." }
     };
 
-    // Synchronous Zero-Flicker Cache Hydration
+    // Synchronous Zero-Flicker Offline Cache Hydration
     let FLEET_STATE = JSON.parse(JSON.stringify(DEFAULT_FLEET_DATA));
     const cached = safeGetStorage("campusride_fleet_cache_v1");
     if (cached) {
       try {
         const parsed = JSON.parse(cached);
-        if (Array.isArray(parsed) && parsed.length >= 3) FLEET_STATE = parsed;
+        if (Array.isArray(parsed) && parsed.length >= 3) {
+          FLEET_STATE = parsed;
+        }
       } catch (e) {}
+    } else {
+      safeSetStorage("campusride_fleet_cache_v1", JSON.stringify(FLEET_STATE));
     }
-
-
 
     let selectedBusId = safeGetStorage("campusride_selected_bus") || "BUS_02";
     let routeSearchQuery = "";
@@ -1001,9 +954,6 @@
       } catch (e) {}
     }
 
-    // =========================================================================
-    // ANDROID-SAFE SERVICE WORKER NOTIFICATION DISPATCHER (FROM CLASSRADAR V16)
-    // =========================================================================
     async function sendNotification(title, body) {
       if (!("Notification" in window) || Notification.permission !== "granted") return;
       const notifOptions = {
@@ -1217,8 +1167,17 @@
     }
 
     // =========================================================================
-    // HEADLESS GOOGLE SHEETS GVIZ LIVE SYNC + CHANGE NOTIFICATION
+    // OFFLINE-SAFE GOOGLE SHEETS GVIZ SYNC (WITH 4-SECOND ABORT TIMEOUT)
     // =========================================================================
+    function setOfflineUIState(isOffline) {
+      const labelEl = document.getElementById("sync-status-label");
+      const dotEl = document.getElementById("sync-dot");
+      const bannerEl = document.getElementById("offline-mode-banner");
+      if (labelEl) labelEl.textContent = isOffline ? "Offline Ready" : "Live";
+      if (dotEl) dotEl.classList.toggle("offline", isOffline);
+      if (bannerEl) bannerEl.style.display = isOffline ? "flex" : "none";
+    }
+
     function getRowField(rowObj, aliases) {
       if (!rowObj) return "";
       const keys = Object.keys(rowObj);
@@ -1235,11 +1194,23 @@
     }
 
     async function syncFromGoogleSheet(manual = false) {
+      // Immediate 0ms offline check
+      if (typeof navigator !== "undefined" && navigator.onLine === false) {
+        setOfflineUIState(true);
+        if (manual) showToast("⚡ Offline Mode: Showing saved schedule from device memory.");
+        return;
+      }
+
       const labelEl = document.getElementById("sync-status-label");
       if (labelEl && manual) labelEl.textContent = "Syncing...";
+
       const url = `https://docs.google.com/spreadsheets/d/${encodeURIComponent(TRANSPORT_SHEET_ID)}/gviz/tq?tqx=out:json`;
+      const controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+      const timer = controller ? setTimeout(() => controller.abort(), 4000) : null;
+
       try {
-        const res = await fetch(url);
+        const res = await fetch(url, controller ? { signal: controller.signal } : {});
+        if (timer) clearTimeout(timer);
         const text = await res.text();
         const m = text.match(/google\.visualization\.Query\.setResponse\(([\s\S]*)\);?/);
         if (!m) throw new Error("Invalid GViz");
@@ -1259,25 +1230,20 @@
           const busName = getRowField(obj, ["Bus_Name", "Bus", "col_1"]);
           if (!dest || !busName || dest.toLowerCase() === "destination") return;
           const fb = DEFAULT_FLEET_DATA[rIdx % DEFAULT_FLEET_DATA.length] || DEFAULT_FLEET_DATA[0];
-          let contact = getRowField(obj, ["Driver_Contact", "Contact", "col_7"]);
-          if (!contact || contact.includes("ERROR")) contact = fb.driverContact;
 
           rows.push({
             id: fb.id || `BUS_0${rows.length + 1}`,
             destination: dest,
             busName: busName,
-            plate: getRowField(obj, ["License_Plate", "Plate", "col_2"]) || fb.plate,
             zone: getRowField(obj, ["Pickup_Zone", "Zone", "col_3"]) || fb.zone,
             zoneLandmark: fb.zoneLandmark,
             departure: getRowField(obj, ["Departure_Time", "Departure", "col_4"]) || fb.departure,
             routeVia: getRowField(obj, ["Route_Via", "Via", "col_5"]) || fb.routeVia,
-            status: getRowField(obj, ["Status", "col_6"]) || fb.status,
-            driverContact: contact
+            status: getRowField(obj, ["Status", "col_6"]) || fb.status
           });
         });
 
         if (rows.length > 0) {
-          // Detect status changes on user's selected bus to chime & notify
           const prevSelected = FLEET_STATE.find((b) => b.id === selectedBusId);
           const nextSelected = rows.find((b) => b.id === selectedBusId);
           if (prevSelected && nextSelected && prevSelected.status !== nextSelected.status) {
@@ -1291,18 +1257,15 @@
           FLEET_STATE = rows;
           safeSetStorage("campusride_fleet_cache_v1", JSON.stringify(FLEET_STATE));
           renderApp();
-          if (labelEl) labelEl.textContent = "Live";
+          setOfflineUIState(false);
           if (manual) showToast(`☁️ Synced ${FLEET_STATE.length} bus routes from Google Sheets.`);
         }
       } catch (e) {
-        if (labelEl) labelEl.textContent = "Offline";
-        if (manual) showToast("⚡ Using cached offline bus schedule.");
+        if (timer) clearTimeout(timer);
+        setOfflineUIState(true);
+        if (manual) showToast("⚡ Offline Mode: Showing saved bus schedule.");
       }
     }
-
-
-
-
 
     function copyTextFallback(text) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -1317,10 +1280,8 @@
       ta.remove();
     }
 
-
-
     // =========================================================================
-    // TRUE 1-TAP PWA INSTALLATION ENGINE (DIRECT NATIVE PROMPT ON FIRST TAP)
+    // TRUE 1-TAP PWA INSTALLATION ENGINE
     // =========================================================================
     function isRunningStandalone() {
       return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true;
@@ -1339,7 +1300,6 @@
     }
 
     async function oneTapInstallApp() {
-      // Direct 1-Tap Native Install when Chrome/Edge/Android has queued beforeinstallprompt
       if (deferredPrompt) {
         try {
           deferredPrompt.prompt();
@@ -1354,14 +1314,12 @@
         } catch (err) {}
       }
 
-      // If already installed in standalone mode
       if (isRunningStandalone()) {
         showToast("✅ CampusRide is already installed on your device!");
         hideInstallUIOnInstalled();
         return;
       }
 
-      // Fallback guide if browser requires manual menu or localhost server
       handleInstallButtonClick();
     }
 
@@ -1386,9 +1344,9 @@
         if (statusBox) {
           statusBox.innerHTML = `
             <div style="background:var(--sky-soft); border:1px solid var(--sky); padding:12px; border-radius:10px; color:var(--text); font-size:0.8rem; line-height:1.55;">
-              📱 <strong>How to enable 1-Tap Install:</strong><br>
+              📱 <strong>How to Install for Offline Use:</strong><br>
               • Open your hosted <strong>GitHub Pages HTTPS link</strong> or <strong>http://localhost:8080</strong> in Chrome and tap <strong>⚡ 1-Tap Install</strong>.<br>
-              • <strong>iPhone (Safari):</strong> Tap <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong>.
+              • Or tap Chrome's <strong>⋮ menu &rarr; Add to Home screen / Install app</strong>.
             </div>
           `;
         }
@@ -1423,15 +1381,20 @@
     window.addEventListener("appinstalled", () => {
       deferredPrompt = null;
       hideInstallUIOnInstalled();
-      showToast("🎉 CampusRide installed to your Home Screen!");
+      showToast("🎉 CampusRide installed! Works 100% offline.");
     });
 
     window.addEventListener("online", () => {
+      setOfflineUIState(false);
       syncFromGoogleSheet(false);
     });
 
+    window.addEventListener("offline", () => {
+      setOfflineUIState(true);
+    });
+
     // =========================================================================
-    // INITIALIZE PWA, SERVICE WORKER & ONESIGNAL (EXACT CLASSRADAR SETUP)
+    // INITIALIZE OFFLINE-FIRST PWA ENGINE
     // =========================================================================
     (function init() {
       if (isRunningStandalone()) {
@@ -1443,30 +1406,34 @@
         document.getElementById("theme-icon").textContent = savedTheme === "dark" ? "☀️" : "🌙";
       }
 
-      // Show opt-in banner if notifications not yet granted
       if ("Notification" in window && Notification.permission === "default" && !safeGetStorage("campusride_notif_banner_dismissed")) {
         const banner = document.getElementById("notif-permission-banner");
         if (banner) banner.style.display = "flex";
       }
 
+      // Render UI synchronously at 0ms from local cache before any network call
       renderApp();
 
-      // When hosted on HTTP/HTTPS (GitHub Pages or Termux localhost), link manifest.json & register Service Worker
-      if (window.location.protocol === "http:" || window.location.protocol === "https:") {
-        const manifestLink = document.getElementById("pwa-manifest-link");
-        if (manifestLink) manifestLink.setAttribute("href", "./manifest.json");
-
-        if ("serviceWorker" in navigator) {
-          navigator.serviceWorker.register("./sw.js", { scope: "./" }).then((reg) => {
-            setInterval(() => {
-              reg.update().catch(() => {});
-            }, 3 * 60 * 1000);
-          }).catch(() => {});
-        }
+      if (typeof navigator !== "undefined" && navigator.onLine === false) {
+        setOfflineUIState(true);
       }
 
-      // Initialize OneSignal Web Push SDK v16 with sw.js
-      if (ONESIGNAL_APP_ID && ONESIGNAL_APP_ID !== "YOUR_ONESIGNAL_APP_ID") {
+      // Register Offline Service Worker on HTTP/HTTPS
+      if ("serviceWorker" in navigator && (window.location.protocol === "http:" || window.location.protocol === "https:")) {
+        navigator.serviceWorker.register("./sw.js", { scope: "./" }).then((reg) => {
+          setInterval(() => {
+            if (navigator.onLine) reg.update().catch(() => {});
+          }, 3 * 60 * 1000);
+        }).catch(() => {});
+      }
+
+      // Load OneSignal SDK asynchronously ONLY when configured and online (never blocks offline startup)
+      if (ONESIGNAL_APP_ID && ONESIGNAL_APP_ID !== "YOUR_ONESIGNAL_APP_ID" && navigator.onLine) {
+        const osScript = document.createElement("script");
+        osScript.src = "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js";
+        osScript.defer = true;
+        document.head.appendChild(osScript);
+
         window.OneSignalDeferred = window.OneSignalDeferred || [];
         window.OneSignalDeferred.push(async function(OneSignal) {
           try {
@@ -1477,15 +1444,14 @@
               serviceWorkerParam: { scope: "./" },
               notifyButton: { enable: false }
             });
-            setTimeout(() => {
-              try { OneSignal.Slidedown.promptPush(); } catch (e) {}
-            }, 1200);
           } catch (e) {}
         });
       }
 
       syncFromGoogleSheet(false);
-      setInterval(() => syncFromGoogleSheet(false), 15000);
+      setInterval(() => {
+        if (navigator.onLine !== false) syncFromGoogleSheet(false);
+      }, 15000);
     })();
   </script>
 </body>

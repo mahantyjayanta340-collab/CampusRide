@@ -1,88 +1,145 @@
-// CampusRide PWA — Unified Offline-First PWA & OneSignal Service Worker
-let oneSignalLoaded = false;
-try {
-  importScripts("https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.sw.js");
-  oneSignalLoaded = true;
-} catch (e) {
-  // Offline or local environment fallback
-}
-
-const CACHE_NAME = 'campusride-aju-v3';
-const ASSETS = [
+// CampusRide PWA — Zero-Dependency Offline-First Service Worker (V4)
+const CACHE_NAME = 'campusride-offline-v4';
+const APP_SHELL_ASSETS = [
   './',
   './index.html',
   './manifest.json',
   './icon-192.png',
-  './icon-512.png',
-  './OneSignalSDKWorker.js'
+  './icon-512.png'
 ];
 
-self.addEventListener('install', (e) => {
-  e.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => cache.addAll(ASSETS))
-      .then(() => self.skipWaiting())
+// Install: Cache each asset resiliently so a single missing optional file never aborts installation
+self.addEventListener('install', (event) => {
+  self.skipWaiting();
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(async (cache) => {
+      for (const assetUrl of APP_SHELL_ASSETS) {
+        try {
+          const response = await fetch(assetUrl, { cache: 'reload' });
+          if (response && response.ok) {
+            await cache.put(assetUrl, response.clone());
+            // Guarantee './index.html' is also stored under './' root key
+            if (assetUrl === './index.html') {
+              await cache.put('./', response.clone());
+            }
+          }
+        } catch (err) {
+          // Ignore individual fetch error during install
+        }
+      }
+    })
   );
 });
 
-self.addEventListener('activate', (e) => {
-  e.waitUntil(
+// Activate: Clean up old caches and immediately claim all open tabs/windows
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
-        keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))
+        keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))
       );
     }).then(() => self.clients.claim())
   );
 });
 
-// Cache same-origin GET requests; let Google Sheets GViz & OneSignal pass through cleanly
-self.addEventListener('fetch', (e) => {
-  if (e.request.method !== 'GET') return;
-  const url = new URL(e.request.url);
-  if (url.origin !== self.location.origin) return;
+// Fetch: Instant Cache-First + Background Revalidate for App Shell & Offline Navigation
+self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
+  const reqUrl = new URL(event.request.url);
 
-  e.respondWith(
-    caches.match(e.request).then((res) => {
-      return res || fetch(e.request).catch(() => caches.match('./index.html'));
+  // 1. Google Sheets GViz Live Sync: Network-first with 4s timeout, fallback to cached GViz response
+  if (reqUrl.hostname.includes('docs.google.com')) {
+    event.respondWith(
+      fetch(event.request)
+        .then((netRes) => {
+          if (netRes && netRes.status === 200) {
+            const copy = netRes.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          }
+          return netRes;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // Only handle same-origin requests for static app shell
+  if (reqUrl.origin !== self.location.origin) return;
+
+  // 2. HTML Navigation Requests (opening app from Home Screen, refreshing page offline, or query strings)
+  if (event.request.mode === 'navigate' || event.request.destination === 'document') {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(async (cache) => {
+        const cachedPage =
+          (await cache.match(event.request, { ignoreSearch: true })) ||
+          (await cache.match('./index.html', { ignoreSearch: true })) ||
+          (await cache.match('./', { ignoreSearch: true }));
+
+        const networkFetch = fetch(event.request)
+          .then((netRes) => {
+            if (netRes && netRes.ok) {
+              cache.put('./index.html', netRes.clone());
+              cache.put('./', netRes.clone());
+            }
+            return netRes;
+          })
+          .catch(() => cachedPage);
+
+        // Return cached page immediately if available (0ms offline load!), else wait for network
+        return cachedPage || networkFetch;
+      })
+    );
+    return;
+  }
+
+  // 3. Static Assets (manifest.json, icons, scripts): Cache-First with network fallback
+  event.respondWith(
+    caches.match(event.request, { ignoreSearch: true }).then((cachedRes) => {
+      if (cachedRes) return cachedRes;
+      return fetch(event.request)
+        .then((netRes) => {
+          if (netRes && netRes.ok) {
+            const copy = netRes.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          }
+          return netRes;
+        })
+        .catch(() => caches.match('./index.html', { ignoreSearch: true }));
     })
   );
 });
 
-if (!oneSignalLoaded) {
-  self.addEventListener('push', (e) => {
-    let data = { title: 'CampusRide Transit Alert', body: 'Live bus status updated.', url: './' };
-    if (e.data) {
-      try {
-        data = e.data.json();
-      } catch (err) {
-        data.body = e.data.text();
-      }
+// Native Web Push Listener
+self.addEventListener('push', (event) => {
+  let data = { title: 'CampusRide Transit Alert', body: 'Bus status updated.', url: './' };
+  if (event.data) {
+    try {
+      data = event.data.json();
+    } catch (err) {
+      data.body = event.data.text();
     }
-    const options = {
-      body: data.body,
-      icon: './icon-192.png',
-      badge: './icon-192.png',
-      vibrate: [200, 100, 200],
-      data: { url: data.url || './' }
-    };
-    e.waitUntil(self.registration.showNotification(data.title, options));
-  });
-}
+  }
+  const options = {
+    body: data.body,
+    icon: './icon-192.png',
+    badge: './icon-192.png',
+    vibrate: [200, 100, 200],
+    data: { url: data.url || './' }
+  };
+  event.waitUntil(self.registration.showNotification(data.title, options));
+});
 
-self.addEventListener('notificationclick', (e) => {
-  if (e.notification && e.notification.data && e.notification.data.custom) return;
-  e.notification.close();
-  const targetUrl = (e.notification.data && e.notification.data.url) || './';
-  e.waitUntil(
+// Notification Click Handler: Focus existing window or open app
+self.addEventListener('notificationclick', (event) => {
+  if (event.notification && event.notification.data && event.notification.data.custom) return;
+  event.notification.close();
+  const targetUrl = (event.notification.data && event.notification.data.url) || './';
+  event.waitUntil(
     clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
       for (const client of clientList) {
-        if ('focus' in client) {
-          return client.focus();
-        }
+        if ('focus' in client) return client.focus();
       }
-      if (clients.openWindow) {
-        return clients.openWindow(targetUrl);
-      }
+      if (clients.openWindow) return clients.openWindow(targetUrl);
     })
   );
 });
